@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
 <head>
 	<title>커피와 개발자 :: CoderDocs</title>
     
@@ -189,7 +189,7 @@
 		                            </span><!--//icon-holder-->
 	                                Note
 	                            </h4>
-                                <p>자바의 단점으로는 속도문제가 대표적인데, 바이트코드(byte code)를 하드웨어의 기계어로 바로 변환해주는 신기술이 도입되므로써 JVM의 기능이 향상되어 상당히 개선되었다.</p>
+                                <p>* 자바의 단점으로는 속도문제가 대표적인데, 바이트코드(byte code)를 하드웨어의 기계어로 바로 변환해주는 신기술이 도입되므로써 JVM의 기능이 향상되어 상당히 개선되었다.</p>
                             </div><!--//content-->
                         </div><!--//callout-block-->
 
@@ -234,9 +234,9 @@
 									Note
 								</h4>
 								<p>
-									JDK는 자바 프로그램을 실행, 컴파일, 개발용 도구.<br/>
-									JRE, JVM를 모두 포함하는 포괄적이 키트이다.<br/>
-									JRE는 자바 프로그램을 실행할 수 있게 하는 도구이다. JVM을 포함하고 있다.
+									* JDK는 자바 프로그램을 실행, 컴파일, 개발용 도구.<br/>
+									* JRE, JVM를 모두 포함하는 포괄적이 키트이다.<br/>
+									* JRE는 자바 프로그램을 실행할 수 있게 하는 도구이다. JVM을 포함하고 있다.
 								</p>
 							</div><!--//content-->
 						</div><!--//callout-block-->
@@ -266,7 +266,7 @@
 										Note
 									</h4>
 									<p>
-										변수(variable) : 단 하나의 값을 저장할 수 있는 메모리 공간
+										* 변수(variable) : 단 하나의 값을 저장할 수 있는 메모리 공간
 									</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
@@ -315,7 +315,7 @@ int x = 0, y = 0; // 한 줄로 선언과 초기화를 동시에 진행</code></
 							<!-- ** Embed github code ends ** -->
 						</div><!--//docs-code-block-->
 
-						<h5>Result : Example 결과</h5>
+						<h5>Result :</h5>
 						<div class="docs-code-block">
 							<pre class="shadow-lg rounded"><code class="json hljs">year = 0
 age = 18
@@ -391,7 +391,7 @@ MAX_VALUE = 200;            // 에러. 상수의 값은 변경될 수 없습니�
 									Note
 								</h4>
 								<p>
-									JDK1.6부터는 상수를 선언과 동시에 초기화 하지 않아도 되며, 사용하기 전에만 초기화하면 되도록 변경되었습니다. 하지만 상수는 한번 선언되어 초기화되면 값을 변경 할 수 없으므로 선언과 동시에 초과하 하는 것이 좋습니다.
+									* JDK1.6부터는 상수를 선언과 동시에 초기화 하지 않아도 되며, 사용하기 전에만 초기화하면 되도록 변경되었습니다. 하지만 상수는 한번 선언되어 초기화되면 값을 변경 할 수 없으므로 선언과 동시에 초과하 하는 것이 좋습니다.
 								</p>
 							</div><!--//content-->
 						</div><!--//callout-block-->
@@ -411,9 +411,9 @@ MAX_VALUE = 200;            // 에러. 상수의 값은 변경될 수 없습니�
 									Note
 								</h4>
 								<p>
-									변수(Variable) : 하나의 겂을 저장하기 위한 공간<br/>
-									상수(constant) : 값을 한번만 저장할 수 있는 공간<br/>
-									리터럴(literal) : 상수 값 자체를 의미
+									* 변수(Variable) : 하나의 겂을 저장하기 위한 공간<br/>
+									* 상수(constant) : 값을 한번만 저장할 수 있는 공간<br/>
+									* 리터럴(literal) : 상수 값 자체를 의미
 								</p>
 							</div><!--//content-->
 						</div><!--//callout-block-->
@@ -425,43 +425,392 @@ MAX_VALUE = 200;            // 에러. 상수의 값은 변경될 수 없습니�
 				    <header class="docs-header">
 					    <h1 class="docs-heading">자료형(Data Type)</h1>
 					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+							<div class="docs-code-block">
+								<pre class="shadow-lg rounded"><code class="json hljs">Java Data Type
+	&#8627 Primitive Type
+		&#8627 Boolean Type(boolean)
+		&#8627 Numeric Type
+			&#8627 Integral Type
+				&#8627 Integer Type(byte, short, int, long)
+				&#8627 Floating Point Type(float, double)
+			&#8627 Character Type(char)
+	&#8627 Reference Type
+		&#8627 Class Type
+		&#8627 Interface Type
+		&#8627 Array Type
+		&#8627 Enum Type</code></pre>
+							</div>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="item-3-1">
 						<h2 class="section-heading">기본형(primitive type)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>
+							자바의 자료형은 크게 기본형<sup>(primitive type)</sup>과 참조형<sup>(referene type)</sup>으로 나뉩니다. 그리고 기본형은 다시 <strong>논리형, 문자형, 정수형, 실수형</strong> 네 가지로 분류할 수 있습니다.
+						</p>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-3-2">
 						<h2 class="section-heading">논리형(boolean)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>논리형은 <strong>참(true)이나 거짓(false) 중 한 가지 값만을 가질 수 있는 불리언 타입을 의미</strong>합니다. 자바의 기본 타입 중 논리형 타입은 <code>boolean</code> 한 가지 밖에 없으며 기본은 <code>false</code> 입니다.</p>
+
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">boolean checked = true;
+boolean power = FALSE;    // 에러. 자바에서는 대소문자를 구별되기 때문에 소문자를 사용해야합니다.</code></pre>
+						</div><!--//docs-code-block-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									* <strong>boolean (1 byte)</strong> 데이터의 표현 범위는 <code>true</code> 또는 <code>false</code> 두 가지뿐 입니다.
+								</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-3-3">
 						<h2 class="section-heading">문자형(char)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>문자형 역시 <code>char</code> 한 가지 자료형 뿐입니다. 자바에서 문자형 데이터란 <strong>작은 정수나 문자 하나를 표현할 수 있는 타입을 의미하며 단 하나의 문자만을 저장</strong>합니다.</p>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">char ch = 'A';         // 문자 'A'를 char 타입의 변수 ch 에 저장합니다.
+char ch = 65;          // 문자의 코드를 직접 변수에 저장합니다.
+int code = (int) ch;   // ch에 저장된 값을 int타입으로 변환하여 저장합니다. (문자의 유니코드를 알 수 있습니다.)</code></pre>
+						</div><!--//docs-code-block-->
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									* 컴퓨터는 2진수밖에 인식하지 못하므로 문자도 숫자로 표현해야 인식할 수 있습니다. 따라서 어떤 문자를 어떤 숫자에 대응시킬 것인가에 대한 약속이 필요해집니다. 위의 문장은 변수에 문자가 저장되는 것처럼 보이지만 사실은 문자가 아닌 문자의 유니코드(정수)가 저장됩니다. 따라서 문자 'A'는 유니코드 65이므로 변수 ch에는 65가 저장됩니다.<br/>
+									* C언어와 C++에서는 아스키코드(ASCII)를 사용하여 문자를 표현합니다. 아스키코드(ASCII)는 영문 대소문자를 사용하는 7비트의 문자 인코딩 방식입니다. 아스키코드는 문자 하나를 7비트로 표현하므로, 총 128개의 문자를 표현할 수 있습니다. 하지만 자바에서는 유니코드(unicode)를 사용하여 문자를 표현합니다. 아스키코드는 영문자와 숫자밖에 표현 못 하지만, 유니코드는 각 나라의 모든 언어를 표현할 수 있습니다. 유니코드는 문자 하나를 16비트로 표현하므로, 총 65,536개의 문자를 표현할 수 있습니다.
+								</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-3-4">
 						<h2 class="section-heading">정수형(byte,short,int,long)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>자바에서 정수란 <strong>부호를 가지고 있으며, 소수 부분이 없는 수</strong>를 의미합니다. 기본 타입 중 정수를 나타내는 타입은 <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>을 제공하고 있습니다.</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">타입</th>
+										<th scope="col">크기</th>
+										<th scope="col">데이터의 표현 범위</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>byte</td>
+										<td>1 byte</td>
+										<td>-128 ~ 127 (-2 7 ~ 2 7 - 1)</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>short</td>
+										<td>2 byte</td>
+										<td>-32,768 ~ 32,767 (-2 15 ~ 2 15 - 1)</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>int</td>
+										<td>4 byte</td>
+										<td>-2,147,483,648 ~ 2,147,483,647 (-2 31 ~ 2 31 - 1)</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>long</td>
+										<td>8 byte</td>
+										<td>-9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 (-2 63 ~ 2 63 - 1)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+						<p>정수형 데이터의 타입을 결정할 때에는 반드시 자신이 사용하고자 하는 데이터의 최대 크기를 고려해야 합니다. 해당 타입이 표현할 수 있는 범위를 벗어난 데이터를 저장하면, <u>오버플로우(overflow)가 발생해 전혀 다른 값이 저장</u>될 수 있기 때문입니다.</p>
+						<h5>오버플로우나 언더플로우가 발생하면 결과에 어떠한 영향을 주는지를 보여주는 Example :</h5>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/92681f82f2e126373a5986480c9d6bdb.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Result :</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">-128
+127</code></pre>
+						</div><!--//docs-code-block-->
+
+						<h5>오버플로우<sup>(overflow)</sup>와 언더플로우<sup>(underflow)</sup></h5>
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									* 오버플로우(overflow)란 해당 타입이 표현할 수 있는 최대 범위보다 큰 수를 저장할 때 발생하는 현상을 가리킵니다. 오버플로우가 발생하면 최상위 비트(MSB)를 벗어난 데이터가 인접 비트를 덮어쓰므로, 잘못된 결과를 얻을 수 있습니다.<br/>
+									* 언더플로우(underflow)란 해당 타입이 표현할 수 있는 최소 범위보다 작은 수를 저장할 때 발생하는 현상을 가리킵니다.
+								</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
+
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-3-5">
 						<h2 class="section-heading">실수형(float,double)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>자바에서 실수란 <strong>소수부나 지수부가 있는 수</strong>를 가리키며, 정수보다 훨씬 더 넓은 표현 범위를 가집니다. 자바의 기본 타입 중 실수를 나타내는 타입은 <code>float</code>, <code>double</code>의 두 가지 타입이 있습니다.</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">타입</th>
+									<th scope="col">크기</th>
+									<th scope="col">데이터의 표현 범위</th>
+									<th scope="col">리터럴 접미사</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>float</td>
+									<td>지수 길이 8 bit / 가수 길이 32 bit / 할당 메모리 4 byte</td>
+									<td>소수 부분 7자리까지 오차없이 표현 (3.4 X 10 -38) ~ (3.4 X 10 38)</td>
+									<td>F 또는 f</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>double</td>
+									<td>지수 길이 11 bit / 가수 길이 52 bit / 할당 메모리 8 byte</td>
+									<td>소수 부분 15자리까지 오차없이 표현 (1.7 X 10 -308) ~ (1.7 X 10 308)</td>
+									<td>D 또는 d (생략가능)</td>
+								</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+
+						<h5>오버플로우<sup>(overflow)</sup>와 언더플로우<sup>(underflow)</sup></h5>
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									* 과거에는 실수를 표현할 때 float형을 많이 사용했지만, 하드웨어의 발달로 인한 메모리 공간의 증가로 현재에는 double형을 가장 많이 사용합니다. 따라서 <u>실수형 타입 중 기본이 되는 타입은 double형</u>입니다.<br/>
+									* 실수형에서도 <u>변수의 값이 표현범위의 최대값을 벗어나면 오버플로우가 발생</u>합니다. 단지 변수의 값이 정수형과 달리 무한대(infinity)가 됩니다. 그리고 정수형에는 없는 언더플로우가 발생하는데 언더플로우는 실수형으로 표현할 수 없는 아주 작은 값, 즉 양의 최소값보다 작은 값이 되면 변수의 값은 0 이 됩니다.
+								</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-3-6">
 						<h2 class="section-heading">형변환(casting)</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>
+							프로그램을 작성하다 보면 같은 타입뿐만 아니라 <strong>서로 다른 타입간의 연산을 수행해야 하는 경우</strong>가 있습니다. 이럴 경우에는 <strong>연산을 수행하기 전에 타입을 일치</strong>시켜야 하는데,
+							<strong>변수나 리터럴의 타입을 다른 타입으로 변환하는 것을 형변환(캐스팅, casting)</strong>이라고 합니다.<br/>
+							형변환 방법은 간단합니다. 형변환하고자 하는 변수나 리터럴의 앞에 변환하고자 하는 타입을 괄호와 함께 붙여주기만 하면 됩니다. 이 때 사용되는 <strong>괄호()는 캐스트 연산자 또는 형변환 연산자</strong>라고 하며, <strong>형변환을 캐스팅(casting)</strong>이라고 합니다.
+						</p>
+
+						<h5>Syntax : (타입) 피연산자</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">double d = 3.14;
+// double타입의 변수 d를 int타입으로 형변환
+// 이 때 형변환의 결과인 3이 score애 저장
+int score = (int) d;</code></pre>
+						</div><!--//docs-code-block-->
+
+						<br/>
+						<h5>형변환(캐스팅, casting) Example :</h5>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/e081bd0a1437517f1da30ea2bf7007ae.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Result :</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">score = 3
+d = 3.14  // 형변환 후에도 피연산자에는 아무런 영향이 없습니다.</code></pre>
+						</div><!--//docs-code-block-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>기본형 타입에서 boolean을 제외한 나머지 타입들은 서로 형변환이 가능합니다. 그리고 기본형과 참조형간의 형변환은 불가능합니다.</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
+
+						<br/>
+						<h3>정수형 간의 형변환</h3>
+						<p></p>
+						<h5>정수형 간의 형변환에서 큰 타입에서 작은 타입으로의 변환 Example :</h5>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/5edb306f99b8a38073e015f585fd802a.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Result :</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">[int -> byte] i=10 -> b=10
+[int -> byte] i=300 -> b=44
+[byte -> int] b=10 -> i=10
+[byte -> int] b=-2 -> i=-2
+i = 11111111111111111111111111111110</code></pre>
+						</div><!--//docs-code-block-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>int타입(4byte)의 값을 byte타입(1byte)으로 변환하는 경우 값의 손실이 발생합니다.</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
+
+						<br/>
+						<h3>실수형 간의 형변환</h3>
+						<p></p>
+						<h5>실수형 간의 형변환에서 큰 타입에서 작은 타입으로의 변환 Example :</h5>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/4b2ffcbbdcfefa0d8cc6c3691a441c39.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Result :</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">f = 9.123456954956055000
+d = 9.123456700000000000
+d2 = 9.123456954956055000</code></pre>
+						</div><!--//docs-code-block-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>실수형에서도 정수형처럼 작은 타입에서 큰 타입으로 변환하는 경우, 빈 공간을 0으로 채웁니다.</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
+
+						<br/>
+						<h3>정수형과 실수형 간의 형변환</h3>
+						<p>
+							정수형과 실수형은 저장형식이 완전히 다르기 때문에 정수형간의 변환처럼 간단히 값을 채우고 자르는 식으로는 할 수 없습니다.<br/>
+						</p>
+
+						<h5>정수형과 실수형 간의 형변환 Example : </h5>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/5dd1c9d867c942b47360e725bb15736b.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+
+						<h5>Result :</h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">i = 91234567
+f = 91234568.000000, i2 = 91234568
+d = 91234567.000000, i3 = 91234567
+(int) 1.666000 = 1</code></pre>
+						</div><!--//docs-code-block-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+									Note
+								</h4>
+								<p>
+									<strong class="me-1">정수형을 실수형으로 변환 : </strong>
+									정수는 소수점이하의 값이 없으므로 비교적 변환이 간단합니다. 실수형은 정수형보다 휠씬 큰 저장범위를 갖고 있기 때문에, 정수형을 실수형으로 변환하는 것은 무리가 없습니다.<br/>
+									<strong class="me-1">실수형을 정수형으로 변환 : </strong>
+									실수형을 정수형으로 변환하면, 실수형의 수수점이하 값은 버려집니다. 정수형의 표현 형식으로 소수점 이하의 값은 표현할 수 없기 때문입니다.
+								</p>
+							</div><!--//content-->
+						</div><!--//callout-block-->
+
+						<br/>
+						<h3>자동 형변환</h3>
+						<p>
+							서로 다른 타입간의 대입이나 연산을 할 때, 형변환으로 타입을 일치시키는 것이 원칙입니다. 하지만, 경우에 따라 편의상의 이유로 형변환을 생략할 수 있습니다.
+							그렇다고 형변환이 이루어지지 않는 것은 아니며, 컴파일러가 생략된 형변환을 자동적으로 추가합니다.
+						</p>
+
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">float f = 1234;  // 형변환의 생략. float f = (float) 1234;</code></pre>
+						</div>
+						<p>그러나 변수가 저장할 수 있는 값의 범위보다 더 큰 값을 저장하려는 경우에 형변환을 생략하면 에러가 발생합니다.</p>
+
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">byte b = 1000;  // Error. byte의 범위 (-125 ~ 127)를 넘는 값을 저장.</code></pre>
+						</div>
+						<p>그러나 다음과 같이 명시적으로 형변환을 해줬을 경우, 형변환이 프로그래머의 실수가 아닌 의도적인 것으로 간주하여 컴파일러는 에러를 발생하지 않습니다.</p>
+
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">char ch = (char) 1000;  // OK. 명시적 형변환.</code></pre>
+						</div>
+						<p>
+							또 다른 예로 다음과 같은 계산식에서 자주 형변환이 생략됩니다. 서로 다른 두 타입의 연산에서는 먼저 타입을 일치시킨 다음에 연산을 수행해야 하므로, 연산과정에서 형변환이 자동적으로 이루어집니다.<br/>
+							서로 다른 두 타입간의 덧셈에서는 두 타입 중 표현볌위가 더 넓은 타입으로 형변환하여 타입을 일치시킨 다음에 연산을 수행합니다. 그렇게 함으로써 값손실의 위험이 더 적어서 올바른 결과를 얻을 확율이 높기 때문입니다.
+						</p>
+
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">int i = 3;
+double d = 1.0 + i;              //  double d = 1.0 + (double) i; 에서 형변환이 생략
+// double d = 1.0 + (double) i;
+// double d = 1.0 + (double) 3;  // i의 값은 3
+// double d = 1.0 + 3.0          // 3을 double타입으로 형변환
+// double d = 4.0                // double = double + double</code></pre>
+						</div>
+						<p>
+							연산과정에서 자동적으로 발생하는 형변환을 <strong>산술변환</strong>이라고 합니다.
+							이러한 자동 형변환에는 규칙이 있습니다. 컴파일러는 <strong>기존의 값을 최대한 보존할 수 있는 타입으로 자동 형변환</strong>합니다.
+						</p>
+
+						<h5>기본형의 자동 형변환이 가능한 방향 : </h5>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">(byte) &#8594 (short) &#8594 (int) &#8594 (long) &#8594 (float) &#8594 (double)
+          (char) &#8599</code></pre>
+						</div>
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 			    
 			    <article class="docs-article" id="section-4">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Intergrations</h1>
+					    <h1 class="docs-heading">연산자(Operator)</h1>
 					    <section class="docs-intro">
 						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
 						</section><!--//docs-intro-->

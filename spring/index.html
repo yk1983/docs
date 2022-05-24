@@ -82,10 +82,14 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">AOP 적용</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">jsonView 적용</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Resolver 적용</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Front-end</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Thymeleaf</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Bootstrap</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">jQuery</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">TOAST UI</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-5"></a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-6"></a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-7"></a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
@@ -326,7 +330,6 @@
 
 						<h5>참고 : </h5>
 						<div class="callout-block callout-block-info">
-
 							<div class="content">
 								<h4 class="callout-title">
 	                                <span class="callout-icon-holder me-1">
@@ -635,14 +638,107 @@
 			    
 			    <article class="docs-article" id="section-4">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Intergrations</h1>
+					    <h1 class="docs-heading">Front-end</h1>
 					    <section class="docs-intro">
 						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="item-4-1">
-						<h2 class="section-heading">Section Item 4.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+				    <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Thymeleaf</h2>
+						<p>
+							<strong>타임리프<sup>(Thymeleaf)</sup></strong>는 View Templete Engine으로 JSP, Freemarkerd와 같이 서버에서 클라이언트에게 응답할 브라우저 화면을 만들어주는 역할을 합니다.
+						</p>
+
+					    <h5>Thymeleaf의 장점 : </h5>
+					    <ul>
+						    <li>코드를 변경하지 않기 때문에 디자인 팀과 개발 팀간의 협업이 편해진다.</li>
+						    <li>JSP와 달리 Servlet Code로 변환되지 않기 때문에 비즈니스 로직과 분리되어 오로지 View에 집중할 수 있다.</li>
+						    <li>서버상에서 동작하지 않아도 되기 때문에 서버 동작 없이 화면을 확인할 수 있다. 때문에 더미 데이터를 넣고 화면 디자인 및 테스트에 용이하다.</li>
+					    </ul>
+
+					    <h5>Thymeleaf와 Spring Boot : </h5>
+					    <div class="callout-block callout-block-info">
+						    <div class="content">
+							    <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+								    Note
+							    </h4>
+							    <p>
+								    타임리프의 장점 때문에 Spring에서도 Spring Boot와 타임리프를 함께 사용하는 것을 권장하고 있습니다.
+								    JSP를 개발하면서 템플릿을 쓰기 위해 Tiles를 설정한다거나, HTML에 JSP 코딩을 해야하고 JSTL을 사용하면서 가독성이 떨어지는 단점이 있는데,
+								    타임리프는 간편하게 Dependency 추가 작업으로 사용할 수 있기 때문입니다.
+							    </p>
+						    </div><!--//content-->
+					    </div><!--//callout-block-->
+
+					    <h5>Thymeleaf 기본 설정 : </h5>
+					    <p>
+						    <strong>Maven</strong>은 <i>pom.xml</i> 에, <strong>Gradle</strong>은 <i>build.gradle</i> 에 타임리프의 dependency를 추가해줍니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/38799be49173277733986ba1d6eb238e.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>HTML에 네임스페이스 추가 : </h5>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/20465c53c2ac0fbb119e310ab01af758.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>Syntax 문법 : </h5>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/c8a7b866495d121c0e1c65fb1c004d31.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>Layout 문법 : </h5>
+					    <p>
+						    타임리프의 layout 기능을 사용하기 위해서는 의존성을 추가해줘야 합니다.<br/>
+						    타임리프를 설정과 동일하게 <strong>Maven</strong>은 <i>pom.xml</i> 에, <strong>Gradle</strong>은 <i>build.gradle</i> 에 타임리프의 dependency를 추가해줍니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/477c4426fb8c7a8d0b7237e219a6a0b4.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <p>
+						    <code>xmlns:layout</code>은 타임리프의 레이아웃 기능을 사용하기 위한 선언이며, 레이아웃을 적용시킬 HTML 파일에 해당 선언을 합니다.
+						    그리고 해당 페이지에 <code>th:fagment</code>로 조각된 공통 영역을 가져와서 삽입해줍니다.<br/>
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/04c80a536b2ab11746772ec37b3f647a.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>Form 문법 : </h5>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/cd6d47a7550b72c8e51a02a2c3d4acbf.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>조건문과 반복문 : </h5>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/aa5b2a43b86232745e9d3c25bb91ef76.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>기타 : </h5>
+					    <p>
+						    <strong>#numbers.sequest(start, end, step)</strong><br/>
+						    기본적으로 타임리프에서는 #numbers라는 숫자 포맷 메소드를 지원한다. #numbers에는 다양한 메소드들이 존재하는데 가장 많이 사용하는 것이 #numbers.sequece이다.
+						    #numbers.sequece 메소드는 start, end, step을 이용하여 원하는 범위에 대해 시퀀스를 생성해준다.
+					    </p>
+
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-4-2">

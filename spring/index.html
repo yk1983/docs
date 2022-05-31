@@ -72,17 +72,20 @@
 				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>소개(Introduction)</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Spring Framework</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Spring Boot</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Installation</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Spring initializr</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Eclipse (STS)</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">IntelliJ IDEA</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Configuration</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Configuration</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">log4j2 적용</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Interceptor 적용</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">AOP 적용</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">jsonView 적용</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Resolver 적용</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Front-end</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">DataBase 연동</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-7">Mybatis 적용</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8">Exception 적용</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Front-end</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Thymeleaf</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Bootstrap</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">jQuery</a></li>
@@ -90,7 +93,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-5"></a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-6"></a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-7"></a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Utilities</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
@@ -634,6 +637,240 @@
 2022-05-24 00:37:59,297 [INFO ] [http-nio-9090-exec-3] s.p.s.c.i.LoggerInterceptor:  * afterCompletion ...</code></pre>
 						</div>
 					</section><!--//section-->
+
+				    <section class="docs-section" id="item-3-6">
+					    <h2>DataBase 연동 (MariaDB, HikariCP)</h2>
+					    <p>
+						    <strong>JDBC<sup>(Java DataBase Connectivity)</sup></strong>는 자바 프로그램이 DBMS에 일관된 방식으로 접근할 수 있도록 API를 제공하는 자바 클래스들의 모임입니다.
+						    즉 데이터베이스에 연결 및 작업을 하기 위한 JAVA의 표준 인터페이스입니다.
+					    </p>
+
+					    <h5>JDBC의 특징 : </h5>
+					    <ul>
+						    <li>JDBC는 함수 호출용 SQL 인터페이스이다.</li>
+						    <li>JDBC는 ANI SQL-92 표준을 지원한다.</li>
+						    <li>JDBC는 공통된 SQL 인터페이스를 바탕으로 한다.</li>
+						    <li>JDBC는 익히고 사용하기 쉽다.</li>
+					    </ul>
+
+					    <h3>MairaDB</h3>
+					    <p>
+						    <strong>MariaDB</strong>는 MariaDB사가 제작한 오픈소스 <strong><sup>*</sup>RDMBS</strong>소프트웨어이며, MySQL코드 기반으로한 오픈소스 RDBMS입니다.
+					    </p>
+
+					    <h5>RDMBS : </h5>
+					    <div class="callout-block callout-block-info">
+						    <div class="content">
+							    <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+								    Note
+							    </h4>
+							    <p>
+								    DBMS란(DataBase Management System) 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해 주고 데이터베이스를 관리해 주는 소프트웨어입니다.
+								    관계형 데이터베이스(RDMBS)에서는 관계를 나타내기 위해 외래 키(foreign key)라는 것을 사용합니다. 이러한 테이블간의 관계에서 외래 키를 이용한 테이블 간 Join이 가능하다는 게 RDBMS의 가장 큰 특징입니다.
+							    </p>
+						    </div><!--//content-->
+					    </div><!--//callout-block-->
+
+					    <h3>JDBC 연결</h3>
+					    <p>
+						    로컬 PC에 MariaDB가 설치되어 있다라는 가정하에 설정합니다.
+					    </p>
+
+					    <h5>pom.xml - dependency 적용 : </h5>
+					    <p>
+						    <i>pom.xml</i> 파일에 <code>mariadb-java-client</code> dependency 를 적용합니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/6bd0f127cf6ae56853103ca25299a1eb.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>application.yml - Database 설정 코드 추가 : </h5>
+					    <div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">spring:
+  ### database
+  datasource:
+    hikari:
+      # DB 드라이브
+      driver-class-name: org.mariadb.jdbc.Driver
+      # DB 주소 및 데이터베이스명
+      jdbc-url: jdbc:mariadb://localhost:3306/데이터베이스명?characterEncoding=UTF-8&serverTimezone=UTC
+      # MariaDB 접속 계정
+      username: 계정
+      # MariaDB 접속 비밀번호
+      password: 비밀번호</code></pre>
+					    </div><!--//docs-code-block-->
+
+					    <h3>SpringBoot와 JPA</h3>
+					    <p>
+						    <strong>JPA<sup>(Java Persistence API)</sup></strong>는 여러 ORM 전문가가 참여한 EJB 3.0 스펙 작업에서
+						    기존 EJB ORM이던 Entity Bean을 JPA라고 바꾸고 JavaSE, JavaEE를 위한 영속성(persistence) 관리와 ORM을 위한 표준 기술입니다.
+						    JPA는 ORM 표준 기술로 Hibernate, OpenJPA, EclipseLink, TopLink Essentials과 같은 구현체가 있고 이에 표준 인터페이스가 바로 JPA입니다.
+					    </p>
+
+					    <h5>JPA의 장점 : </h5>
+					    <ul>
+						    <li>객체지향적으로 데이터를 관리할 수 있기 때문에 비즈니스 로직에 집중 할 수 있으며, 객체지향 개발이 가능하다.</li>
+						    <li>테이블 생성, 변경, 관리가 쉽다. (JPA를 잘 이해하고 있는 경우)</li>
+						    <li>로직을 쿼리에 집중하기 보다는 객체자체에 집중 할 수 있다.</li>
+						    <li>빠른 개발이 가능하다.</li>
+					    </ul>
+
+					    <h5>JPA의 단점 : </h5>
+					    <ul>
+						    <li>어렵다. 장점을 더 극대화 하기 위해서 알아야 할게 많다.</li>
+						    <li>잘 이해하고 사용하지 않으면 데이터 손실이 있을 수 있다. (persistence context)</li>
+						    <li>성능상 문제가 있을 수 있다.(이 문제 또한 잘 이해해야 해결이 가능하다.)</li>
+					    </ul>
+					    <div class="callout-block callout-block-info">
+						    <div class="content">
+							    <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+								    Note
+							    </h4>
+							    <p>
+								    MyBatis, iBatis는 ORM이 아니며, SQL Mapper입니다. ORM은 객체를 매핑하는 것이고, SQL Mapper는 쿼리를 매핑하는 것이다.
+							    </p>
+						    </div><!--//content-->
+					    </div><!--//callout-block-->
+
+					    <h5>DatabaseConfiguration 클래스 생성 : </h5>
+					    <p>
+						    configuration 패키지에 <i>DatabaseConfiguration.java</i> 설정 파일을 생성합니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/e78c63503b94eed2e47c46a1202be700.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+					    <p>
+						    <i>SpringbootApplication.java</i>에서 exclude했던 DataSourceAutoConfiguration설정을 제거해줍니다.
+					    </p>
+					    <p>
+						    <code>@SpringBootApplication<i class="text-danger">(exclude = {DataSourceAutoConfiguration.class})</i></code>
+					    </p>
+				    </section>
+
+				    <section class="docs-section" id="item-3-7">
+					    <h2>Mybatis</h2>
+					    <p>
+						    <strong>Mybatis</strong>는 객체지향 언어인 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와주는 개발 프레임워크이며,
+						    복잡한 JDBC 코드를 걷어내며 깔끔한 소스코드를 유지, 자바의 객체(Object)와 SQL 사이에서 자동 맵핑을 도와주는 프레임워크로 XML 형태로 쓰인 JDBC 코드라고 생각해도 될 만큼 JDBC의 모든 기능을 제공합니다.
+					    </p>
+
+					    <h5>pom.xml - dependency 적용 : </h5>
+					    <p>
+						    <i>pom.xml</i> 파일에 <code>mybatis-spring-boot-starter</code> dependency 를 적용합니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/2c9df9ec71a54a910a33078fcb54b523.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>application.yml - mybatis 설정 코드 추가 : </h5>
+					    <div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">### mybatis
+mybatis:
+  # xml파일 result type에 패키지명을 생략할 수 있도록 alias 설정
+  type-aliases-package: 프로젝트 패키지
+  configuration:
+    # model 프로퍼티 camel case 설정
+    map-underscore-to-camel-case: true
+  # Mybatis mapper 위치 설정
+  mapper-locations:
+    - mapper/**/*.xml</code></pre>
+					    </div><!--//docs-code-block-->
+
+					    <h5>Sample 코드 구조 : </h5>
+					    <div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">src
+&boxur; main
+  &boxvr; java
+  |   &boxur; std
+  |      &boxur; pjt
+  |         &boxur; springboot
+  |             &boxur; sample
+  |                 &boxvr; controller // Controller java class
+  |                 &boxvr; service    // Service java interface
+  |                     &boxur; impl   // Service java class
+  |                 &boxvr; mapper     // Mapper java class
+  |                 &boxur; vo         // VO or DTO
+  &boxur; resources
+       &boxur; mapper
+           &boxur; sample              // SQL.xml</code></pre>
+					    </div><!--//docs-code-block-->
+
+					    <h5>Smaple 코드 작성 : </h5>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/48c2f66c01e9d67f6410513ccf918e67.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+				    </section>
+
+				    <section class="docs-section" id="item-3-8">
+					    <h2>예외처리(Exception Handling)</h2>
+					    <p>
+						    스프링은 예외처리를 위해 다양하고 막강한 어노테이션을 제공하고 있습니다. 예외처리 핸들링(Exception Handling)은 일관성 있는 코드 스타일을 유지하면서 Exception을 처리하는 방법입니다.
+					    </p>
+
+					    <h3>Error Response 객체</h3>
+					    <p>
+						    Error Response 객체는 항상 동일한 <code>ErrorResponse</code>를 가져야 합니다. 그렇지 않으면 클라이언트에서 예외 처리를 항상 동일한 로직으로 처리하기 어렵습니다.<br/>
+						    Error Response 객체를 유연하게 처리하기 위해서 <code>Map&lt;K, V&gt;</code>형식으로 처리할 때도 있습니다. (비추천)
+					    </p>
+						<br/>
+					    <h5>Error Response 객체 Example : </h5>
+					    <p>
+						    에러 코드는 enum 타입으로 한 곳에서 관리합니다.
+						    에러 코드가 전체적으로 흩어져있을 경우 코드, 메시지의 중복을 방지하기 어렵고 전체적으로 관리하는 것이 매우 어렵습니다.<br/>
+						    코드도 동일하게 enum으로 관리 하는 것도 좋습니다.  에러 메시지는 Common과 각 도메인별로 관리하는 것이 효율적이며, 유니크한 코드값도 규칙을 정하는 것이 좋습니다.<br/>
+						    우리는 우선 error 패키지를 생성하고 enum으로 <i>ErrorCode.java</i>를 작성하고 <i>ErrorResponse.java</i>를 작성합니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/5009b98345f9ad873e7a22b840843be8.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+
+					    <h5>Error Response 객체 JSON : </h5>
+					    <ul>
+						    <li><strong class="me-1">status : </strong> <i class="text-danger">http status code</i>를 작성합니다. header 정보에도 포함된 정보이니 굳이 추가하지 않아도 됩니다.</li>
+						    <li><strong class="me-1">code : </strong>에러에 할당되는 <i class="text-danger">유니크한 코드값</i> 입니다.</li>
+						    <li><strong class="me-1">message : </strong> 에러에 대한 <i class="text-danger">message</i>를 작성합니다.</li>
+						    <li><strong class="me-1">errors : </strong> 요청 값에 대한 <i class="text-danger">field, value, reason</i>
+							    작성합니다. 일반적으로 <i class="text-danger">@Valid</i> 어노테이션으로 <i class="text-danger">JSR 303: Bean Validation</i>에 대한 검증을 진행 합니다.<br/>
+							    만약 errors에 바인인된 결과가 없을 경우 null이 아니라 빈 배열 <i class="text-danger">[]</i>을 응답해줍니다. null 객체는 절대 리턴하지 않습니다. null이 의미하는 것이 애매합니다.
+						    </li>
+					    </ul>
+
+					    <h3>Business Exception 처리</h3>
+					    <p>
+						    <strong>Business Exception</strong>은 요구사항에 맞지 않을 경우 발생시키는 Exception을 말합니다.
+						    예를들어 쇼핑몰에서 구매하는 상품에 쿠폰을 사용 하려고 할때, 이미 사용된 쿠폰의 경우 적용되지 않고 구매 진행을 할 수 없는데,
+						    이런 경우에는 적절한 Exception을 발생시키고 로직을 종료 시켜야합니다.<br/>
+						    즉, 요구사항에 맞게 개발자가 직접 Exception을 발생시키는 것들이 Business Exception 이라고 할수 있습니다.
+					    </p>
+					    <br/>
+					    <h5>Business Exception Example : </h5>
+					    <p>
+						    error 패키지에 exception 패키지를 생성한 후, <i>BusinessException.java</i>와 사용자 Exception중 최상위 BusinessException을
+						    상속 받는 <i>InvalidValueException, EntityNotFoundExceptuon</i>를 생성합니다.
+					    </p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/1fca6ff20e6228cb5afad210a8fce079.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
+				    </section>
+
 			    </article><!--//docs-article-->
 			    
 			    <article class="docs-article" id="section-4">

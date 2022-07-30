@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>커피와 개발자 :: CoderDocs SpringBoot</title>
+	<title>커피와 개발자 :: CoderDocs thymeleaf</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -39,7 +39,7 @@
 	                <div class="site-logo">
 		                <a class="navbar-brand" href="index.html">
 			                <img class="logo-icon me-2" src="../assets/images/coderdocs-logo.svg" alt="logo">
-			                <span class="logo-text">Spring<span class="text-alt">Docs</span></span>
+			                <span class="logo-text">Thymeleaf<span class="text-alt">Docs</span></span>
 		                </a>
 	                </div>
                 </div><!--//docs-logo-wrapper-->
@@ -75,27 +75,16 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
 				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>소개(Introduction)</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Spring Framework</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Spring Boot</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Spring initializr</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Eclipse (STS)</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">IntelliJ IDEA</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Configuration</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">log4j2 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Interceptor 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">AOP 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">jsonView 적용</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Resolver 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">DataBase 연동</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-7">Mybatis 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8">Exception 적용</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9">Error page 적용</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Front-end</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Thymeleaf</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Bootstrap</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">jQuery</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">TOAST UI</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Thymeleaf</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>설치(Installation)</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Thymeleaf 기본 설정</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Thymeleaf 기본 문법</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">설정</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">기본 기능</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Layout</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Form</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">조건문과 반복문</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">기타</a></li>
 			    </ul>
 		    </nav><!--//docs-nav-->
 	    </div><!--//docs-sidebar-->
@@ -117,46 +106,36 @@
 				    </header>
 
 				    <section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">스프링 프레임워크(Spring Framework)</h2>
+						<h2 class="section-heading">타임리프(Thymeleaf)</h2>
 						<p>
-							<strong>스프링 프레임워크<sup>(Spring Framework)</sup></strong>는 자바 플랫폼을 위한 오픈 소스 애플리케이션 프레임워크로서 간단히 스프링(Spring)이라고도 합니다. <strong>동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공</strong>하고 있습니다.
-							대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하고 있는 <strong>전자정부 표준프레임워크의 기반 기술</strong>로서 쓰이고 있다.
+							<strong>타임리프<sup>(Thymeleaf)</sup></strong>는 View Templete Engine으로 JSP, Freemarkerd와 같이 서버에서 클라이언트에게 응답할 브라우저 화면을 만들어주는 역할을 합니다.<br/>
 						</p>
 						<p>
-							스프링은 다른 프레임워크에 비해 다음과 같은 특징을 갖습니다.
+							Thymeleaf는 템플릿을 만들 때 유지관리가 쉽도록 하는 것이며, 이를 위해 디자인 프토로타입으로 사용되는 템플릿에 영향을 미치지 않는 방식인 Natural Templates(기존 HTML 코드와 구조를 변경하지 않고 덧붙이는 방식)을 기반으로 합니다.
 						</p>
-						<h5>스프링 프레임워크 특징 : </h5>
+						<h5>Thymeleaf의 장점 : </h5>
 						<ul>
-							<li>경량 컨테이너로서 자바 객체를 직접 관리합니다. 각각의 객체 생성, 소멸과 같은 라이프 사이클을 관리하며 스프링으로부터 필요한 객체를 얻어올 수 있습니다.</li>
-							<li>스프링은 <strong class="me-1">Plain Old Java Object 방식</strong>의 프레임워크이며, 일반적인 J2EE 프레임워크에 비해 구현을 위해 특정한 인터페이스를 구현하거나 상속을 받을 필요가 없어 기존에 존재하는 라이브러리 등을 지원하기에 용이하고 객체가 가볍습니다.</li>
-							<li>스프링은 <strong class="me-1">제어 반전<sup>(IoC : Inversion of Control)</sup>을 지원</strong>합니다. 컨트롤의 제어권이 사용자가 아니라 프레임워크에 있어서 필요에 따라 스프링에서 사용자의 코드를 호출합니다.</li>
-							<li>스프링은 <strong class="me-1">의존성 주입<sup>(DI : Dependency Injection)</sup>을 지원</strong>합니다. 각각의 계층이나 서비스들 간에 의존성이 존재할 경우 프레임워크가 서로 연결시켜줍니다.</li>
-							<li>스프링은 <strong class="me-1">관점 지향 프로그래밍<sup>(AOP : Aspect-Oriented Programming)</sup>을 지원</strong>합니다. 따라서 트랜잭션이나 로깅, 보안과 같이 여러 모듈에서 공통적으로 사용하는 기능의 경우 해당 기능을 분리하여 관리할 수 있습니다.</li>
-							<li>스프링은 <strong class="me-1">영속성과 관련된 다양한 서비스를 지원</strong>합니다. iBatis나 하이버네이트 등 이미 완성도가 높은 데이터베이스 처리 라이브러리와 연결할 수 있는 인터페이스를 제공합니다.</li>
-							<li>스프링은 <strong class="me-1">확장성</strong>이 높습니다. 스프링 프레임워크에 통합하기 위해 간단하게 기존 라이브러리를 감싸는 정도로 스프링에서 사용이 가능하기 때문에 수많은 라이브러리가 이미 스프링에서 지원되고 있고 스프링에서 사용되는 라이브러리를 별도로 분리하기도 용이합니다.</li>
+							<li>HTML 코드를 변경하지 않고 JSTL처럼 복잡한 구조로 구현할 필요가 없기 때문에 디자인 팀과 개발 팀간의 협업에 좋습니다.</li>
+							<li>SP와 달리 Servlet Code로 변환되지 않기 때문에 비즈니스 로직과 분리되어 오로지 View에 집중할 수 있습니다.</li>
+							<li>서버상에서 동작하지 않아도 되기 때문에 서버 동작 없이 화면을 확인할 수 있다. 때문에 더미 데이터를 넣고 화면 디자인 및 테스트에 용이합니다.</li>
 						</ul>
 
-						<h5>제어의 역전(IOC, Inversion Of Control) : </h5>
-						<p>
-							자바 프로그램에서는 각 객체들이 프로그램의 흐름을 결정하고 각 객체를 직접 생성하고 조작하는 작업(객체를 직접 생성하여 메소드 호출)을 사용자가 제어하는 구조였습니다.
-							하지만 IOC가 적용된 경우, 객체의 생성을 특별한 관리 위임 주체에게 맡깁니다. 이 경우 사용자는 객체를 직접 생성하지 않고, 객체의 생명주기를 컨트롤하는 주체는 다른 주체가 됩니다. 이처럼 사용자의 제어권을 다른 주체에게 넘기는 것을 <strong>IOC(제어의 역전)</strong> 라고 합니다.<br/>
-							Spring의 Ioc란 클래스 내부의 객체 생성 -> 의존성 객체의 메소드 호출이 아닌, 스프링에게 제어를 위임하여 스프링이 만든 객체를 주입 -> 의존성 객체의 메소드 호출 구조입니다. 스프링에서는 모든 의존성 객체를 스프링이 실행될때 만들어주고 필요한 곳에 주입해줍니다.
-						</p>
-
-						<h5>의존성 주입 (DI, Dependency Injection) : </h5>
-						<p>
-							객체를 외부(Spring)에서 생성해서 사용하려는 주체에 주입시켜주는 방식입니다. 사용하는 주체가 사용하려는 객체를 직접 생성하는 경우 의존성(변경사항이 있는 경우 서로에게 영향도)이 높아집니다. 하지만, 외부(Spring)에서 직접 생성하여 관리하는 경우에는 의존성이 줄어듭니다.
-						</p>
+					    <h5>Thymeleaf와 Spring Boot : </h5>
+					    <div class="callout-block callout-block-info">
+						    <div class="content">
+							    <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+								    Note
+							    </h4>
+							    <p>
+								    <strong>Thymeleaf</strong>의 장점 때문에 Spring에서도 <strong>Spring Boot</strong>와 타임리프를 <strong>함께 사용하는 것을 권장</strong>하고 있습니다.
+								    Spring Boot에서는 JSP 또는 JSTL을 사용 시 코드의 가독성이 매우 떨어지며 환경설정 또한 여러가지를 해야하지만, 반대로 타임리프는 <strong>간편하게 Dependency 추가 작업으로 사용</strong>할 수 있습니다.
+							    </p>
+						    </div><!--//content-->
+					    </div><!--//callout-block-->
 					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Spring Boot</h2>
-						<p>
-							스프링(Spring)을 더 쉽게 이용하기 위한 도구라고 볼 수 있습니다. 스프링 이용하여 개발을 할 때, 설정을 해줘야 할 요소들이 많이 있습니다. Spring Boot는 매우 간단하게 프로젝트를 설정할 수 있게 하여, Spring 개발을 조금 더 쉽게 만들어주는 역할을 하고 있습니다.
-						</p>
-						
-					</section><!--//section-->
-
 			    </article>
 			    
 			    <article class="docs-article" id="section-2">
@@ -164,47 +143,48 @@
 					    <h1 class="docs-heading">설치(Installation)</h1>
 					    <section class="docs-intro">
 						    <p>
-								// TODO
+							    Thymeleaf 기본 설정은 다음의 간단한 두 가지 과정만 거치면 됩니다.
 							</p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Spring initializr</h2>
+				    <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">의존성 추가</h2>
 						<p>
-							// TODO
+							<strong>Maven</strong>을 사용하는 경우에는 pom.xml에, <strong>Gradle</strong>은 build.gradle에 타임리프의 dependency를 추가해줍니다.
 						</p>
+					    <div class="docs-code-block">
+						    <!-- ** Embed github code starts ** -->
+						    <script src="https://gist.github.com/yk1983/38799be49173277733986ba1d6eb238e.js"></script>
+						    <!-- ** Embed github code ends ** -->
+					    </div><!--//docs-code-block-->
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Eclipse (STS)</h2>
+						<h2 class="section-heading">HTML문서에 네임스페이스 추가</h2>
 						<p>
-							// TODO
+							타임리프를 적용할 HTML문서에 네임스페이스 <code>xmlns:th="http://www.thymeleaf.org"</code>를 추가합니다.
 						</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">IntelliJ IDEA</h2>
-						<p>
-							// TODO
-						</p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/yk1983/20465c53c2ac0fbb119e310ab01af758.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 			    
-			    
 			    <article class="docs-article" id="section-3">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Configuration</h1>
+					    <h1 class="docs-heading">Thymeleaf 기본 문법</h1>
 					    <section class="docs-intro">
 						    <p>
-								Spring Boot 프레임워크에서 MVC패턴으로 개발하기 위한 환경 설정입니다.
+							    https://velog.io/@alicesykim95/Thymeleaf
 							</p>
 						</section><!--//docs-intro-->
 				    </header>
 					<section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">log4j2 설정</h2>
+						<h2 class="section-heading">설정</h2>
 						<p>
-							Log4j는 자바 기반 로깅 유틸리티입니다. 아파치 소프트웨어 재단의 프로젝트 아파치 로깅 서비스<sup>(Apache Logging Services)</sup>의 일부이며, Log4j는 여러 자바 로깅 프레임워크들 가운데 하나입니다.
-							최종 사용자가 제품의 문제나 정보를 식별하기 위해, 그리고 소프트웨어 개발자가 프로그램을 개발하는 도중에 디버깅 등을 위해 타임스탬프 등 <strong>정해진 양식에 맞추어 화면 상이나 파일로 로그를 남길 목적으로 사용</strong>됩니다.
+							Thymeleaf의 th:속성을 사용하기 위해 선언하는 네임스페이스입니다.
 						</p>
 						<p>
 							그 뒤로 Log4j의 뒤를 잇는 유틸리티를 제공할 목적으로 SLF4J와 로그백(Logback) 프로젝트를 시작했습니다. (기본적으로 Spring boot에는 로그백(Logback)이 적용되어 있으므로 로그백(Logback)을 제외하고 log4j를 적용할 예정입니다.)

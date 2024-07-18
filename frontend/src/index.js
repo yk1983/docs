@@ -5,7 +5,7 @@ import Aside from 'components/Aside';
 import Footer from 'components/Footer';
 import App from 'App';
 // Vendor CSS Files
-import 'assets/vendor/bootstrap/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/vendor/bootstrap-icons/bootstrap-icons.css';
 import 'assets/vendor/boxicons/css/boxicons.min.css';
 import 'assets/vendor/quill/quill.snow.css';

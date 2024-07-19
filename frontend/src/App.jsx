@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-import LearnReact from 'pages/LearnReact';
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
+import LearnReact from 'pages/LearnReact';
 
 const App = () => {
     return (
@@ -13,9 +13,9 @@ const App = () => {
             </Helmet>
             <main id="main" className="main">
                 <Routes>
-                    <Route path="/react" element={<LearnReact />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
+                    <Route path="/react" element={<LearnReact />} />
                 </Routes>
             </main>{/* End #main */}
         </>

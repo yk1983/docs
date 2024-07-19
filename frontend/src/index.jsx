@@ -1,5 +1,6 @@
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import Header from 'components/Header';
 import Aside from 'components/Aside';
@@ -10,10 +11,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <HelmetProvider>
-            <Header />
-            <Aside />
-            <App />
-            <Footer />
+            <BrowserRouter>
+                <Header />
+                <Aside />
+                <App />
+                <Footer />
+            </BrowserRouter>
         </HelmetProvider>
     </React.StrictMode>
 );

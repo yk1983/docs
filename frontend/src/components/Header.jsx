@@ -15,13 +15,14 @@ const Header = () => {
                 <div className="search-bar">
                     <form className="search-form d-flex align-items-center" method="POST" action="#">
                         <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
-                        <button type="submit" title="Search"><i className="bi bi-search"></i></button>
+                        <button type="submit" title="Search">
+                            <i className="bi bi-search"></i>
+                        </button>
                     </form>
                 </div>{/* End Search Bar */}
 
                 <nav className="header-nav ms-auto">
                     <ul className="d-flex align-items-center">
-
                         <li className="nav-item d-block d-lg-none">
                             <a className="nav-link nav-icon search-bar-toggle " href="#">
                                 <i className="bi bi-search"></i>
@@ -38,8 +39,11 @@ const Header = () => {
                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
                                 <li className="dropdown-header">
                                     You have 4 new notifications
-                                    <a href="#"><span className="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                                    <a href="#">
+                                        <span className="badge rounded-pill bg-primary p-2 ms-2">View all</span>
+                                    </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -95,10 +99,10 @@ const Header = () => {
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
+
                                 <li className="dropdown-footer">
                                     <a href="#">Show all notifications</a>
                                 </li>
-
                             </ul>{/* End Notification Dropdown Items */}
 
                         </li>{/* End Notification Nav */}
@@ -113,8 +117,11 @@ const Header = () => {
                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                                 <li className="dropdown-header">
                                     You have 3 new messages
-                                    <a href="#"><span className="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                                    <a href="#">
+                                        <span className="badge rounded-pill bg-primary p-2 ms-2">View all</span>
+                                    </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -129,6 +136,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -143,6 +151,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -157,6 +166,7 @@ const Header = () => {
                                         </div>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -164,13 +174,10 @@ const Header = () => {
                                 <li className="dropdown-footer">
                                     <a href="#">Show all messages</a>
                                 </li>
-
                             </ul>{/* End Messages Dropdown Items */}
-
                         </li>{/* End Messages Nav */}
 
                         <li className="nav-item dropdown pe-3">
-
                             <a className="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                                 <img src={process.env.PUBLIC_URL + '/assets/img/profile-img.jpg'} alt="Profile" className="rounded-circle" />
                                 <span className="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
@@ -181,6 +188,7 @@ const Header = () => {
                                     <h6>Kevin Anderson</h6>
                                     <span>Web Designer</span>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -191,6 +199,7 @@ const Header = () => {
                                         <span>My Profile</span>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -201,6 +210,7 @@ const Header = () => {
                                         <span>Account Settings</span>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -211,6 +221,7 @@ const Header = () => {
                                         <span>Need Help?</span>
                                     </a>
                                 </li>
+
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
@@ -221,13 +232,10 @@ const Header = () => {
                                         <span>Sign Out</span>
                                     </a>
                                 </li>
-
                             </ul>{/* End Profile Dropdown Items */}
                         </li>{/* End Profile Nav */}
-
                     </ul>
                 </nav>{/* End Icons Navigation */}
-
             </header>{/* End Header */}
         </>
     );

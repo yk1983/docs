@@ -1,21 +1,31 @@
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
+import JavaIntro from 'pages/learn/java/Intro';
+import JavaDataType from 'pages/learn/java/DataType';
+import JavaIntegerType from 'pages/learn/java/IntegerType';
+import JavaFloatingType from 'pages/learn/java/FloatingType';
+import JavaCharactersType from 'pages/learn/java/CharactersType';
+import JavaBooleanType from 'pages/learn/java/BooleanType';
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
-import LearnReact from 'pages/LearnReact';
 
 const App = () => {
     return (
         <>
             <Helmet>
-                <title>React study</title>
+                <title>Learn</title>
             </Helmet>
             <main id="main" className="main">
                 <Routes>
+                    <Route path="/java-intro" element={<JavaIntro />} />
+                    <Route path="/java-datatype" element={<JavaDataType />} />
+                    <Route path="/java-integer-type" element={<JavaIntegerType />} />
+                    <Route path="/java-floating-type" element={<JavaFloatingType />} />
+                    <Route path="/java-characters-type" element={<JavaCharactersType />} />
+                    <Route path="/java-boolean-type" element={<JavaBooleanType />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
-                    <Route path="/react" element={<LearnReact />} />
                 </Routes>
             </main>{/* End #main */}
         </>

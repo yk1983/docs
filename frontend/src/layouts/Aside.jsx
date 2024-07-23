@@ -219,7 +219,20 @@ const Aside = () => {
                         </ul>
                     </li>{/* End Icons Nav */}
 
+                    <li className="nav-heading">HTML</li>
+
+                    <li className="nav-heading">CSS</li>
+
+                    <li className="nav-heading">JavaScript</li>
+
                     <li className="nav-heading">자바(Java)</li>
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java-intro">
+                            <i className="bi bi-braces"></i>
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-nav" data-bs-toggle="collapse" to="#">
@@ -258,10 +271,23 @@ const Aside = () => {
                                     <span>논리형(Boolean)</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/java-casting">
+                                    <i className="bi bi-circle"></i>
+                                    <span>형변환(Casting)</span>
+                                </Link>
+                            </li>
                         </ul>
                     </li>{/* End Java Nav */}
 
                     <li className="nav-heading">리액트(React)</li>
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/react-intro">
+                            <i className="bi bi-braces"></i>
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" href="/learn-react">

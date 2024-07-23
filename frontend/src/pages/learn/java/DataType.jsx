@@ -23,7 +23,7 @@ const DataType = () => {
                     <div className="col-lg-4">
                         <div className="card">
                             <div className="card-body">
-                                <h5 className="card-title">변수(variable)</h5>
+                                <h5 className="card-title">변수<sup>variable</sup></h5>
                                 <p>
                                     변수(variable)란 데이터(data)를 저장하기 위해 프로그램에 의해 이름을 할당받은 메모리 공간을 의미합니다.<br />
                                     즉, 변수란 데이터(data)를 저장할 수 있는 메모리 공간을 의미하며, 이렇게 저장된 값은 변경될 수 있습니다.
@@ -35,7 +35,7 @@ const DataType = () => {
                     <div className="col-lg-4">
                         <div className="card">
                             <div className="card-body">
-                                <h5 className="card-title">상수(constant)</h5>
+                                <h5 className="card-title">상수<sup>constant</sup></h5>
                                 <p>
                                     상수(constant)란 변수와 마찬가지로 데이터를 저장할 수 있는 메모리 공간을 의미합니다.<br />
                                     하지만 상수가 변수와 다른 점은 프로그램이 실행되는 동안 메모리에 저장된 데이터를 변경할 수 없다는 점입니다.
@@ -47,7 +47,7 @@ const DataType = () => {
                     <div className="col-lg-4">
                         <div className="card">
                             <div className="card-body">
-                                <h5 className="card-title">리터럴(literal)</h5>
+                                <h5 className="card-title">리터럴<sup>literal</sup></h5>
                                 <p>
                                     리터럴(literal)이란 그 자체로 값을 의미하는 것입니다.<br />
                                     즉, 변수와 상수와는 달리 데이터가 저장된 메모리 공간을 가리키는 이름을 가지고 있지 않습니다.

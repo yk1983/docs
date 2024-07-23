@@ -6,7 +6,7 @@ const Header = () => {
             <header id="header" className="header fixed-top d-flex align-items-center">
 
                 <div className="d-flex align-items-center justify-content-between">
-                    <Link to="index.html" className="logo d-flex align-items-center">
+                    <Link to="/" className="logo d-flex align-items-center">
                         <img src={process.env.PUBLIC_URL + '/assets/img/logo.png'} alt="" />
                         <span className="d-none d-lg-block">DocsAdmin</span>
                     </Link>

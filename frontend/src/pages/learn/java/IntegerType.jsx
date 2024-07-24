@@ -62,9 +62,9 @@ const IntegerType = () => {
                                 <Table striped bordered hover>
                                     <thead>
                                         <tr>
-                                            <th scope="col">타입</th>
-                                            <th scope="col">할당 크기</th>
-                                            <th scope="col">표현 범위</th>
+                                            <th>타입</th>
+                                            <th>할당 크기</th>
+                                            <th>표현 범위</th>
                                         </tr>
                                     </thead>
                                     <tbody>

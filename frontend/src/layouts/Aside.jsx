@@ -6,13 +6,19 @@ const Aside = () => {
             <aside id="sidebar" className="sidebar">
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link " to="/">
+                        <Link className="nav-link" to="/">
                             <i className="bi bi-grid"></i>
                             <span>Dashboard</span>
                         </Link>
                     </li>{/* End Dashboard Nav */}
 
                     <li className="nav-heading">HTML</li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/html-tags">
+                            <i className="bi bi-code"></i>
+                            <span>HTML Tags</span>
+                        </Link>
+                    </li>
 
                     <li className="nav-heading">CSS</li>
 
@@ -22,7 +28,7 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java-intro">
-                            <i className="bi bi-braces"></i>
+                            <i className="bi bi-vector-pen"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
@@ -77,7 +83,7 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react-intro">
-                            <i className="bi bi-braces"></i>
+                            <i className="bi bi-vector-pen"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}

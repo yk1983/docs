@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
+import HtmlTagList from 'pages/learn/html/TagList';
 import JavaIntro from 'pages/learn/java/Introduction';
 import JavaDataType from 'pages/learn/java/DataType';
 import JavaIntegerType from 'pages/learn/java/IntegerType';
@@ -22,6 +23,7 @@ const App = () => {
             </Helmet>
             <main id="main" className="main">
                 <Routes>
+                    <Route path="/html-tags" element={<HtmlTagList />} />
                     <Route path="/java-intro" element={<JavaIntro />} />
                     <Route path="/java-datatype" element={<JavaDataType />} />
                     <Route path="/java-integer-type" element={<JavaIntegerType />} />

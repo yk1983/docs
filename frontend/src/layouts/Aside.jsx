@@ -25,7 +25,6 @@ const Aside = () => {
                     <li className="nav-heading">JavaScript</li>
 
                     <li className="nav-heading">자바(Java)</li>
-
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java-intro">
                             <i className="bi bi-vector-pen"></i>
@@ -80,7 +79,6 @@ const Aside = () => {
                     </li>{/* End Java Nav */}
 
                     <li className="nav-heading">리액트(React)</li>
-
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react-intro">
                             <i className="bi bi-vector-pen"></i>
@@ -89,28 +87,28 @@ const Aside = () => {
                     </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/learn-react">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
                             <i className="bi bi-braces"></i>
                             <span>React</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
-                        <ul id="icons-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="icons-bootstrap.html">
                                     <i className="bi bi-circle"></i>
-                                    <span>Bootstrap Icons</span>
+                                    <span>환경설정</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="icons-remix.html">
                                     <i className="bi bi-circle"></i>
-                                    <span>Remix Icons</span>
+                                    <span>시작하기</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="icons-boxicons.html">
                                     <i className="bi bi-circle"></i>
-                                    <span>Boxicons</span>
+                                    <span>JSX</span>
                                 </Link>
                             </li>
                         </ul>

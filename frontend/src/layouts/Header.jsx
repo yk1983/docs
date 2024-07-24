@@ -1,11 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const Header = () => {
-    const [isSideBar, setSideBar] = useState(false);  // 메뉴의 초기값을 false로 설정
+    const [isSideBar, setSideBar] = useState(false); // 메뉴의 초기값을 false로 설정
+    const [isSearch, setSearch] = useState(false);
+    const inputSearch = useRef();
     useEffect(() => {
-        document.body.classList.toggle('toggle-sidebar', isSideBar);
+        document.body.classList.toggle('toggle-sidebar');
     }, [isSideBar]);
+
+    useEffect(() => {
+        inputSearch.current.classList.toggle('search-bar-show');
+    }, [isSearch]);
 
     return(
         <>
@@ -18,12 +25,12 @@ const Header = () => {
                     <i className="bi bi-list toggle-sidebar-btn" onClick={() => setSideBar(!isSideBar)}></i>
                 </div>{/* End Logo */}
 
-                <div className="search-bar">
+                <div className="search-bar" ref={ inputSearch }>
                     <form className="search-form d-flex align-items-center" method="POST" action="#">
                         <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
-                        <button type="submit" title="Search">
+                        <Button type="submit" title="Search">
                             <i className="bi bi-search"></i>
-                        </button>
+                        </Button>
                     </form>
                 </div>{/* End Search Bar */}
 
@@ -31,7 +38,7 @@ const Header = () => {
                     <ul className="d-flex align-items-center">
                         <li className="nav-item d-block d-lg-none">
                             <Link className="nav-link nav-icon search-bar-toggle " to="#">
-                                <i className="bi bi-search"></i>
+                                <i className="bi bi-search" onClick={() => setSearch(!isSearch)}></i>
                             </Link>
                         </li>{/* End Search Icon */}
 

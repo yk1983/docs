@@ -84,7 +84,7 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/learn-react">
-                            <i class="bi bi-braces"></i>
+                            <i className="bi bi-braces"></i>
                             <span>React</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
@@ -109,6 +109,10 @@ const Aside = () => {
                             </li>
                         </ul>
                     </li>{/* End React Page Nav */}
+
+                    <li className="nav-heading">SQL</li>
+
+                    <li className="nav-heading">Spring</li>
 
                     <li className="nav-heading">Pages</li>
 

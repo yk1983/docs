@@ -1,16 +1,21 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const [isSideBar, setSideBar] = useState(false);  // 메뉴의 초기값을 false로 설정
+    useEffect(() => {
+        document.body.classList.toggle('toggle-sidebar', isSideBar);
+    }, [isSideBar]);
+
     return(
         <>
             <header id="header" className="header fixed-top d-flex align-items-center">
-
                 <div className="d-flex align-items-center justify-content-between">
                     <Link to="/" className="logo d-flex align-items-center">
                         <img src={process.env.PUBLIC_URL + '/assets/img/logo.png'} alt="" />
                         <span className="d-none d-lg-block">DocsAdmin</span>
                     </Link>
-                    <i className="bi bi-list toggle-sidebar-btn"></i>
+                    <i className="bi bi-list toggle-sidebar-btn" onClick={() => setSideBar(!isSideBar)}></i>
                 </div>{/* End Logo */}
 
                 <div className="search-bar">
@@ -180,7 +185,8 @@ const Header = () => {
 
                         <li className="nav-item dropdown pe-3">
                             <Link className="nav-link nav-profile d-flex align-items-center pe-0" to="#" data-bs-toggle="dropdown">
-                                <img src={process.env.PUBLIC_URL + '/assets/img/profile-img.jpg'} alt="Profile" className="rounded-circle" />
+                                <img src={process.env.PUBLIC_URL + '/assets/img/profile-img.png'} alt="Profile"
+                                className="rounded-circle" />
                                 <span className="d-none d-md-block dropdown-toggle ps-2">Yong Kim</span>
                             </Link>{/* End Profile Iamge Icon */}
 

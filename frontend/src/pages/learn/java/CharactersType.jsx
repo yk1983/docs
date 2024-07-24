@@ -1,4 +1,7 @@
 import { Helmet } from 'react-helmet-async';
+import { Row, Col, Card, Table } from 'react-bootstrap';
+
+import PageTitle from 'layouts/PageTitle';
 
 const CharactersType = () => {
     return(
@@ -7,44 +10,40 @@ const CharactersType = () => {
                 <title>Learn JAVA</title>
             </Helmet>
 
-            <div className="pagetitle">
-                <h1>문자형(Characters types)</h1>
-                <nav>
-                    <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="index.html">Learn</a></li>
-                        <li className="breadcrumb-item">Java</li>
-                        <li className="breadcrumb-item active">Characters types</li>
-                    </ol>
-                </nav>
-            </div> {/* End Page Title */}
+            <PageTitle
+                title="문자형(Characters types)"
+                depth1="Learn"
+                depth2="Java"
+                depth3="Characters types"
+            />
 
             <section className="section">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">문자형</h5>
-                                <p>
+                <Row>
+                    <Col lg={6}>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>문자형</Card.Title>
+                                <Card.Text>
                                     자바에서 문자형 데이터란 작은 정수나 문자 하나를 표현할 수 있는 타입을 의미합니다.
-                                </p>
+                                </Card.Text>
                                 <ul>
                                     <li>char</li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                    <div className="col-lg-6">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위</h5>
+                    <Col lg={6}>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위</Card.Title>
                                 {/* Small tables */}
-                                <table className="table table-hover">
+                                <Table striped bordered hover>
                                     <thead>
                                         <tr>
-                                            <th scope="col">타입</th>
-                                            <th scope="col">할당 크기</th>
-                                            <th scope="col">표현 범위</th>
+                                            <th>타입</th>
+                                            <th>할당 크기</th>
+                                            <th>표현 범위</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -54,11 +53,11 @@ const CharactersType = () => {
                                             <td>0 ~ 2<sup>16</sup></td>
                                         </tr>
                                     </tbody>
-                                </table> {/* End small tables */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                </Table> {/* End small tables */}
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </section>
         </>
     );

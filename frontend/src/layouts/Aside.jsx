@@ -15,8 +15,8 @@ const Aside = () => {
                     <li className="nav-heading">HTML</li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/html-tags">
-                            <i className="bi bi-code"></i>
-                            <span>HTML Tags</span>
+                            <i className="bi bi-list-columns-reverse"></i>
+                            <span>Tag List</span>
                         </Link>
                     </li>
 
@@ -27,7 +27,7 @@ const Aside = () => {
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java-intro">
-                            <i className="bi bi-vector-pen"></i>
+                            <i className="bi bi-grid"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
@@ -81,38 +81,38 @@ const Aside = () => {
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react-intro">
-                            <i className="bi bi-vector-pen"></i>
+                            <i className="bi bi-grid"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
-                            <i className="bi bi-braces"></i>
-                            <span>React</span>
+                            <i className="bi bi-download"></i>
+                            <span>Getting Started</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
                         <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
-                                <Link to="icons-bootstrap.html">
+                                <Link to="/react-getstarted">
                                     <i className="bi bi-circle"></i>
-                                    <span>환경설정</span>
+                                    <span>Create App</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="icons-remix.html">
+                                <Link to="/react-adding-typescript">
                                     <i className="bi bi-circle"></i>
-                                    <span>시작하기</span>
+                                    <span>Adding TypeScript</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="icons-boxicons.html">
+                                <Link to="/react-adding-bootstrap">
                                     <i className="bi bi-circle"></i>
-                                    <span>JSX</span>
+                                    <span>Adding Bootstrap</span>
                                 </Link>
                             </li>
                         </ul>
-                    </li>{/* End React Page Nav */}
+                    </li>{/* End React Getting Started Page Nav */}
 
                     <li className="nav-heading">SQL</li>
 

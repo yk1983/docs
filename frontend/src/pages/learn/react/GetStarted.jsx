@@ -24,7 +24,7 @@ const Setting = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i class="bi bi-subtract"></i> Node.js 설치 (MacOS)
+                                    <i className="bi bi-subtract"></i> Node.js 설치 (MacOS)
                                 </Card.Title>
                                 <Card.Text>
                                     React 프로젝트를 생성하기 위해서는 Node.js가 먼저 설치되어 있어야 합니다.
@@ -32,7 +32,7 @@ const Setting = () => {
                                 <ol>
                                     <li>
                                         <Link to="https://nodejs.org/ko/" target="_blank">
-                                            <i class="bi bi-link-45deg"></i> Node.js
+                                            <i className="bi bi-link-45deg"></i> Node.js
                                         </Link>로 접속합니다.
                                     </li>
                                     <li>
@@ -53,7 +53,7 @@ const Setting = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i class="bi bi-subtract"></i> NPM(Node Package Manager)
+                                    <i className="bi bi-subtract"></i> NPM<sup>Node Package Manager</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">NPM(Node Package Manager)</span>은 자바스크립트
@@ -74,7 +74,7 @@ const Setting = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i class="bi bi-subtract"></i> yarn
+                                    <i className="bi bi-subtract"></i> yarn
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">yarn</span>은 npm의 단점을 보완, 성능 및 속도를
@@ -92,7 +92,7 @@ const Setting = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i class="bi bi-subtract"></i> CRA (Create-React-App) 설치
+                                    <i className="bi bi-subtract"></i> CRA<sup>Create-React-App</sup> 설치
                                 </Card.Title>
                                 <Card.Text>
                                     리액트 프로젝트를 시작하는데 필요한 개발 환경을 세팅해주는 도구입니다.
@@ -115,7 +115,7 @@ const Setting = () => {
                                     <br />
                                     리액트를 실행하면
                                     <Link to="http://localhost:3000/">
-                                        <i class="bi bi-link-45deg"></i> 로컬(http://localhost:3000/)
+                                        <i className="bi bi-link-45deg"></i> 로컬(http://localhost:3000/)
                                     </Link>으로 접속되어 확인할 수 있습니다.
                                 </Card.Text>
                             </Card.Body>

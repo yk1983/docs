@@ -3,7 +3,7 @@ import { Row, Col, Card, Table } from 'react-bootstrap';
 
 import PageTitle from 'layouts/PageTitle';
 
-const CharactersType = () => {
+const Characters = () => {
     return(
         <>
             <Helmet>
@@ -22,7 +22,9 @@ const CharactersType = () => {
                     <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>문자형</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 문자형
+                                </Card.Title>
                                 <Card.Text>
                                     자바에서 문자형 데이터란 작은 정수나 문자 하나를 표현할 수 있는 타입을 의미합니다.
                                 </Card.Text>
@@ -36,7 +38,9 @@ const CharactersType = () => {
                     <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
+                                </Card.Title>
                                 {/* Small tables */}
                                 <Table striped bordered hover>
                                     <thead>
@@ -63,4 +67,4 @@ const CharactersType = () => {
     );
 }
 
-export default CharactersType;
+export default Characters;

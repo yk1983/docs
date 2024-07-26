@@ -7,7 +7,7 @@ const Casting = () => {
     return(
         <>
             <Helmet>
-                <title>Learn React</title>
+                <title>Learn JAVA</title>
             </Helmet>
 
             <PageTitle
@@ -22,7 +22,9 @@ const Casting = () => {
                     <Col lg={12}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>형변환</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 형변환
+                                </Card.Title>
                                 <Card.Text>
                                     프로그램을 작성하다 보면 같은 타입뿐만 아니라 서로 다른 타입간의 연산을 수행해야
                                     하는 경우가 있습니다.

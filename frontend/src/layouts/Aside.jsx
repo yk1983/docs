@@ -6,7 +6,7 @@ const Aside = () => {
             <aside id="sidebar" className="sidebar">
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">
+                        <Link className="nav-link collapsed" to="/">
                             <i className="bi bi-grid"></i>
                             <span>Dashboard</span>
                         </Link>
@@ -14,11 +14,32 @@ const Aside = () => {
 
                     <li className="nav-heading">HTML</li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/html-tags">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-htmlref-nav" data-bs-toggle="collapse" to="#">
                             <i className="bi bi-list-columns-reverse"></i>
-                            <span>Tag List</span>
+                            <span>References</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
-                    </li>
+                        <ul id="learn-htmlref-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/html/ref-tags">
+                                    <i className="bi bi-circle"></i>
+                                    <span>Tag List</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/html/ref-standardattributes">
+                                    <i className="bi bi-circle"></i>
+                                    <span>Global Attributes</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/html/ref-eventattributes">
+                                    <i className="bi bi-circle"></i>
+                                    <span>Events</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End HTML References Nav */}
 
                     <li className="nav-heading">CSS</li>
 
@@ -26,8 +47,8 @@ const Aside = () => {
 
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/java-intro">
-                            <i className="bi bi-grid"></i>
+                        <Link className="nav-link collapsed" to="/java/intro">
+                            <i className="bi bi-signpost"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
@@ -40,37 +61,37 @@ const Aside = () => {
                         </Link>
                         <ul id="learn-java-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
-                                <Link to="/java-datatype">
+                                <Link to="/java/datatype">
                                     <i className="bi bi-circle"></i>
                                     <span>자료형(Data Types)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java-integer-type">
+                                <Link to="/java/integer">
                                     <i className="bi bi-circle"></i>
                                     <span>정수형(Integer)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java-floating-type">
+                                <Link to="/java/floating">
                                     <i className="bi bi-circle"></i>
                                     <span>실수형(Floating-Point)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java-characters-type">
+                                <Link to="/java/characters">
                                     <i className="bi bi-circle"></i>
                                     <span>문자형(Characters)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java-boolean-type">
+                                <Link to="/java/boolean">
                                     <i className="bi bi-circle"></i>
                                     <span>논리형(Boolean)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java-casting">
+                                <Link to="/java/casting">
                                     <i className="bi bi-circle"></i>
                                     <span>형변환(Casting)</span>
                                 </Link>
@@ -80,8 +101,8 @@ const Aside = () => {
 
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/react-intro">
-                            <i className="bi bi-grid"></i>
+                        <Link className="nav-link collapsed" to="/react/intro">
+                            <i className="bi bi-signpost"></i>
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
@@ -94,21 +115,27 @@ const Aside = () => {
                         </Link>
                         <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
-                                <Link to="/react-getstarted">
+                                <Link to="/react/getstarted">
                                     <i className="bi bi-circle"></i>
                                     <span>Create App</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/react-adding-typescript">
+                                <Link to="/react/adding-typescript">
                                     <i className="bi bi-circle"></i>
                                     <span>Adding TypeScript</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/react-adding-bootstrap">
+                                <Link to="/react/adding-bootstrap">
                                     <i className="bi bi-circle"></i>
                                     <span>Adding Bootstrap</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/adding-router">
+                                    <i className="bi bi-circle"></i>
+                                    <span>Adding Router</span>
                                 </Link>
                             </li>
                         </ul>

@@ -1,43 +1,46 @@
 import { Routes, Route } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
-
-import HtmlTagList from 'pages/learn/html/TagList';
+// HTML
+import HtmlTags from 'pages/learn/html/Tags';
+import HtmlGlobalAttributes from 'pages/learn/html/GlobalAttributes';
+import HtmlEvents from 'pages/learn/html/Events';
+// Java
 import JavaIntro from 'pages/learn/java/Intro';
 import JavaDataType from 'pages/learn/java/DataType';
-import JavaIntegerType from 'pages/learn/java/IntegerType';
-import JavaFloatingType from 'pages/learn/java/FloatingType';
-import JavaCharactersType from 'pages/learn/java/CharactersType';
-import JavaBooleanType from 'pages/learn/java/BooleanType';
+import JavaInteger from 'pages/learn/java/Integer';
+import JavaFloating from 'pages/learn/java/Floating';
+import JavaCharacters from 'pages/learn/java/Characters';
+import JavaBoolean from 'pages/learn/java/Boolean';
 import JavaCasting from 'pages/learn/java/Casting';
-
+// React
 import ReactIntro from 'pages/learn/react/Intro';
 import ReactStarted from 'pages/learn/react/GetStarted';
-import ReactAddingTypeScript from 'pages/learn/react/AddTypeScript';
-import ReactAddingBootstrap from 'pages/learn/react/AddBootstrap';
-
+import ReactTypeScript from 'pages/learn/react/AddTypeScript';
+import ReactBootstrap from 'pages/learn/react/AddBootstrap';
+import ReactRouter from 'pages/learn/react/AddRouter';
+// pages
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
 
 const App = () => {
     return (
         <>
-            <Helmet>
-                <title>Learn</title>
-            </Helmet>
             <main id="main" className="main">
                 <Routes>
-                    <Route path="/html-tags" element={<HtmlTagList />} />
-                    <Route path="/java-intro" element={<JavaIntro />} />
-                    <Route path="/java-datatype" element={<JavaDataType />} />
-                    <Route path="/java-integer-type" element={<JavaIntegerType />} />
-                    <Route path="/java-floating-type" element={<JavaFloatingType />} />
-                    <Route path="/java-characters-type" element={<JavaCharactersType />} />
-                    <Route path="/java-boolean-type" element={<JavaBooleanType />} />
-                    <Route path="/java-casting" element={<JavaCasting />} />
-                    <Route path="/react-intro" element={<ReactIntro />} />
-                    <Route path="/react-getstarted" element={<ReactStarted />} />
-                    <Route path="/react-adding-typescript" element={<ReactAddingTypeScript />} />
-                    <Route path="/react-adding-bootstrap" element={<ReactAddingBootstrap />} />
+                    <Route path="/html/ref-tags" element={<HtmlTags />} />
+                    <Route path="/html/ref-standardattributes" element={<HtmlGlobalAttributes />} />
+                    <Route path="/html/ref-eventattributes" element={<HtmlEvents />} />
+                    <Route path="/java/intro" element={<JavaIntro />} />
+                    <Route path="/java/datatype" element={<JavaDataType />} />
+                    <Route path="/java/integer" element={<JavaInteger />} />
+                    <Route path="/java/floating" element={<JavaFloating />} />
+                    <Route path="/java/characters" element={<JavaCharacters />} />
+                    <Route path="/java/boolean" element={<JavaBoolean />} />
+                    <Route path="/java/casting" element={<JavaCasting />} />
+                    <Route path="/react/intro" element={<ReactIntro />} />
+                    <Route path="/react/getstarted" element={<ReactStarted />} />
+                    <Route path="/react/adding-typescript" element={<ReactTypeScript />} />
+                    <Route path="/react/adding-bootstrap" element={<ReactBootstrap />} />
+                    <Route path="/react/adding-router" element={<ReactRouter />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
                 </Routes>

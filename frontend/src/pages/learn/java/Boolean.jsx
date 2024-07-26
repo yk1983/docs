@@ -22,7 +22,9 @@ const BooleanType = () => {
                     <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>논리형</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 논리형
+                                </Card.Title>
                                 <Card.Text>
                                     논리형은 참(true)이나 거짓(false) 중 한 가지 값만을 가질 수 있는 불리언 타입을 의미합니다.<br />
                                     boolean형의 기본값은 false이며, 기본 타입 중 가장 작은 크기인 1바이트의 크기를 가집니다.
@@ -37,7 +39,9 @@ const BooleanType = () => {
                     <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>논리형 타입에 따른 메모리의 크기 및 데이터의 표현 범위</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 논리형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
+                                </Card.Title>
                                 {/* Small tables */}
                                 <Table striped bordered hover>
                                     <thead>

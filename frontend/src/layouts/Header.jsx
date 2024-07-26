@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 
 const Header = () => {
     const [isSideBar, setSideBar] = useState(false); // 메뉴의 초기값을 false로 설정
     const [isSearch, setSearch] = useState(false);
     const inputSearch = useRef();
+
     useEffect(() => {
         document.body.classList.toggle('toggle-sidebar');
     }, [isSideBar]);
@@ -19,7 +20,11 @@ const Header = () => {
             <header id="header" className="header fixed-top d-flex align-items-center">
                 <div className="d-flex align-items-center justify-content-between">
                     <Link to="/" className="logo d-flex align-items-center">
-                        <img src={process.env.PUBLIC_URL + '/assets/img/logo.png'} alt="" />
+                        <Image
+                            src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
+                            alt=""
+                            thumbnail
+                        />
                         <span className="d-none d-lg-block">DocsAdmin</span>
                     </Link>
                     <i className="bi bi-list toggle-sidebar-btn" onClick={() => setSideBar(!isSideBar)}></i>

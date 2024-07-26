@@ -22,7 +22,9 @@ const DataType = () => {
                     <Col lg={4}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>변수<sup>variable</sup></Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 변수<sup>variable</sup>
+                                </Card.Title>
                                 <Card.Text>
                                     변수(variable)란 데이터(data)를 저장하기 위해
                                     프로그램에 의해 이름을 할당받은 메모리 공간을 의미합니다.<br />
@@ -36,7 +38,9 @@ const DataType = () => {
                     <Col lg={4}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>상수<sup>constant</sup></Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 상수<sup>constant</sup>
+                                </Card.Title>
                                 <Card.Text>
                                     상수(constant)란 변수와 마찬가지로 데이터를
                                     저장할 수 있는 메모리 공간을 의미합니다.<br />
@@ -50,7 +54,9 @@ const DataType = () => {
                     <Col lg={4}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>리터럴<sup>literal</sup></Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 리터럴<sup>literal</sup>
+                                </Card.Title>
                                 <Card.Text>
                                     리터럴(literal)이란 그 자체로 값을 의미하는
                                     것입니다.<br />
@@ -60,10 +66,12 @@ const DataType = () => {
                         </Card>
                     </Col>
 
-                    <Col lg={12}>
+                    <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>변수명 생성 규칙</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 변수명 생성 규칙
+                                </Card.Title>
                                 <Card.Text>
                                     자바에서는 변수뿐만 아니라 클래스(class), 메서드(method)등의 이름을 짓는데 지켜야할 규칙이 있습니다.<br />
                                     자바에서 변수명을 생성할 때에 반드시 지켜야 하는 규칙입니다.
@@ -78,10 +86,12 @@ const DataType = () => {
                         </Card>
                     </Col>
 
-                    <Col lg={12}>
+                    <Col lg={6}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>변수의 종류</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 변수의 종류
+                                </Card.Title>
                                 <ul>
                                     <li>
                                         기본형(primitive type) 변수 :
@@ -109,7 +119,9 @@ const DataType = () => {
                     <Col lg={12}>
                         <Card>
                             <Card.Body>
-                                <Card.Title>변수의 선언</Card.Title>
+                                <Card.Title>
+                                    <i className="bi bi-subtract"></i> 변수의 선언
+                                </Card.Title>
                                 <Card.Text>
                                     자바에서는 변수를 사용하기 전에 반드시 먼저 변수를 선언하고 초기화해야 합니다.
                                 </Card.Text>

@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Table } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -147,7 +148,7 @@ const TagList = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> HTML Element Reference
+                                    <BsSubtract /> HTML Element Reference
                                 </Card.Title>
                                 {/* tables */}
                                 <Table striped bordered hover size="sm">

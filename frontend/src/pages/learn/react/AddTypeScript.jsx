@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const AddTypeScript = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 타입스크립트<sup>TypeScript</sup>
+                                    <BsSubtract /> 타입스크립트<sup>TypeScript</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">타입스크립트(TypeScript)</span>는 마이크로소프트에서
@@ -38,7 +39,7 @@ const AddTypeScript = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바스크립트와 차이점
+                                    <BsSubtract /> 자바스크립트와 차이점
                                 </Card.Title>
                                 <Card.Text>
                                     타입스크립트에서는 버그가 일어나기 쉬운 요소의 타입을 선언하여 버그가 일어나는 것을 방지해줍니다.
@@ -52,7 +53,7 @@ const AddTypeScript = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 리액트 컴포넌트 타입스크립트로 작성
+                                    <BsSubtract /> 리액트 컴포넌트 타입스크립트로 작성
                                 </Card.Title>
                                 <Card.Text>
                                     새로운 프로젝트를 시작하려면 아래와 같이 터미널에 명령을 입력합니다.

@@ -1,4 +1,15 @@
 import { Link } from 'react-router-dom';
+import {
+    BsSignpost,
+    BsPuzzle,
+    BsGrid,
+    BsBraces,
+    BsDownload,
+    BsListColumnsReverse,
+    BsQuestionCircle,
+    BsEnvelope,
+    BsCircle
+} from 'react-icons/bs';
 
 const Aside = () => {
     return(
@@ -7,7 +18,9 @@ const Aside = () => {
                 <ul className="sidebar-nav" id="sidebar-nav">
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/">
-                            <i className="bi bi-grid"></i>
+                            <BsGrid
+                                className="icon"
+                            />
                             <span>Dashboard</span>
                         </Link>
                     </li>{/* End Dashboard Nav */}
@@ -15,26 +28,34 @@ const Aside = () => {
                     <li className="nav-heading">HTML</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-htmlref-nav" data-bs-toggle="collapse" to="#">
-                            <i className="bi bi-list-columns-reverse"></i>
+                            <BsListColumnsReverse
+                                className="icon"
+                            />
                             <span>References</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
                         <ul id="learn-htmlref-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/html/ref-tags">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Tag List</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/html/ref-standardattributes">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Global Attributes</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/html/ref-eventattributes">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Events</span>
                                 </Link>
                             </li>
@@ -44,97 +65,142 @@ const Aside = () => {
                     <li className="nav-heading">CSS</li>
 
                     <li className="nav-heading">JavaScript</li>
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/javascript/intro">
+                            <BsSignpost
+                                className="icon"
+                            />
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/intro">
-                            <i className="bi bi-signpost"></i>
+                            <BsSignpost
+                                className="icon"
+                            />
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-nav" data-bs-toggle="collapse" to="#">
-                            <i className="bi bi-braces"></i>
+                            <BsBraces
+                                className="icon"
+                            />
                             <span>자료형(Data Types)</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
                         <ul id="learn-java-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/datatype">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>자료형(Data Types)</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/java/integer">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>정수형(Integer)</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/java/floating">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>실수형(Floating-Point)</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/java/characters">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>문자형(Characters)</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/java/boolean">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>논리형(Boolean)</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/java/casting">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>형변환(Casting)</span>
                                 </Link>
                             </li>
                         </ul>
                     </li>{/* End Java Nav */}
 
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java/oop">
+                            <BsPuzzle
+                                className="icon"
+                            />
+                            <span>객체지향프로그래밍</span>
+                        </Link>
+                    </li>{/* End React Introduction Page Nav */}
+
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react/intro">
-                            <i className="bi bi-signpost"></i>
+                            <BsSignpost
+                                className="icon"
+                            />
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
-                            <i className="bi bi-download"></i>
+                            <BsDownload
+                                className="icon"
+                            />
                             <span>Getting Started</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
                         <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/react/getstarted">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Create App</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-typescript">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Adding TypeScript</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-bootstrap">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Adding Bootstrap</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-router">
-                                    <i className="bi bi-circle"></i>
+                                    <BsCircle
+                                        className="icon"
+                                    />
                                     <span>Adding Router</span>
                                 </Link>
                             </li>
@@ -149,14 +215,18 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/faq">
-                            <i className="bi bi-question-circle"></i>
+                            <BsQuestionCircle
+                                className="icon"
+                            />
                             <span>F.A.Q</span>
                         </Link>
                     </li>{/* End F.A.Q Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/contact">
-                            <i className="bi bi-envelope"></i>
+                            <BsEnvelope
+                                className="icon"
+                            />
                             <span>Contact</span>
                         </Link>
                     </li>{/* End Contact Page Nav */}

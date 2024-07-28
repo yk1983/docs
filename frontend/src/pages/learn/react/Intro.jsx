@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Container, Row, Col, Card, Alert, Image } from 'react-bootstrap';
+import { BsSubtract, BsFeather } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 리액트<sup>React</sup>란?
+                                    <BsSubtract /> 리액트<sup>React</sup>란?
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">리액트(React, React.js 또는 ReactJS)</span>는 자바스크립트
@@ -41,14 +42,14 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 특징
+                                    <BsSubtract /> 특징
                                 </Card.Title>
                                 <Card.Text>
                                     React 프로그래밍의 특징은 <span className="text-primary">선언형, 컴포넌트 기반, 확장성</span>입니다.
                                 </Card.Text>
                                 <dl>
                                     <dt>
-                                        <i className="bi bi-feather"></i> 선언형(Declarative) 프로그래밍
+                                        <BsFeather /> 선언형(Declarative) 프로그래밍
                                     </dt>
                                     <dd>
                                         애플리케이션의 각 상태에 대한 간단한 뷰만 설계하고,
@@ -59,7 +60,7 @@ const Intro = () => {
                                         UI갱신<span className="text-primary">(rendering)</span>
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> 컴포넌트(Component) 기반 프로그래밍
+                                        <BsFeather /> 컴포넌트(Component) 기반 프로그래밍
                                     </dt>
                                     <dd>
                                         스스로 상태를 관리하는 캡슐화된 컴포넌트를 만들어 조합하여 복잡한UI를 만들수 있습니다.
@@ -69,7 +70,7 @@ const Intro = () => {
                                         따라서 다양한 형식의 데이터를 앱 안에서 손쉽게 전달할 수 있으며, DOM과는 별개로 상태를 관리할 수 있습니다.
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> 한 번 배워서 어디서나 사용하기
+                                        <BsFeather /> 한 번 배워서 어디서나 사용하기
                                     </dt>
                                     <dd>
                                         기술 스택의 나머지 부분에는 관여하지 않기 때문에,
@@ -84,7 +85,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> JSX<sup>Javascript Syntax eXtension</sup>
+                                    <BsSubtract /> JSX<sup>Javascript Syntax eXtension</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">JSX(JavaScript XML)</span>는 XML같은 문법을 사용하는
@@ -100,21 +101,21 @@ const Intro = () => {
                                 </Card.Text>
                                 <dl>
                                     <dt>
-                                        <i className="bi bi-feather"></i> 반드시 부모 요소 하나가 감싸는 형태
+                                        <BsFeather /> 반드시 부모 요소 하나가 감싸는 형태
                                     </dt>
                                     <dd>
                                         Virtual DOM에서 컴포넌트 변화를 감지할 때 때 효율적으로 비교할 수 있도록
                                         컴포넌트 내부는 하나의 DOM트리구조로 이루어져야 한다는 규칙이 있기 때문입니다.
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> 유효한 모든 JavaScript 표현식
+                                        <BsFeather /> 유효한 모든 JavaScript 표현식
                                     </dt>
                                     <dd>
                                         JSX 안에서도 자바스크립트 표현식을 사용할 수 있습니다.
                                         자바스크립트 표현식을 작성하려면 JSX내부에서 코드를 <code>&#123; &#125;</code>로 감싸주면 됩니다.
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> if문(for문) 대신 삼항연산자(조건부연산자) 사용
+                                        <BsFeather /> if문(for문) 대신 삼항연산자(조건부연산자) 사용
                                     </dt>
                                     <dd>
                                         if구문과 for루프는 JavaScript 표현식이 아니기 때문에 JSX 내부 자바스크립트
@@ -123,7 +124,7 @@ const Intro = () => {
                                         <code>&#123; &#125;</code> 안에서 삼항연산자(조건부연산자)를 사용합니다.
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> React DOM은 HTML 어트리뷰트 이름 대신 camelCase
+                                        <BsFeather /> React DOM은 HTML 어트리뷰트 이름 대신 camelCase
                                         프로퍼티 명명 규칙을 사용
                                     </dt>
                                     <dd>
@@ -132,7 +133,7 @@ const Intro = () => {
                                         (예를 들어, css style 이나 class속성은 className을 사용)
                                     </dd>
                                     <dt>
-                                        <i className="bi bi-feather"></i> JSX 내에서 주석 사용 방법
+                                        <BsFeather /> JSX 내에서 주석 사용 방법
                                     </dt>
                                     <dd>
                                         JSX 내에서 <code>&#123;/* ... */&#125;</code>와 같은 형식을 사용 합니다.
@@ -146,7 +147,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 컴포넌트<sup>component</sup>
+                                    <BsSubtract /> 컴포넌트<sup>component</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">컴포넌트(component)</span>는 리액트로 만들어진 앱을 이루는 최소한의 단위입니다.
@@ -162,7 +163,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 프로퍼티<sup>props</sup>
+                                    <BsSubtract /> 프로퍼티<sup>props</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">프로퍼티(props)</span>는 properties의 줄임말로
@@ -177,7 +178,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 상태<sup>state</sup>
+                                    <BsSubtract /> 상태<sup>state</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">상태(state)</span>는 컴포넌트의 상태를 나타내며
@@ -196,7 +197,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 가상 돔<sup>Virtual DOM</sup>
+                                    <BsSubtract /> 가상 돔<sup>Virtual DOM</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     브라우저에서 HTML을 열게되면 DOM을 만들게 됩니다. HTML코드의 특정 부분이 변경되면,
@@ -217,7 +218,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 라이프 사이클<sup>Life Cycle</sup>
+                                    <BsSubtract /> 라이프 사이클<sup>Life Cycle</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     모든 리액트 컴포넌트는 생명주기가 존재합니다.
@@ -259,7 +260,7 @@ const Intro = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 훅<sup>hook</sup>
+                                    <BsSubtract /> 훅<sup>hook</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <span className="text-primary">훅(hook)</span>은 함수 컴포넌트에서 react state와

@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract, BsLink45Deg } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -24,7 +25,7 @@ const AddBootstrap = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 부트스트랩<sup>Bootstrap</sup>
+                                    <BsSubtract /> 부트스트랩<sup>Bootstrap</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     트위터에서 시작된 오픈 소스 프론트엔드 프레임워크입니다.
@@ -41,13 +42,13 @@ const AddBootstrap = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 설치<sup>Installation</sup>
+                                    <BsSubtract /> 설치<sup>Installation</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     <ol>
                                         <li>
                                             <Link to="https://react-bootstrap.github.io" target="_blank">
-                                                <i className="bi bi-link-45deg"></i> 리액트 부트스트랩
+                                                <BsLink45Deg /> 리액트 부트스트랩
                                             </Link> 사이트에 접속합니다.
                                         </li>
                                         <li>Get started 버튼 클릭합니다.</li>
@@ -73,7 +74,7 @@ const AddBootstrap = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 임포트 컴포넌트<sup>Importing Components</sup>
+                                    <BsSubtract /> 임포트 컴포넌트<sup>Importing Components</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     라이브러리 전체가 아닌 <code>react-bootstrap/Button</code>과 같은 각각의 컴포넌트

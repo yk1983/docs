@@ -1,9 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const Introduction = () => {
+const Intro = () => {
     return(
         <>
             <Helmet>
@@ -23,7 +24,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바의 소개
+                                    <BsSubtract /> 자바의 소개
                                 </Card.Title>
                                 <Card.Text>
                                     자바(Java)는 객체 지향적 프로그래밍 언어이며,
@@ -48,7 +49,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바의 장점
+                                    <BsSubtract /> 자바의 장점
                                 </Card.Title>
                                 <ul>
                                     <li>운영체제와는 독립적으로 실행할 수 있습니다.</li>
@@ -67,7 +68,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바의 단점
+                                    <BsSubtract /> 자바의 단점
                                 </Card.Title>
                                 <ul>
                                     <li>
@@ -99,7 +100,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바 가상 머신<sup>Java Virtual Machine(JVM)</sup>
+                                    <BsSubtract /> 자바 가상 머신<sup>Java Virtual Machine(JVM)</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     자바로 개발한 프로그램을 컴파일하여 만들어지는 바이트코드를 실행시키기 위한 가상머신입니다.
@@ -116,7 +117,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 가비지 컬렉터<sup>Garbage Collector(GC)</sup>
+                                    <BsSubtract /> 가비지 컬렉터<sup>Garbage Collector(GC)</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     자바 가상 머신(JVM)에 의해 구동되는 자바 프로그램은 메모리 관리를 개발자가
@@ -132,7 +133,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바 개발 키트<sup>Java Development Kit(JDK)</sup>
+                                    <BsSubtract /> 자바 개발 키트<sup>Java Development Kit(JDK)</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     자바를 사용하기 위해 필요한 모든 기능을 갖춘 자바용 SDK (Software Development Kit)입니다.
@@ -147,7 +148,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 자바 런타임 환경<sup>Java Runtime Environment(JRE)</sup>
+                                    <BsSubtract /> 자바 런타임 환경<sup>Java Runtime Environment(JRE)</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     JVM + 자바 클래스 라이브러리(Java Class Library) 등으로 구성되어 있습니다.
@@ -161,7 +162,7 @@ const Introduction = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 소프트웨어 개발 키트<sup>Software Development Kit(SDK)</sup>
+                                    <BsSubtract /> 소프트웨어 개발 키트<sup>Software Development Kit(SDK)</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     하드웨어 플랫폼, 운영체제 또는 프로그래밍 언어 제작사가 제공하는 툴입니다.
@@ -178,4 +179,4 @@ const Introduction = () => {
     );
 }
 
-export default Introduction;
+export default Intro;

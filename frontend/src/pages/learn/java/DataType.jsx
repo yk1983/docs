@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 변수<sup>variable</sup>
+                                    <BsSubtract /> 변수<sup>variable</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     변수(variable)란 데이터(data)를 저장하기 위해
@@ -39,7 +40,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 상수<sup>constant</sup>
+                                    <BsSubtract /> 상수<sup>constant</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     상수(constant)란 변수와 마찬가지로 데이터를
@@ -55,7 +56,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 리터럴<sup>literal</sup>
+                                    <BsSubtract /> 리터럴<sup>literal</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     리터럴(literal)이란 그 자체로 값을 의미하는
@@ -70,7 +71,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 변수명 생성 규칙
+                                    <BsSubtract /> 변수명 생성 규칙
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서는 변수뿐만 아니라 클래스(class), 메서드(method)등의 이름을 짓는데 지켜야할 규칙이 있습니다.<br />
@@ -90,7 +91,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 변수의 종류
+                                    <BsSubtract /> 변수의 종류
                                 </Card.Title>
                                 <ul>
                                     <li>
@@ -120,7 +121,7 @@ const DataType = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 변수의 선언
+                                    <BsSubtract /> 변수의 선언
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서는 변수를 사용하기 전에 반드시 먼저 변수를 선언하고 초기화해야 합니다.

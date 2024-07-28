@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract, BsFeather } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Router = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 라우터<sup>Router</sup>
+                                    <BsSubtract /> 라우터<sup>Router</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     라우팅은 사용자가 요청한 링크주소 즉, URL에 맞는 페이지를 찾아서 보여주는 것이라고 할 수 있습니다.
@@ -42,7 +43,7 @@ const Router = () => {
                             />
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> SPA<sup>Single Page Application</sup>
+                                    <BsSubtract /> SPA<sup>Single Page Application</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     모던 웹의 패러다임으로, 한 개의 페이지로 구성된 어플리케이션입니다.
@@ -53,7 +54,7 @@ const Router = () => {
                                     기대할 수 있어서 모바일 퍼스트(Mobile First) 전략에 부합니다.
                                 </Card.Text>
 
-                                <h6><i className="bi bi-feather"></i> 작동방식</h6>
+                                <h6><BsFeather /> 작동방식</h6>
                                 <ul>
                                     <li>
                                         SPA는 웹 에플리케이션에 필요한 모든 정적 리소스를 최초 접근 시 단 한번만 다운로드
@@ -67,7 +68,7 @@ const Router = () => {
                                     </li>
                                 </ul>
 
-                                <h6><i className="bi bi-feather"></i> 장점</h6>
+                                <h6><BsFeather /> 장점</h6>
                                 <ul>
                                     <li>
                                         <strong>속도 및 응답시간 : </strong>
@@ -93,7 +94,7 @@ const Router = () => {
                                     </li>
                                 </ul>
 
-                                <h6><i className="bi bi-feather"></i> 단점</h6>
+                                <h6><BsFeather /> 단점</h6>
                                 <ul>
                                     <li>
                                         <strong>초기 구동 속도 : </strong>
@@ -124,12 +125,12 @@ const Router = () => {
                             />
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> MPA<sup>Multiple Page Application</sup>
+                                    <BsSubtract /> MPA<sup>Multiple Page Application</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     웹 앱을 개발하는 전통적인 방식으로, 여러 개의 페이지로 구성된 어플리케이션입니다.
                                 </Card.Text>
-                                <h6><i className="bi bi-feather"></i> 작동방식</h6>
+                                <h6><BsFeather /> 작동방식</h6>
                                 <ul>
                                     <li>
                                         새로운 페이지를 요청할 때마다 서버에서 렌더링된 정적 리소스(HTML, CSS, JavaScript)가 다운로드
@@ -142,7 +143,7 @@ const Router = () => {
                                     </li>
                                 </ul>
 
-                                <h6><i className="bi bi-feather"></i> 장점</h6>
+                                <h6><BsFeather /> 장점</h6>
                                 <ul>
                                     <li>
                                         <strong>SEO 친화적 : </strong>
@@ -158,7 +159,7 @@ const Router = () => {
                                     </li>
                                 </ul>
 
-                                <h6><i className="bi bi-feather"></i> 단점</h6>
+                                <h6><BsFeather /> 단점</h6>
                                 <ul>
                                     <li>
                                         <strong>페이지 이동 시 느린 속도 : </strong>
@@ -184,20 +185,20 @@ const Router = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> React-Router-Dom
+                                    <BsSubtract /> React-Router-Dom
                                 </Card.Title>
                                 <Card.Text>
                                     React로 생성된 SPA 내부에서 페이지 이동이 가능하도록 만들어주는 라이브러리입니다.
                                 </Card.Text>
                                 <dl>
-                                    <dt><i className="bi bi-feather"></i> BrowserRouter</dt>
+                                    <dt><BsFeather /> BrowserRouter</dt>
                                     <dd>
                                         history API를 활용해 history객체를 생성합니다.
                                         history API는 내부적으로 스택 자료구조의 형태를 띄기 때문에 사용자가 방문한
                                         url 기록들을 차곡차곡 쌓는 형태로 저장해둔다고 생각하면 됩니다.
                                         라우팅을 진행할 컴포넌트 상위에 BrowserRouter 컴포넌트를 생성하고 감싸주어야 합니다.
                                     </dd>
-                                    <dt><i className="bi bi-feather"></i> Route</dt>
+                                    <dt><BsFeather /> Route</dt>
                                     <dd>
                                         현재 브라우저의 location(window.href.location 정보를 가져옵니다.) 상태에 따라 다른
                                         요소를 렌더링합니다.
@@ -206,7 +207,7 @@ const Router = () => {
                                         <br />
                                         <code>Route.path</code> : 현재 path값이 url과 일치하는지 확인해 해당 url에 매칭된 요소를 렌더링해줍니다.
                                     </dd>
-                                    <dt><i className="bi bi-feather"></i> Routes</dt>
+                                    <dt><BsFeather /> Routes</dt>
                                     <dd>
                                         모든 Route의 상위 경로에 존재해야 하며, location변경 시 하위에 있는 모든 Route를
                                         조회해 현재 location과 맞는 Route를 찾아줍니다.
@@ -220,7 +221,7 @@ const Router = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 설치<sup>Installation</sup>
+                                    <BsSubtract /> 설치<sup>Installation</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     터미널에서 해당 프로젝트 경로에 아래와 같이 명령을 실행합니다.
@@ -239,7 +240,7 @@ const Router = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 적용<sup>Apply</sup>
+                                    <BsSubtract /> 적용<sup>Apply</sup>
                                 </Card.Title>
                                 <Card.Text>
                                     아래와 같이 적용합니다.

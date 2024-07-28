@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Casting = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 형변환
+                                    <BsSubtract /> 형변환
                                 </Card.Title>
                                 <Card.Text>
                                     프로그램을 작성하다 보면 같은 타입뿐만 아니라 서로 다른 타입간의 연산을 수행해야

@@ -1,10 +1,10 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Table } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
 const Events = () => {
-    const data = [];
     return(
         <>
             <Helmet>
@@ -24,7 +24,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Global Event Attributes
+                                    <BsSubtract /> Global Event Attributes
                                 </Card.Title>
                                 <Card.Text>
                                     HTML은 사용자가 요소를 클릭할 때 자바스크립트를 시작하는 것과 같이 브라우저에서
@@ -38,7 +38,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Window Event Attributes
+                                    <BsSubtract /> Window Event Attributes
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -48,7 +48,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Form Events
+                                    <BsSubtract /> Form Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -58,7 +58,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Keyboard Events
+                                    <BsSubtract /> Keyboard Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -68,7 +68,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Mouse Events
+                                    <BsSubtract /> Mouse Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -78,7 +78,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Drag Events
+                                    <BsSubtract /> Drag Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -88,7 +88,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Clipboard Events
+                                    <BsSubtract /> Clipboard Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -98,7 +98,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Media Events
+                                    <BsSubtract /> Media Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>
@@ -108,7 +108,7 @@ const Events = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> Misc Events
+                                    <BsSubtract /> Misc Events
                                 </Card.Title>
                             </Card.Body>
                         </Card>

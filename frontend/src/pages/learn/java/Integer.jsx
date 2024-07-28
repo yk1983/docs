@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Alert, Table } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Integer = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 정수형
+                                    <BsSubtract /> 정수형
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 정수란 부호를 가지고 있으며, 소수 부분이 없는 수를 의미합니다.
@@ -60,7 +61,7 @@ const Integer = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 정수형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
+                                    <BsSubtract /> 정수형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
                                 </Card.Title>
                                 {/* Small tables */}
                                 <Table striped bordered hover>

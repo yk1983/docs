@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Alert, Table } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Floating = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 실수형
+                                    <BsSubtract /> 실수형
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 실수란 소수부나 지수부가 있는 수를 가리키며, 정수보다 훨씬 더 넓은 표현 범위를 가집니다.
@@ -50,7 +51,7 @@ const Floating = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 실수형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
+                                    <BsSubtract /> 실수형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
                                 </Card.Title>
                                 {/* Small tables */}
                                 <Table striped bordered hover>
@@ -94,7 +95,7 @@ const Floating = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 실수의 표현
+                                    <BsSubtract /> 실수의 표현
                                 </Card.Title>
                                 <Card.Text>
                                     컴퓨터에서는 실수를 정수와 마찬가지로 2진수로만 표현해야 하기 때문에 실수를 표현하는 방법은 정수에 비해 복잡합니다.

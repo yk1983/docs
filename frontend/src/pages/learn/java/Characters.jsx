@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Table } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
@@ -23,7 +24,7 @@ const Characters = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 문자형
+                                    <BsSubtract /> 문자형
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 문자형 데이터란 작은 정수나 문자 하나를 표현할 수 있는 타입을 의미합니다.
@@ -39,7 +40,7 @@ const Characters = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <i className="bi bi-subtract"></i> 문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
+                                    <BsSubtract /> 문자형 타입에 따른 메모리의 크기 및 데이터의 표현 범위
                                 </Card.Title>
                                 {/* Small tables */}
                                 <Table striped bordered hover>

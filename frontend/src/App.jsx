@@ -24,6 +24,8 @@ import ReactRouter from 'pages/learn/react/AddRouter';
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
 
+import "highlight.js/styles/github.css";
+
 const App = () => {
     return (
         <>

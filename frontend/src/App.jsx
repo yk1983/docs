@@ -12,6 +12,9 @@ import JavaCharacters from 'pages/learn/java/Characters';
 import JavaBoolean from 'pages/learn/java/Boolean';
 import JavaCasting from 'pages/learn/java/Casting';
 import JavaOop from 'pages/learn/java/Oop';
+import JavaClass from 'pages/learn/java/Classes';
+import JavaConstructor from 'pages/learn/java/Constructor';
+import JavaMethod from 'pages/learn/java/Method';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // React
@@ -43,6 +46,9 @@ const App = () => {
                     <Route path="/java/boolean" element={<JavaBoolean />} />
                     <Route path="/java/casting" element={<JavaCasting />} />
                     <Route path="/java/oop" element={<JavaOop />} />
+                    <Route path="/java/classes" element={<JavaClass />} />
+                    <Route path="/java/constructor" element={<JavaConstructor />} />
+                    <Route path="/java/method" element={<JavaMethod />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />

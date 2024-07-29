@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import {
-    BsSignpost,
-    BsPuzzle,
     BsGrid,
-    BsBraces,
+    BsFiletypeCss,
+    BsFiletypeJava,
+    BsFiletypeJsx,
+    BsFiletypeJs,
     BsDownload,
     BsListColumnsReverse,
     BsQuestionCircle,
     BsEnvelope,
+    BsBoxes, BsBox,
     BsCircle
 } from 'react-icons/bs';
 
@@ -67,7 +69,7 @@ const Aside = () => {
                     <li className="nav-heading">JavaScript</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/javascript/intro">
-                            <BsSignpost
+                            <BsFiletypeJs
                                 className="icon"
                             />
                             <span>소개(Introduction)</span>
@@ -77,7 +79,7 @@ const Aside = () => {
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/intro">
-                            <BsSignpost
+                            <BsFiletypeJava
                                 className="icon"
                             />
                             <span>소개(Introduction)</span>
@@ -86,7 +88,7 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-nav" data-bs-toggle="collapse" to="#">
-                            <BsBraces
+                            <BsBoxes
                                 className="icon"
                             />
                             <span>자료형(Data Types)</span>
@@ -146,17 +148,44 @@ const Aside = () => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/oop">
-                            <BsPuzzle
+                            <BsBox
                                 className="icon"
                             />
                             <span>객체지향프로그래밍</span>
                         </Link>
-                    </li>{/* End React Introduction Page Nav */}
+                    </li>{/* End Java OOP Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java/classes">
+                            <BsBox
+                                className="icon"
+                            />
+                            <span>클래스(Class)</span>
+                        </Link>
+                    </li>{/* End Java classes Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java/constructor">
+                            <BsBox
+                                className="icon"
+                            />
+                            <span>생성자(Constructor)</span>
+                        </Link>
+                    </li>{/* End Java Constructor Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java/method">
+                            <BsBox
+                                className="icon"
+                            />
+                            <span>메서드(Method)</span>
+                        </Link>
+                    </li>{/* End Java Method Page Nav */}
 
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react/intro">
-                            <BsSignpost
+                            <BsFiletypeJsx
                                 className="icon"
                             />
                             <span>소개(Introduction)</span>

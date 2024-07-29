@@ -227,8 +227,8 @@ const Oop = () => {
                                 객체 지향 프로그래밍에서의 객체와 인스턴스의 차이점은 객체는 선언, 인스턴스는 실체화를 의미합니다.
                                 <br />
                                 예를 들어, <code>Animal cat = new Animal();</code>는 <span className="text-primary">cat</span>은
-                                객체로 선언되고 <span className="text-primary">new Animal()</span>로 클래스를 생성하므로 인스턴스,
-                                인스턴스화 했다고 합니다.
+                                객체로 선언되고 <span className="text-primary">new Animal()</span>로 클래스를 생성하므로 Animal의
+                                인스턴스라고 표현하는 것이 바람직합니다.
                             </p>
                         </Alert>
                     </Col>
@@ -243,11 +243,9 @@ const Oop = () => {
                                     자바에서 클래스는 멤버(member)로 속성을 표현하는 필드(field)와 기능을 표현하는 메소드(method)를 가집니다.
                                     그중에서 메소드(method)란 어떠한 특정 작업을 수행하기 위한 명령문의 집합이라 할 수 있습니다.
                                     <Highlight language="java">
-                                    {`
-접근제어자 반환타입 메소드이름(매개변수목록) { // 선언부
+{`접근제어자 반환타입 메소드이름(매개변수목록) { // 선언부
     // 구현부
-}
-                                    `}
+}`}
                                     </Highlight>
                                     <ul>
                                         <li>접근제어자 : 해당 메소드에 접근할 수 있는 범위</li>

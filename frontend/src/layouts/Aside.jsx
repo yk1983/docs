@@ -147,6 +147,42 @@ const Aside = () => {
                     </li>{/* End Java DataType Nav */}
 
                     <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-statements" data-bs-toggle="collapse" to="#">
+                            <BsBoxes
+                                className="icon"
+                            />
+                            <span>제어문(Statements)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-java-statements" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/java/conditional">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>조건문(Conditional)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/iteration">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>반복문(Iteration)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/constructor">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>기타</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End Java Statements Nav */}
+
+                    <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-oop" data-bs-toggle="collapse" to="#">
                             <BsBoxes
                                 className="icon"

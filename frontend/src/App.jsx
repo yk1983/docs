@@ -11,6 +11,8 @@ import JavaFloating from 'pages/learn/java/Floating';
 import JavaCharacters from 'pages/learn/java/Characters';
 import JavaBoolean from 'pages/learn/java/Boolean';
 import JavaCasting from 'pages/learn/java/Casting';
+import JavaConditional from 'pages/learn/java/Conditional';
+import JavaIteration from 'pages/learn/java/Iteration';
 import JavaOop from 'pages/learn/java/Oop';
 import JavaClass from 'pages/learn/java/Classes';
 import JavaConstructor from 'pages/learn/java/Constructor';
@@ -45,10 +47,12 @@ const App = () => {
                     <Route path="/java/characters" element={<JavaCharacters />} />
                     <Route path="/java/boolean" element={<JavaBoolean />} />
                     <Route path="/java/casting" element={<JavaCasting />} />
+                    <Route path="/java/constructor" element={<JavaConstructor />} />
+                    <Route path="/java/iteration" element={<JavaIteration />} />
                     <Route path="/java/oop" element={<JavaOop />} />
                     <Route path="/java/classes" element={<JavaClass />} />
-                    <Route path="/java/constructor" element={<JavaConstructor />} />
                     <Route path="/java/method" element={<JavaMethod />} />
+                    <Route path="/java/conditional" element={<JavaConditional />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />

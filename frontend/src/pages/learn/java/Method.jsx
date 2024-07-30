@@ -4,12 +4,17 @@ import { Row, Col, Card, Alert, Button } from 'react-bootstrap';
 import { BsSubtract, BsFeather, BsPinAngle, BsBoxArrowUpRight } from 'react-icons/bs';
 import Highlight from 'react-highlight';
 import PageTitle from 'layouts/PageTitle';
-import SourceBsModal from 'components/SourceBsModal';
+import BsModalEx1 from 'components/modal/BsModalEx1';
+import BsModalEx2 from 'components/modal/BsModalEx2';
 
 const Method = () => {
-    const [modalShow, setModalShow] = useState(false);
-    const handleClose = () => setModalShow(false);
-    const handleShow = () => setModalShow(true);
+    const [modalShow1, setModalShow1] = useState(false);
+    const handleClose1 = () => setModalShow1(false);
+    const handleShow1 = () => setModalShow1(true);
+
+    const [modalShow2, setModalShow2] = useState(false);
+    const handleClose2 = () => setModalShow2(false);
+    const handleShow2 = () => setModalShow2(true);
 
     return(
         <>
@@ -142,6 +147,20 @@ const Method = () => {
                                     접근 제한 범위에 순으로 나열하면, <code>public > protected > default > private</code> 순입니다.
                                     접근 제어자를 작성하지 않으면, 자동으로 기본값인 <code>default</code>가 설정됩니다.
                                 </Card.Text>
+                                <Button
+                                    variant="outline-primary"
+                                    size="sm"
+                                    onClick={handleShow1}
+                                >
+                                    <BsBoxArrowUpRight /> 접근제어자 예제_1
+                                </Button>{' '}
+                                <Button
+                                    variant="outline-primary"
+                                    size="sm"
+                                    onClick={handleShow2}
+                                >
+                                    <BsBoxArrowUpRight /> 접근제어자 예제_2
+                                </Button>
                             </Card.Body>
                             <Card.Img
                                 variant="bottom"
@@ -169,13 +188,6 @@ const Method = () => {
                                     따라서 private 멤버는 public 인터페이스를 직접 구성하지 않고, 클래스 내부의 세부적인
                                     동작을 구현하는 데 사용됩니다.
                                 </Card.Text>
-                                <Button
-                                    variant="outline-primary"
-                                    size="sm"
-                                    onClick={handleShow}
-                                >
-                                    <BsBoxArrowUpRight /> Example
-                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -198,13 +210,6 @@ const Method = () => {
                                     따라서 public 메소드는 private 멤버와 프로그램 사이의 인터페이스(interface) 역할을
                                     수행한다고 할 수 있습니다.
                                 </Card.Text>
-                                <Button
-                                    variant="outline-primary"
-                                    size="sm"
-                                    onClick={handleShow}
-                                >
-                                    <BsBoxArrowUpRight /> Example
-                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -228,13 +233,6 @@ const Method = () => {
                                     default 접근 제어를 가지는 멤버는 같은 클래스의 멤버와 같은 패키지에 속하는 멤버에서만
                                     접근할 수 있습니다.
                                 </Card.Text>
-                                <Button
-                                    variant="outline-primary"
-                                    size="sm"
-                                    onClick={handleShow}
-                                >
-                                    <BsBoxArrowUpRight /> Example
-                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -264,22 +262,22 @@ const Method = () => {
                                         <li>이 멤버를 선언한 클래스를 상속받은 자식 클래스(child class)의 멤버</li>
                                     </ul>
                                 </Card.Text>
-                                <Button
-                                    variant="outline-primary"
-                                    size="sm"
-                                    onClick={handleShow}
-                                >
-                                    <BsBoxArrowUpRight /> Example
-                                </Button>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
             </section>
 
-            <SourceBsModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
+            <BsModalEx1
+                title="변수 접근제어자 예제"
+                show={modalShow1}
+                onHide={() => setModalShow1(false)}
+            />
+
+            <BsModalEx2
+                title="메서드 접근제어자 예제"
+                show={modalShow2}
+                onHide={() => setModalShow2(false)}
             />
         </>
     );

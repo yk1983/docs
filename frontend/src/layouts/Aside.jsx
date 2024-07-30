@@ -87,14 +87,14 @@ const Aside = () => {
                     </li>{/* End React Introduction Page Nav */}
 
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" data-bs-target="#learn-java-nav" data-bs-toggle="collapse" to="#">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-datatype" data-bs-toggle="collapse" to="#">
                             <BsBoxes
                                 className="icon"
                             />
                             <span>자료형(Data Types)</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
-                        <ul id="learn-java-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <ul id="learn-java-datatype" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/datatype">
                                     <BsCircle
@@ -144,43 +144,51 @@ const Aside = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </li>{/* End Java Nav */}
+                    </li>{/* End Java DataType Nav */}
 
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/java/oop">
-                            <BsBox
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-oop" data-bs-toggle="collapse" to="#">
+                            <BsBoxes
                                 className="icon"
                             />
-                            <span>객체지향프로그래밍</span>
+                            <span>객체지향프로그래밍(OOP)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
-                    </li>{/* End Java OOP Page Nav */}
-
-                    <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/java/classes">
-                            <BsBox
-                                className="icon"
-                            />
-                            <span>클래스(Class)</span>
-                        </Link>
-                    </li>{/* End Java classes Page Nav */}
-
-                    <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/java/constructor">
-                            <BsBox
-                                className="icon"
-                            />
-                            <span>생성자(Constructor)</span>
-                        </Link>
-                    </li>{/* End Java Constructor Page Nav */}
-
-                    <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/java/method">
-                            <BsBox
-                                className="icon"
-                            />
-                            <span>메서드(Method)</span>
-                        </Link>
-                    </li>{/* End Java Method Page Nav */}
+                        <ul id="learn-java-oop" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/java/oop">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>객체지향프로그래밍(OOP)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/classes">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>클래스(Class)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/constructor">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>생성자(Constructor)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/method">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>메서드(Method)</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End Java OOP Nav */}
 
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">

@@ -172,7 +172,7 @@ const Aside = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/constructor">
+                                <Link to="/java/control-flow">
                                     <BsCircle
                                         className="icon"
                                     />

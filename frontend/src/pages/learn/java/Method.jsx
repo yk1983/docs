@@ -147,6 +147,12 @@ const Method = () => {
                                     접근 제한 범위에 순으로 나열하면, <code>public > protected > default > private</code> 순입니다.
                                     접근 제어자를 작성하지 않으면, 자동으로 기본값인 <code>default</code>가 설정됩니다.
                                 </Card.Text>
+                            </Card.Body>
+                            <Card.Img
+                                variant="bottom"
+                                src={process.env.PUBLIC_URL + '/assets/img/java/access_modifier.png'}
+                            />
+                            <Card.Footer>
                                 <Button
                                     variant="outline-primary"
                                     size="sm"
@@ -161,11 +167,7 @@ const Method = () => {
                                 >
                                     <BsBoxArrowUpRight /> 접근제어자 예제_2
                                 </Button>
-                            </Card.Body>
-                            <Card.Img
-                                variant="bottom"
-                                src={process.env.PUBLIC_URL + '/assets/img/java/access_modifier.png'}
-                            />
+                            </Card.Footer>
                         </Card>
                     </Col>
 
@@ -269,13 +271,13 @@ const Method = () => {
             </section>
 
             <BsModalEx1
-                title="변수 접근제어자 예제"
+                title="접근제어자 예제 1"
                 show={modalShow1}
                 onHide={() => setModalShow1(false)}
             />
 
             <BsModalEx2
-                title="메서드 접근제어자 예제"
+                title="접근제어자 예제 2"
                 show={modalShow2}
                 onHide={() => setModalShow2(false)}
             />

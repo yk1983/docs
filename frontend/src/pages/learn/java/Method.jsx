@@ -9,11 +9,11 @@ import BsModalEx2 from 'components/modal/BsModalEx2';
 
 const Method = () => {
     const [modalShow1, setModalShow1] = useState(false);
-    const handleClose1 = () => setModalShow1(false);
+    // const handleClose1 = () => setModalShow1(false);
     const handleShow1 = () => setModalShow1(true);
 
     const [modalShow2, setModalShow2] = useState(false);
-    const handleClose2 = () => setModalShow2(false);
+    // const handleClose2 = () => setModalShow2(false);
     const handleShow2 = () => setModalShow2(true);
 
     return(

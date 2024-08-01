@@ -18,6 +18,7 @@ import JavaOop from 'pages/learn/java/Oop';
 import JavaClass from 'pages/learn/java/Classes';
 import JavaConstructor from 'pages/learn/java/Constructor';
 import JavaMethod from 'pages/learn/java/Method';
+import JavaInheritance from 'pages/learn/java/Inheritance';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // React
@@ -26,6 +27,7 @@ import ReactStarted from 'pages/learn/react/GetStarted';
 import ReactTypeScript from 'pages/learn/react/AddTypeScript';
 import ReactBootstrap from 'pages/learn/react/AddBootstrap';
 import ReactRouter from 'pages/learn/react/AddRouter';
+import ReactComponent from 'pages/learn/react/Component';
 // pages
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
@@ -52,6 +54,7 @@ const App = () => {
                     <Route path="/java/iteration" element={<JavaIteration />} />
                     <Route path="/java/control-flow" element={<JavaControlFlow />} />
                     <Route path="/java/oop" element={<JavaOop />} />
+                    <Route path="/java/inheritance" element={<JavaInheritance />} />
                     <Route path="/java/classes" element={<JavaClass />} />
                     <Route path="/java/method" element={<JavaMethod />} />
                     <Route path="/java/conditional" element={<JavaConditional />} />
@@ -60,6 +63,7 @@ const App = () => {
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />
                     <Route path="/react/adding-bootstrap" element={<ReactBootstrap />} />
                     <Route path="/react/adding-router" element={<ReactRouter />} />
+                    <Route path="/react/component" element={<ReactComponent />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
                 </Routes>

@@ -1,10 +1,65 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsPinAngle } from 'react-icons/bs';
-import Highlight from 'react-highlight';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
+// Components
+import CodeBlock from 'components/CodeBlock';
 
 const ControlFlow = () => {
+    const
+        codeEx1 =
+`public class BreakAndContinue {
+    public static void main(String[] args) {
+        int result = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) { // 짝수인 경우 합산하지 않는다.
+                continue;
+            }
+            result += i;
+        }
+        System.out.println(result);
+    }
+}`,
+        codeEx2 =
+`for (조건식) {
+    ... // 실행문
+    break; // 아래의 실행문을 거치지 않고 강제 종료
+    ... // 실행문
+}
+
+while (입력 변수) {
+    ... // 실행문
+    break; // 아래의 실행문을 거치지 않고 강제 종료
+    ... // 실행문
+}`,
+        codeEx3 =
+`for (조건식) {
+    ... // 실행문1
+    for (조건식) {
+        ... // 실행문2
+        break; // 안쪽 반복문만 종료
+    }
+    ... // 실행문3 // 바깥쪽 반복문은 정상작동, 실행문3도 실행
+}`,
+        codeEx4 =
+`public class BreakAndContinue {
+    public static void main(String[] args) {
+        int result = 0;
+        int i = 1;
+
+        while (true) {
+            result += i;
+            if (i == 10) {
+                break;
+            }
+            i += 1;
+        }
+
+        System.out.println(result);
+    }
+}`;
+
     return(
         <>
             <Helmet>
@@ -35,21 +90,10 @@ const ControlFlow = () => {
                                     넘어가고자 할 때 사용합니다.
                                     <br />
                                     보통 반복문 내에서 특정 조건에 대한 예외 처리를 하고자 할 때 자주 사용됩니다.
-                                    <Highlight language="java">
-{`public class BreakAndContinue {
-    public static void main(String[] args) {
-        int result = 0;
-
-        for (int i = 1; i <= 10; i++) {
-            if (i % 2 == 0) { // 짝수인 경우 합산하지 않는다.
-                continue;
-            }
-            result += i;
-        }
-        System.out.println(result);
-    }
-}`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx1 }
+                                    />
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -65,50 +109,21 @@ const ControlFlow = () => {
                                     <code>break</code>문은 반복문인 for문이나 while문, do-while문의 실행을 중지시키거나,
                                     switch문 중지시키기 위해 사용합니다.
                                     실행문 안에서 break를 만나면 다음 실행 코드가 존재하더라도 강제로 벗어나게 됩니다.
-                                    <Highlight language="java">
-{`for (조건식) {
-    ... // 실행문
-    break; // 아래의 실행문을 거치지 않고 강제 종료
-    ... // 실행문
-}
-
-while (입력 변수) {
-    ... // 실행문
-    break; // 아래의 실행문을 거치지 않고 강제 종료
-    ... // 실행문
-}`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx2 }
+                                    />
                                     반복문에서 break문은 대체적으로 if문과 함께 사용됩니다.
                                     if문의 조건에 따라 반복문의 종료를 결정합니다. 만약, 중첩된 반복문에서 사용할 경우,
                                     가장 가까운 반복문만 종료하고, 바깥쪽 반복문에게는 영향을 끼치지 않습니다.
-                                    <Highlight language="java">
-{`for (조건식) {
-    ... // 실행문1
-    for (조건식) {
-        ... // 실행문2
-        break; // 안쪽 반복문만 종료
-    }
-    ... // 실행문3 // 바깥쪽 반복문은 정상작동, 실행문3도 실행
-}`}
-                                    </Highlight>
-                                    <Highlight language="java">
-{`public class BreakAndContinue {
-    public static void main(String[] args) {
-        int result = 0;
-        int i = 1;
-
-        while (true) {
-            result += i;
-            if (i == 10) {
-                break;
-            }
-            i += 1;
-        }
-
-        System.out.println(result);
-    }
-}`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx3 }
+                                    />
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx4 }
+                                    />
                                 </Card.Text>
                             </Card.Body>
                         </Card>

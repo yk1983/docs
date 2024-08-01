@@ -1,10 +1,26 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsFeather, BsPinAngle } from 'react-icons/bs';
-import Highlight from 'react-highlight';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
+// Components
+import CodeBlock from 'components/CodeBlock';
 
 const Constructor = () => {
+    const
+        codeEx1 =
+`클래스명() {} // 매개변수가 없는 기본생성자`,
+        codeEx2 =
+`// 선언문법
+클래스명() {...} // 매개변수가 없는 생성자 선언
+클래스명(매개변수1, 매개변수2) {...} // 매개변수가 있는 생성자
+// 선언예시
+Car() {}
+// 매개변수가 존재하는 생성자 (매개변수의 갯수가 다르므로 오버라이딩)
+Car(String modelName) {}
+Car(String modelName, int modelYear) {}
+Car(String modelName, int modelYear, String color) {}
+Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
+
     return(
         <>
             <Helmet>
@@ -69,18 +85,10 @@ const Constructor = () => {
                                     <BsSubtract /> 생성자 선언
                                 </Card.Title>
                                 <Card.Text>
-                                    <Highlight language="java">
-{`// 선언문법
-클래스명() {...} // 매개변수가 없는 생성자 선언
-클래스명(매개변수1, 매개변수2) {...} // 매개변수가 있는 생성자
-// 선언예시
-Car() {}
-// 매개변수가 존재하는 생성자 (매개변수의 갯수가 다르므로 오버라이딩)
-Car(String modelName) {}
-Car(String modelName, int modelYear) {}
-Car(String modelName, int modelYear, String color) {}
-Car(String modelName, int modelYear, String color, int maxSpeeds) {}`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx2 }
+                                    />
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -102,9 +110,10 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`}
                                     자바 컴파일러는 컴파일 시 클래스에 생성자가 하나도 정의되어 있지 않으면,
                                     자동으로 다음과 같은 기본 생성자를 추가합니다. (기본 생성자는 어떠한 매개변수도
                                     전달받지 않으며, 기본적으로 아무런 동작도 하지 않습니다.)
-                                    <Highlight language="java">
-{`클래스명() {} // 매개변수가 없는 기본생성자`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx1 }
+                                    />
                                     하지만 만약 매개변수를 가지는 생성자를 하나라도 정의했다면, 기본 생성자는 자동으로
                                     추가되지 않습니다.
                                 </Card.Text>

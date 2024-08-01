@@ -1,10 +1,18 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsFeather, BsPinAngle } from 'react-icons/bs';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract, BsFeather } from 'react-icons/bs';
 import Highlight from 'react-highlight';
 import PageTitle from 'layouts/PageTitle';
 
 const Classes = () => {
+    const
+        codeEx1 =
+``,
+        codeEx2 =
+``,
+        codeEx3 =
+``;
+
     return(
         <>
             <Helmet>

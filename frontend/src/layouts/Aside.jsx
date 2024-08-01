@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
     BsGrid,
-    BsFiletypeCss,
     BsFiletypeJava,
     BsFiletypeJsx,
     BsFiletypeJs,
@@ -9,7 +8,8 @@ import {
     BsListColumnsReverse,
     BsQuestionCircle,
     BsEnvelope,
-    BsBoxes, BsBox,
+    BsBoxes,
+    BsBox,
     BsCircle
 } from 'react-icons/bs';
 
@@ -75,6 +75,71 @@ const Aside = () => {
                             <span>소개(Introduction)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
+
+                    <li className="nav-heading">jQuery</li>
+
+                    <li className="nav-heading">리액트(React)</li>
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/react/intro">
+                            <BsFiletypeJsx
+                                className="icon"
+                            />
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End React Introduction Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
+                            <BsDownload
+                                className="icon"
+                            />
+                            <span>Getting Started</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/react/getstarted">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>Create App</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/adding-typescript">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>Adding TypeScript</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/adding-bootstrap">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>Adding Bootstrap</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/adding-router">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>Adding Router</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End React Getting Started Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/react/component">
+                            <BsBox
+                                className="icon"
+                            />
+                            <span>컴포넌트(Component)</span>
+                        </Link>
+                    </li>{/* End React Component Page Nav */}
 
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
@@ -226,59 +291,25 @@ const Aside = () => {
                         </ul>
                     </li>{/* End Java OOP Nav */}
 
-                    <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/react/intro">
-                            <BsFiletypeJsx
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-inheritance" data-bs-toggle="collapse" to="#">
+                            <BsBoxes
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
-                        </Link>
-                    </li>{/* End React Introduction Page Nav */}
-
-                    <li className="nav-item">
-                        <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
-                            <BsDownload
-                                className="icon"
-                            />
-                            <span>Getting Started</span>
+                            <span>상속(Inheritance)</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
-                        <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <ul id="learn-java-inheritance" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
-                                <Link to="/react/getstarted">
+                                <Link to="/java/inheritance">
                                     <BsCircle
                                         className="icon"
                                     />
-                                    <span>Create App</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/react/adding-typescript">
-                                    <BsCircle
-                                        className="icon"
-                                    />
-                                    <span>Adding TypeScript</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/react/adding-bootstrap">
-                                    <BsCircle
-                                        className="icon"
-                                    />
-                                    <span>Adding Bootstrap</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/react/adding-router">
-                                    <BsCircle
-                                        className="icon"
-                                    />
-                                    <span>Adding Router</span>
+                                    <span>상속(Inheritance)</span>
                                 </Link>
                             </li>
                         </ul>
-                    </li>{/* End React Getting Started Page Nav */}
+                    </li>{/* End Java OOP Nav */}
 
                     <li className="nav-heading">SQL</li>
 

@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Table } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
-
 import PageTitle from 'layouts/PageTitle';
 
 const BooleanType = () => {

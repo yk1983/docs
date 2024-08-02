@@ -1,0 +1,32 @@
+[
+    {
+        "image" : "/flow/sequence-flow.jpg",
+        "title" : "Sequence Flow",
+        "name" : "Sequence Flow",
+        "description" : "프로세스의 흐름을 나타냅니다. Activity를 비롯한 Element들을 이어줍니다. 하지만 나중에 나올 Swimlane을 벗어나지 못한다는 제약사항이 있다. 실선에 색칠된 삼각형으로 표기합니다. 분기처리된 프로세스의 기본 흐름을 표시하기 위해서는 선 끝에 \\ 를 그어 표기합니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/flow/default-flow.jpg",
+        "title" : "Default Flow",
+        "name" : "Default Flow"
+    },
+    {
+        "image" : "/flow/message-flow.jpg",
+        "title" : "Message Flow",
+        "name" : "Message Flow",
+        "description" : "Swimlane간에 전달하는 메시지를 의미합니다. 메시지라함은 말(Speak), 시스템 등록같은 다른 사람이나 시스템에 지시와 요청을 전달하는 것을 포괄적으로 나타냅니다. 점선에 빈 삼각형 화살표로 표기합니다."
+    },
+    {
+        "image" : "/flow/association.jpg",
+        "title" : "Association",
+        "name" : "Association",
+        "description" : "액티비티와 관련된 산출물을 연결할때 사용합니다. 산출물은 말(Speak), 제품, 데이터등 포괄적인 의미를 갖고 있습니다. 작은 점선으로 표기합니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/flow/directed-association.jpg",
+        "title" : "Directed Association",
+        "name" : "Directed Association"
+    }
+]

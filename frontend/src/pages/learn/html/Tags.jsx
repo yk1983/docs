@@ -27,7 +27,6 @@ const TagList = () => {
                                 <Card.Title>
                                     <BsSubtract /> HTML Element Reference
                                 </Card.Title>
-                                {/* tables */}
                                 <Table striped bordered hover size="sm">
                                     <thead>
                                         <tr>

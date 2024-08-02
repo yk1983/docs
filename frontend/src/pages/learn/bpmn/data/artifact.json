@@ -1,0 +1,14 @@
+[
+    {
+        "image" : "/object/group.jpg",
+        "title" : "Group Object",
+        "name" : "Group Object\n(그룹 기호)",
+        "description" : "일련의 모델 요소의 그룹에 어떤 특별한 의미를 부여하기 위해 사용되는 시각적인 표현입니다. 그룹은 모서리가 둥근 사각형 점선으로 표현됩니다."
+    },
+    {
+        "image" : "/object/data-store.jpg",
+        "title" : "Annotation Object",
+        "name" : "Annotation Object\n(주석 기호)",
+        "description" : "주석은 텍스트로 표현된 설명입니다. 주석은 모델 요소에 부착되며, 이때 주석과 모델 요소를 연결하는 커넥터를 연관(association:점선)으로 표현합니다."
+    }
+]

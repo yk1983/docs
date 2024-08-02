@@ -1,0 +1,20 @@
+[
+    {
+        "image" : "/activity/bpmn-task-loop.jpg",
+        "title" : "Activity Task Loop",
+        "name" : "Loop",
+        "description" : ""
+    },
+    {
+        "image" : "/activity/bpmn-task-compensation.jpg",
+        "title" : "Activity Task Multi-Instance",
+        "name" : "Multi-Instance",
+        "description" : ""
+    },
+    {
+        "image" : "/activity/bpmn-task-multi-instance.jpg",
+        "title" : "Activity Task Compensation",
+        "name" : "Compensation",
+        "description" : ""
+    }
+]

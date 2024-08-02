@@ -1,0 +1,86 @@
+[
+    {
+        "image" : "/events/intermedidate-event-none.jpg",
+        "title" : "Non Intermedidate Event",
+        "name" : "None\n(중간 이벤트 기호)",
+        "description" : "시작 이벤트와 종료 이벤트 사이에 발생하는 모든 이벤트를 나타냅니다.\n일반적인 흐름위에서만 의미가 있습니다. (Activity의 경계에 놓을 수 없음) 이벤트가 발생하는 특정한 트리거가 없으며, 프로세스에서 상태 변경을 나타내기 위해 이벤트를 사용하는 모델링 방법론에 사용합니다."
+    },
+    {
+        "image" : "/events/intermedidate-event-message-throw.jpg",
+        "title" : "Throw-Message Intermedidate Event",
+        "name" : "Message\n(Throw 메세지 기호)",
+        "description" : "메시지는 보내거나 받는데 사용합니다.\n받는 메시지 이벤트는 메시지를 기다리는 중 일때 프로세스를 계속하게 하거나 예외 처리를 위한 플로우로 변경합니다. 메시지를 수신한 참여자는 메시지 플로우로 식별합니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/events/intermedidate-event-message-catch.jpg",
+        "title" : "Catch-Message Intermedidate Event",
+        "name" : "Message\n(Catch 메세지 기호)"
+    },
+    {
+        "image" : "/events/intermedidate-event-timer-catch.jpg",
+        "title" : "Timer Intermedidate Event",
+        "name" : "Timer\n(Catch 타이머 기호)",
+        "description" : "일반 플로우에서는 지정한 시간이나 특정 사이클에 맞게 지연을 시킵니다."
+    },
+    {
+        "image" : "/events/intermedidate-event-escalation-throw.jpg",
+        "title" : "Escalation Intermedidate Event",
+        "name" : "Escalation\n(Throw 단계적 확대 기호)",
+        "description" : "Escalation 을 발생시킵니다."
+    },
+    {
+        "image" : "/events/intermedidate-event-compensation-throw.jpg",
+        "title" : "Throw-Compensation Intermedidate Event",
+        "name" : "Compensation\n(Throw 보상 기호)",
+        "description" : "Compensation이 필수임을 표시합니다.\n활동이 식별되고 성공적으로 완료되면 해당 활동이 보상됩니다. 보상 종료 이벤트에서 활동을 볼 수 있어야 합니다. 즉, Compensation End Event가 일반적인 흐름 안에 있고 서브 프로세스와 동일한 레벨에 있어야 합니다."
+    },
+    {
+        "image" : "/events/intermedidate-event-conditional-catch.jpg",
+        "title" : "Catch-Conditional Intermedidate Event",
+        "name" : "Conditional\n(조건부 기호)",
+        "description" : "조건이 <code>TRUE</code>가되면 트리거됩니다. 조건은 식 유형입니다."
+    },
+    {
+        "image" : "/events/intermedidate-event-link-throw.jpg",
+        "title" : "Throw-Link Intermedidate Event",
+        "name" : "Link\n(Throw 링크 기호)",
+        "description" : "일반적인 흐름에서만 사용가능, 즉 활동의 경계에 사용될 수 없습니다.\n링크는 프로세스의 두 섹션을 연결하는 메커니즘이며, 연결 이벤트를 사용하여 루핑 상황을 만들거나 긴 시퀀스 흐름 라인을 피할 수 있습니다.\n링크 이벤트 사용은 단일 프로세스 수준으로 제한됩니다. (즉, 상위 프로세스와 하위 프로세스를 연결할 수 없음). 짝을 이루는 중간 이벤트는 여러 페이지에 걸쳐 프로세스를 인쇄하기 위해 \"오프 페이지 커넥터\"로 사용될 수도 있으며, 또한 프로세스 수준 내에서 일반 \"이동\"개체로 사용할 수도 있습니다. 소스 링크 이벤트는 여러개 있을 수 있지만 대상 링크 이벤트는 하나만 있을 수 있습니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/events/intermedidate-event-link-catch.jpg",
+        "title" : "Catch-Link Intermedidate Event",
+        "name" : "Link\n(Catch 링크 기호)"
+    },
+    {
+        "image" : "/events/intermedidate-event-signal-throw.jpg",
+        "title" : "Throw-Signal Intermedidate Event",
+        "name" : "Signal\n(Throw 신호 기호)",
+        "description" : "신호를 보내거나받는 데 사용합니다.\n신호는 프로세스 수준 내, 프로세스 수준, 풀 및 비즈니스 프로세스 다이어그램 간의 일반적인 통신을 위함입니다.\nBPMN 신호는 관심을 보인 후 반응을 원하는 사람을 위해 허공으로 발사되는 신호 플레어와 유사합니다. 따라서 신호 원이 있지만 특정 목표는 없습니다.\n이 유형의 중간 이벤트는 이벤트가 정상 흐름의 일부인 경우 신호를 보내거나 받을 수 있습니다. 이벤트는 활동의 경계에 연결된 경우에만 신호를 수신 할 수 있고 에러 이벤트보다 더 일반적이고 엑티비티를 인터럽트 할 수 있는 에러 조건이 없고 에러 이벤트보다 더 큰 영역을 가집니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/events/intermedidate-event-signal-catch.jpg",
+        "title" : "Catch-Signal Intermedidate Event",
+        "name" : "Signal\n(Catch 신호 기호)"
+    },
+    {
+        "image" : "/events/intermedidate-event-multiple-throw.jpg",
+        "title" : "Throw-Multiple Intermedidate Event",
+        "name" : "Multiple\n(Throw 복수 기호)",
+        "description" : "다수의 트리거들이 이 이벤트에 할당되어 있다는 의미입니다.\n일반 플로우에서는 트래거를 잡거나 보낼수 있고, 엑티비티 경계에 있으면 트리거를 잡을 수만 있습니다. 트리거를 잡기 위해 사용할 떄는 한개 트리거만 할당할 수 있습니다. 트리거를 던지기 위해 쓸때는 할당된 트리거중에 하나만 트리거 되도 이벤트를 발생시킵니다.",
+        "rowspan" : 2
+    },
+    {
+        "image" : "/events/intermedidate-event-multiple-catch.jpg",
+        "title" : "Catch-Multiple Intermedidate Event",
+        "name" : "Multiple\n(Catch 복수 기호)"
+    },
+    {
+        "image" : "/events/intermedidate-event-parallel-multiple-catch.jpg",
+        "title" : "Parallel Multiple Intermedidate Event",
+        "name" : "Parallel Multiple\n(Catch 병렬 복수 기호)",
+        "description" : "다수의 트리거가 이벤트에 할당되어 있습니다. 일반 플로우나 엑티비티 경계있을 때 트리거를 잡을 수 있습니다. 할당된 모든 트리거가 도달해야 이벤트가 발생됩니다."
+    }
+]

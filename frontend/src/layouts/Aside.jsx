@@ -315,6 +315,84 @@ const Aside = () => {
 
                     <li className="nav-heading">Spring</li>
 
+                    <li className="nav-heading">BPMN</li>
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/bpmn/intro">
+                            <BsFiletypeJava
+                                className="icon"
+                            />
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End BPMN Introduction Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-bpmn-nav" data-bs-toggle="collapse" to="#">
+                            <BsListColumnsReverse
+                                className="icon"
+                            />
+                            <span>BPMN 요소</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-bpmn-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/bpmn/event">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>이벤트(Event)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/activitie">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>활동(Activities)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/geteway">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>게이트웨이(Geteways)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/data-object">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>데이터 객체(Data Objects)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/flow">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>흐름(Flow)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/artifact">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>아티팩트(Artifact)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/bpmn/swimlane">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>스윔레인(Swimlane)</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End HTML References Nav */}
+
                     <li className="nav-heading">Pages</li>
 
                     <li className="nav-item">

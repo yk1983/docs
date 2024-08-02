@@ -1,0 +1,56 @@
+[
+    {
+        "image" : "/activity/bpmn-task-none.jpg",
+        "title" : "Activity Task",
+        "name" : "None",
+        "description" : "활동의 가장 기본적인 수준으로서, 이보다 더 세분화할 수는 없습니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-transaction.jpg",
+        "title" : "Activity Transaction",
+        "name" : "Transaction",
+        "description" : "결제와 관련된 특수 하위 프로세스입니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-service.jpg",
+        "title" : "Activity Service",
+        "name" : "Service",
+        "description" : "서비스에 일종이고 웹 서비스나 자동화된 애플리케이션일 수 있습니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-send.jpg",
+        "title" : "Activity Send",
+        "name" : "Send",
+        "description" : "Message를 외부 참여자에게 보내기 위한 Task입니다. 메시지를 전송하면 해당 Task는 종료됩니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-receive.jpg",
+        "title" : "Activity Receive",
+        "name" : "Receive",
+        "description" : "외부 참여자가 보내는 Message를 수신하기 위해 기다리는 Task입니다. 메시지를 수신하면 Task는 종료됩니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-user.jpg",
+        "title" : "Activity User",
+        "name" : "User",
+        "description" : "사람이 소프트웨어 애플리케이션을 통해 수행하는 일반적인 작업을 표현하기 위한 Task입니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-manual.jpg",
+        "title" : "Activity Manual",
+        "name" : "Manual",
+        "description" : "소프트웨어 애플리케이션을 사용하지 않고 사람이 직접 수행하는 Task입니다. 설비 설치 등을 예를 들 수 있습니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-business-rule.jpg",
+        "title" : "Activity Business Rule",
+        "name" : "Business Rule",
+        "description" : "비스니스 규칙 엔진에 입력값을 넣고, 결과를 얻는 Task입니다."
+    },
+    {
+        "image" : "/activity/bpmn-task-script.jpg",
+        "title" : "Activity Script",
+        "name" : "Script",
+        "description" : "비즈니스 프로세스 엔진에 의해서 실행되는 Task입니다. 모델러나 개발자가 스크립트를 작성하여 넣으면 엔진에 의해서 스크립트가 실행되며, 스크립트가 다 실행되면 Task는 종료됩니다."
+    }
+]

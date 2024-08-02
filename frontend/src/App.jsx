@@ -28,6 +28,15 @@ import ReactTypeScript from 'pages/learn/react/AddTypeScript';
 import ReactBootstrap from 'pages/learn/react/AddBootstrap';
 import ReactRouter from 'pages/learn/react/AddRouter';
 import ReactComponent from 'pages/learn/react/Component';
+// BPMN
+import BpmnIntro from 'pages/learn/bpmn/Intro';
+import BpmnEvent from 'pages/learn/bpmn/Events';
+import BpmnActivitie from 'pages/learn/bpmn/Activities';
+import BpmnGateway from 'pages/learn/bpmn/Gateways';
+import BpmnDataObject from 'pages/learn/bpmn/DataObjects';
+import BpmnFlow from 'pages/learn/bpmn/Flow';
+import BpmnArtifact from 'pages/learn/bpmn/Artifact';
+import BpmnSwimlane from 'pages/learn/bpmn/Swimlane';
 // pages
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
@@ -64,6 +73,14 @@ const App = () => {
                     <Route path="/react/adding-bootstrap" element={<ReactBootstrap />} />
                     <Route path="/react/adding-router" element={<ReactRouter />} />
                     <Route path="/react/component" element={<ReactComponent />} />
+                    <Route path="/bpmn/intro" element={<BpmnIntro />} />
+                    <Route path="/bpmn/event" element={<BpmnEvent />} />
+                    <Route path="/bpmn/activitie" element={<BpmnActivitie />} />
+                    <Route path="/bpmn/geteway" element={<BpmnGateway />} />
+                    <Route path="/bpmn/data-object" element={<BpmnDataObject />} />
+                    <Route path="/bpmn/flow" element={<BpmnFlow />} />
+                    <Route path="/bpmn/artifact" element={<BpmnArtifact />} />
+                    <Route path="/bpmn/swimlane" element={<BpmnSwimlane />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
                 </Routes>

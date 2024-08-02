@@ -1,0 +1,26 @@
+[
+    {
+        "image" : "/object/data-object.jpg",
+        "title" : "Data Object",
+        "name" : "Data Object\n(데이터 객체 기호)",
+        "description" : "프로세스 흐름 안에서 처리되는 일반적인 데이터 항목을 표시합니다.\n프로세스 흐름을 실행하는 동안 변경되는 데이터 객체의 상태는 ([])안에 표기합니다."
+    },
+    {
+        "image" : "/object/data-object-input.jpg",
+        "title" : "Input Data Object",
+        "name" : "Data Input\n(데이터 입력 기호)",
+        "description" : "비즈니스 프로세스의 작업이 종속된 데이터 요구 사항을 나타냅니다."
+    },
+    {
+        "image" : "/object/data-object-output.jpg",
+        "title" : "Output Data Object",
+        "name" : "Data Output\n(데이터 출력 기호)",
+        "description" : "비즈니스 프로세스의 결과로 생산된 정보를 나타냅니다."
+    },
+    {
+        "image" : "/object/data-object-collection.jpg",
+        "title" : "Data Collection Object",
+        "name" : "Data Collection\n(데이터 수집 기호)",
+        "description" : "비즈니스 프로세스 내에서 수집된 정보를 나타냅니다."
+    }
+]

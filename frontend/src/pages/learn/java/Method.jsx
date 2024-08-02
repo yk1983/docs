@@ -2,12 +2,21 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Alert, Button } from 'react-bootstrap';
 import { BsSubtract, BsFeather, BsPinAngle, BsBoxArrowUpRight } from 'react-icons/bs';
-import Highlight from 'react-highlight';
 import PageTitle from 'layouts/PageTitle';
+// Components
 import BsModalEx1 from 'components/modal/BsModalEx1';
 import BsModalEx2 from 'components/modal/BsModalEx2';
+import CodeBlock from 'components/CodeBlock';
 
 const Method = () => {
+    const
+        codeEx =
+`접근제어자 리턴타입 메서드명(매개변수1, 매개변수2, ...) { // 선언부
+    // 구현부
+    ...
+    return 반환값;
+}`;
+
     const [modalShow1, setModalShow1] = useState(false);
     // const handleClose1 = () => setModalShow1(false);
     const handleShow1 = () => setModalShow1(true);
@@ -66,13 +75,10 @@ const Method = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 메서드를 정의하는 방법은 다음과 같습니다.
-                                    <Highlight language="java">
-{`접근제어자 리턴타입 메서드명(매개변수1, 매개변수2, ...) { // 선언부
-    // 구현부
-    ...
-    return 반환값;
-}`}
-                                    </Highlight>
+                                    <CodeBlock
+                                        language="java"
+                                        codestring={ codeEx }
+                                    />
                                     <dl>
                                         <dt><BsFeather /> 접근제어자</dt>
                                         <dd>
@@ -85,8 +91,6 @@ const Method = () => {
                                             외부에서 메서드를 호출하면 메서드는 외부에서 값을 입력받아 매개변수에 저장하고
                                             구현부에서 실행하여 리턴값을 다시 돌려주는 역할을 합니다.
                                             (즉, 반환타입은 메서드를 실행한 후의 결과값 타입입니다.)
-                                            <br />
-
                                         </dd>
                                         <dt><BsFeather /> 메서드명</dt>
                                         <dd>

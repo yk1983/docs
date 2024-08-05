@@ -3,8 +3,8 @@ import { Row, Col, Card, Table, Image } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data1 from './data/taskType';
-import data2 from './data/taskMaker';
+import data1 from 'data/bpmn/taskType';
+import data2 from 'data/bpmn/taskMaker';
 
 const Activities = () => {
     return(

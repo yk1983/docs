@@ -13,7 +13,49 @@ import {
     BsCircle
 } from 'react-icons/bs';
 
-const Aside = () => {
+const LiCreator = (text, link, liChildren) => {
+    return (
+        <li>
+            <a href={ link }>
+                { text }
+            </a>
+            { liChildren }
+        </li>
+    );
+};
+
+const UlTreeBuilder = ({ arrObjs, recLink }) => {
+
+    let MenuItems = [];
+
+    // this component will simply create a ul element with children
+    const UlParent = ({ UlChildren }) => {
+        return (<ul>{ UlChildren }</ul>);
+    };
+
+    for (let i = 0; i < arrObjs.length; i++) {
+        // if the item has children
+        if (arrObjs[i].children) {
+            //we then create a ul with children, by self invoking UlTreeBuilder
+            let ulWithChildren = <UlTreeBuilder arrObjs={ arrObjs[i].children } recLink={ arrObjs[i].link } />;
+            // then we add this created ul into a new li
+            let liSingle = LiCreator(arrObjs[i].text, recLink+arrObjs[i].link, ulWithChildren);
+            // then we put this li into ul, and push ul into the MenuItems array of the current recursion level
+            MenuItems.push(<UlParent UlChildren={ liSingle } />);
+        }
+        // if the item has no children
+        else {
+            // we simply create a li with no children
+            let liSingle = LiCreator(arrObjs[i].text, arrObjs[i].link);
+            // then we put this li into ul, and push ul into the MenuItems array of the current recursion level
+            MenuItems.push(<UlParent UlChildren={ liSingle } />);
+        }
+    }
+
+    return(MenuItems);
+};
+
+const Aside = ({ arrObjs, recLink }) => {
     return(
         <>
             <aside id="sidebar" className="sidebar">
@@ -416,6 +458,6 @@ const Aside = () => {
             </aside>{/* End Sidebar*/}
         </>
     );
-}
+};
 
 export default Aside;

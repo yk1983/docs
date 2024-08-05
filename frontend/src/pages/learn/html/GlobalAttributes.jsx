@@ -3,7 +3,7 @@ import { Row, Col, Card, Table } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data from './data/globalAttributes'
+import data from 'data/html/globalAttributes'
 
 const GlobalAttributes = () => {
     return(

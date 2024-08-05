@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // Components
-import CodeBlock from 'components/CodeBlock';
+import CodeBlock from 'components/CodeBlock'; // SyntaxHighlighter
 
 const Component = () => {
     // 코드하이라이트 문자열 정의

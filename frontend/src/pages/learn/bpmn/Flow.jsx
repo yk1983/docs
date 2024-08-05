@@ -3,7 +3,7 @@ import { Row, Col, Card, Table, Image } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data from './data/flow';
+import data from 'data/bpmn/flow';
 
 const Flow = () => {
     return(

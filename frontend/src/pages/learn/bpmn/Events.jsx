@@ -3,9 +3,9 @@ import { Row, Col, Card, Table, Image } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data1 from './data/startEvent';
-import data2 from './data/endEvent';
-import data3 from './data/intermedidateEvent';
+import data1 from 'data/bpmn/startEvent';
+import data2 from 'data/bpmn/endEvent';
+import data3 from 'data/bpmn/intermedidateEvent';
 
 const Events = () => {
     return(

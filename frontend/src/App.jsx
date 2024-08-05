@@ -76,7 +76,7 @@ const App = () => {
                     <Route path="/bpmn/intro" element={<BpmnIntro />} />
                     <Route path="/bpmn/event" element={<BpmnEvent />} />
                     <Route path="/bpmn/activitie" element={<BpmnActivitie />} />
-                    <Route path="/bpmn/geteway" element={<BpmnGateway />} />
+                    <Route path="/bpmn/gateway" element={<BpmnGateway />} />
                     <Route path="/bpmn/data-object" element={<BpmnDataObject />} />
                     <Route path="/bpmn/flow" element={<BpmnFlow />} />
                     <Route path="/bpmn/artifact" element={<BpmnArtifact />} />

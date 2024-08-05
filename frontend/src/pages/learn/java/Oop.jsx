@@ -3,7 +3,7 @@ import { Row, Col, Card, Alert } from 'react-bootstrap';
 import { BsSubtract, BsFeather, BsPinAngle } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // Components
-import Span from 'components/Span';
+import { Sup, Span, Code } from 'components/elements/Elements';
 import CodeBlock from 'components/CodeBlock';
 
 const Oop = () => {
@@ -32,14 +32,14 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 절차지향프로그래밍<sup>Procedural Programming</sup>
+                                    <BsSubtract /> 절차지향프로그래밍 <Sup text="Procedural Programming" />
                                 </Card.Title>
                                 <Card.Text>
                                     Procedural Programming에서 Procedural를 "절차적"으로 번역해버려서 마치 절차적으로 실행하는 것이 중점이 되는 것처럼 보이게 되는데,
                                     실제로 프로그래밍은 왼쪽에서 오른쪽 위에서 아래로 절차적이지 않은 프로그래밍이란 존재하지 않습니다.
                                     (실제로는 Procedural는 "절차"라는 의미가 아닌 프로시저의 의미입니다.)
                                     <br />
-                                    따라서 절차적 프로그래밍이란 단순히 순차적인 명령 수행이 아니라 <Span contents="루틴, 서브루틴, 메서드, 함수 등(이를 통틀어 프로시저라고 합니다.)" />을
+                                    따라서 절차적 프로그래밍이란 단순히 순차적인 명령 수행이 아니라 <Span text="루틴, 서브루틴, 메서드, 함수 등(이를 통틀어 프로시저라고 합니다.)" />을
                                     이용한 프로그래밍 패러다임을 뜻합니다. (명령형 프로그래밍의 일종입니다.)
                                     <br />
                                     이 패러다임에서는 프로시저 콜, 즉 함수 호출을 통해서 추상화와 재사용성을 얻어내는 것이 본질이기 때문입니다.
@@ -71,10 +71,10 @@ const Oop = () => {
                                     <BsSubtract /> 객체지향프로그래밍<sup>object-oriented programming</sup>
                                 </Card.Title>
                                 <Card.Text>
-                                    프로그램을 단순히 데이터와 처리 방법으로 나누는 것이 아니라, 프로그램을 수많은 <Span contents="객체(object)" />
+                                    프로그램을 단순히 데이터와 처리 방법으로 나누는 것이 아니라, 프로그램을 수많은 <Span text="객체(object)" />
                                     라는 기본 단위로 나누고 이들의 상호 작용으로 서술하는 방식입니다.
                                     <br />
-                                    객체란 <Span contents="메서드, 변수" />를 가지며, 특정 역할을 수행하도록 정의한, 추상적인 개념입니다.
+                                    객체란 <Span text="메서드, 변수" />를 가지며, 특정 역할을 수행하도록 정의한, 추상적인 개념입니다.
                                     <br />
                                     객체 지향 프로그래밍(<abbr title="Object-Oriented Programming">OOP</abbr>)은
                                     현실 세계의 사물을 객체로 추상화하여 프로그램에 적용하는 프로그램을 객체들의 집합으로
@@ -94,8 +94,8 @@ const Oop = () => {
                                     객체를 정의하면, 넓은 의미로 객체는 실세계에 존재하거나 생각할 수 있는 것을 뜻합니다.
                                     <br />
                                     <br />
-                                    컴퓨터 공학에서의 객체는 <Span contents="변수, 자료 구조, 함수, 메서드, 식별자에 의해 참조된 메모리상의 값" />등을
-                                    의미하고, 객체 지향 프로그래밍에서의 객체는 <Span contents="변수, 함수, 자료 구조의 조합이 될 수 있는데, 특히 객체지향 프로그래밍에서 클래스를 기반으로 한 변수를 클래스의 인스턴스" />라고 정의합니다.
+                                    컴퓨터 공학에서의 객체는 <Span text="변수, 자료 구조, 함수, 메서드, 식별자에 의해 참조된 메모리상의 값" />등을
+                                    의미하고, 객체 지향 프로그래밍에서의 객체는 <Span text="변수, 함수, 자료 구조의 조합이 될 수 있는데, 특히 객체지향 프로그래밍에서 클래스를 기반으로 한 변수를 클래스의 인스턴스" />라고 정의합니다.
                                     <br />
                                     <br />
                                     자바 언어 설명서 (The java Language Specification)에서는 객체란 클래스의 인스턴스나 배열을 말한다고 정의되어 있습니다.
@@ -118,7 +118,7 @@ const Oop = () => {
                                     또한 프로그램의 세부 구현을 외부로 드러나지 않도록 특정 모듈 내부로 감추는 역활도 합니다.
                                     내부의 구현은 감추고 모듈 내에서 응집도를 높이며, 외부로의 노출을 최소화하여 모듈 간의 결합도를 떨어뜨려 유연함과 유지 보수성을 높입니다.
                                     <br />
-                                    일반적으로 <Span contents="public, protected, private" />의 접근 제한이 사용됩니다.
+                                    일반적으로 <Span text="public, protected, private" />의 접근 제한이 사용됩니다.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -132,7 +132,7 @@ const Oop = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     상속은 자식 클래스가 부모 클래스의 특성과 기능을 그대로 물려받는 것을 말합니다.
-                                    기능의 일부분을 변경해야 하는 경우 자식 클래스에서 상속받은 그 기능만을 수정해서 다시 정의하는 <Span contents="오버라이딩(overriding)" />을 합니다.
+                                    기능의 일부분을 변경해야 하는 경우 자식 클래스에서 상속받은 그 기능만을 수정해서 다시 정의하는 <Span text="오버라이딩(overriding)" />을 합니다.
                                     <br />
                                     상속은 캡슐화를 유지하면서 클래스의 재사용이 용이하도록 해줍니다.
                                 </Card.Text>
@@ -201,8 +201,8 @@ const Oop = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 클래스를 사용하기 위해서는 우선 해당 클래스 타입과 객체를 선언해야 합니다.
-                                    클래스로부터 객체를 선언하는 과정을 클래스의 <Span contents="인스턴스화" />라고하며,
-                                    이렇게 선언된 해당 클래스 타입의 객체를 <Span contents="인스턴스(instance)" />라고합니다.
+                                    클래스로부터 객체를 선언하는 과정을 클래스의 <Span text="인스턴스화" />라고하며,
+                                    이렇게 선언된 해당 클래스 타입의 객체를 <Span text="인스턴스(instance)" />라고합니다.
                                     (즉, 인스턴스는 메모리에 할당된 객체를 의미합니다.)
                                     <br />
                                     자바에서는 하나의 클래스로부터 여러개의 인스턴스를 생성할 수 있습니다.
@@ -219,8 +219,8 @@ const Oop = () => {
                             <p>
                                 객체 지향 프로그래밍에서의 객체와 인스턴스의 차이점은 객체는 선언, 인스턴스는 실체화를 의미합니다.
                                 <br />
-                                예를 들어, <code>Animal cat = new Animal();</code>는 <Span contents="cat" />은 객체로
-                                선언되고 <Span contents="new Animal();" />로 클래스를 생성하므로 Animal의 인스턴스라고 표현하는 것이 바람직합니다.
+                                예를 들어, <Code text="Animal cat = new Animal();" />는 <Code text="cat" />은 객체로
+                                선언되고 <Code text="new Animal();" />로 클래스를 생성하므로 Animal의 인스턴스라고 표현하는 것이 바람직합니다.
                             </p>
                         </Alert>
                     </Col>

@@ -6,6 +6,8 @@ import Header from 'layouts/Header';
 import Aside from 'layouts/Aside';
 import Footer from 'layouts/Footer';
 import App from 'App';
+// JsonData
+import Menu from 'data/layouts/menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +15,7 @@ root.render(
         <HelmetProvider>
             <BrowserRouter>
                 <Header />
-                <Aside />
+                <Aside arrObjs={ Menu } recLink={ '' } />
                 <App />
                 <Footer />
             </BrowserRouter>

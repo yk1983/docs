@@ -3,7 +3,7 @@ import { Row, Col, Card, Table, Image } from 'react-bootstrap';
 import { BsSubtract, BsFeather } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data from './data/artifact';
+import data from 'data/bpmn/artifact';
 
 const Artifact = () => {
     return(

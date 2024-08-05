@@ -3,8 +3,8 @@ import { Row, Col, Card, Table, Image } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // JsonData
-import data1 from './data/dataObjectType';
-import data2 from './data/dataStore';
+import data1 from 'data/bpmn/dataObjectType';
+import data2 from 'data/bpmn/dataStore';
 
 const DataObjects = () => {
     return(

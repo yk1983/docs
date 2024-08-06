@@ -17,9 +17,11 @@ import JavaControlFlow from 'pages/learn/java/ControlFlow';
 import JavaOop from 'pages/learn/java/Oop';
 import JavaClass from 'pages/learn/java/Classes';
 import JavaConstructor from 'pages/learn/java/Constructor';
+import JavaConstructorThis from 'pages/learn/java/ConstructorThis';
 import JavaMethod from 'pages/learn/java/Method';
 import JavaOverloading from 'pages/learn/java/Overloading';
 import JavaInheritance from 'pages/learn/java/Inheritance';
+import JavaInheritanceSuper from 'pages/learn/java/InheritanceSuper';
 import JavaOverriding from 'pages/learn/java/Overriding';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
@@ -62,10 +64,12 @@ const App = () => {
                     <Route path="/java/boolean" element={<JavaBoolean />} />
                     <Route path="/java/casting" element={<JavaCasting />} />
                     <Route path="/java/constructor" element={<JavaConstructor />} />
+                    <Route path="/java/constructor-this" element={<JavaConstructorThis />} />
                     <Route path="/java/iteration" element={<JavaIteration />} />
                     <Route path="/java/control-flow" element={<JavaControlFlow />} />
                     <Route path="/java/oop" element={<JavaOop />} />
                     <Route path="/java/inheritance" element={<JavaInheritance />} />
+                    <Route path="/java/inheritance-super" element={<JavaInheritanceSuper />} />
                     <Route path="/java/overriding" element={<JavaOverriding />} />
                     <Route path="/java/classes" element={<JavaClass />} />
                     <Route path="/java/method" element={<JavaMethod />} />

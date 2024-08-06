@@ -323,19 +323,19 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/java/constructor-this">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>this와 this()</span>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="/java/method">
                                     <BsCircle
                                         className="icon"
                                     />
                                     <span>메서드(Method)</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/java/this">
-                                    <BsCircle
-                                        className="icon"
-                                    />
-                                    <span>this와 this()</span>
                                 </Link>
                             </li>
                             <li>
@@ -375,7 +375,7 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/super">
+                                <Link to="/java/inheritance-super">
                                     <BsCircle
                                         className="icon"
                                     />

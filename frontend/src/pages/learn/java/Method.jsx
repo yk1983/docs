@@ -2,21 +2,15 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Alert, Button } from 'react-bootstrap';
 import { BsSubtract, BsFeather, BsPinAngle, BsBoxArrowUpRight } from 'react-icons/bs';
+// layouts
 import PageTitle from 'layouts/PageTitle';
 // Components
+import { Sup, Code } from 'components/elements/Elements';
 import BsModalEx1 from 'components/modal/BsModalEx1';
 import BsModalEx2 from 'components/modal/BsModalEx2';
-import CodeBlock from 'components/CodeBlock';
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Method = () => {
-    const
-        codeEx =
-`접근제어자 리턴타입 메서드명(매개변수1, 매개변수2, ...) { // 선언부
-    // 구현부
-    ...
-    return 반환값;
-}`;
-
     const [modalShow1, setModalShow1] = useState(false);
     // const handleClose1 = () => setModalShow1(false);
     const handleShow1 = () => setModalShow1(true);
@@ -44,7 +38,7 @@ const Method = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 메서드<sup>method</sup>
+                                    <BsSubtract /> 메서드 <Sup text="method" />
                                 </Card.Title>
                                 <Card.Text>
                                     다른 프로그래밍 언어에는 함수가 별도로 존재합니다.
@@ -58,7 +52,7 @@ const Method = () => {
 
                         <Alert variant="success">
                             <Alert.Heading>
-                                <BsPinAngle /> 함수<sup>function</sup>와 메서드<sup>method</sup>
+                                <BsPinAngle /> 함수 <Sup text="function" />와 메서드 <Sup text="method" />
                             </Alert.Heading>
                             <p>
                                 함수와 메서드가 공존하는 언어(예를 들어, 파이썬)에서는 두 개를 구분하여 말합니다.
@@ -75,15 +69,21 @@ const Method = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 메서드를 정의하는 방법은 다음과 같습니다.
-                                    <CodeBlock
+                                    <Highlight
                                         language="java"
-                                        codestring={ codeEx }
+                                        codestring={[
+                                            "접근제어자 리턴타입 메서드명(매개변수1, 매개변수2, ...) { // 선언부",
+                                            "    // 구현부",
+                                            "    ...",
+                                            "    return 반환값;",
+                                            "}"
+                                        ].join('\n')}
                                     />
                                     <dl>
                                         <dt><BsFeather /> 접근제어자</dt>
                                         <dd>
                                             접근제어자는 해당 메서드에 접근할 수 있는 범위를 명시합니다.
-                                            (생략가능하며, 생략시 기본 접근제어자는 <code>default</code>가 됩니다.)
+                                            (생략가능하며, 생략시 기본 접근제어자는 <Code text="default" />가 됩니다.)
                                         </dd>
                                         <dt><BsFeather /> 리턴타입</dt>
                                         <dd>
@@ -117,7 +117,7 @@ const Method = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 제어자<sup>Modifier</sup>
+                                    <BsSubtract /> 제어자 <Sup text="Modifier" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 제어자는 클래스, 필드, 메서드, 생성자 등에 외부로부터의 접근을 제어하는 것을
@@ -135,7 +135,7 @@ const Method = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 접근제어자<sup>Access Modifier</sup>
+                                    <BsSubtract /> 접근제어자 <Sup text="Access Modifier" />
                                 </Card.Title>
                                 <Card.Text>
                                     접근 제어자는 클래스 외부로의 불필요한 데이터 노출을 방지하고, 외부로부터 데이터가
@@ -143,18 +143,18 @@ const Method = () => {
                                     <br />
                                     접근제어자의 종류는 다음과 같습니다.
                                     <ul>
-                                        <li><code>public</code> : 외부 클래스에서 자유롭게 사용할 수 있습니다.</li>
-                                        <li><code>protected</code> : 같은 패키지 또는 자식 클래스에서 사용할 수 있습니다.</li>
-                                        <li><code>private</code> : 외부에서 사용할 수 없습니다. (클래스 내부에서만 사용가능 합니다.)</li>
-                                        <li><code>default</code> : 같은 패키지에 소속된 클래스에서만 사용할 수 있습니다.</li>
+                                        <li><Code text="public" /> : 외부 클래스에서 자유롭게 사용할 수 있습니다.</li>
+                                        <li><Code text="protected" /> : 같은 패키지 또는 자식 클래스에서 사용할 수 있습니다.</li>
+                                        <li><Code text="private" /> : 외부에서 사용할 수 없습니다. (클래스 내부에서만 사용가능 합니다.)</li>
+                                        <li><Code text="default" /> : 같은 패키지에 소속된 클래스에서만 사용할 수 있습니다.</li>
                                     </ul>
-                                    접근 제한 범위에 순으로 나열하면, <code>public > protected > default > private</code> 순입니다.
-                                    접근 제어자를 작성하지 않으면, 자동으로 기본값인 <code>default</code>가 설정됩니다.
+                                    접근 제한 범위에 순으로 나열하면, <Code text="public > protected > default > private" /> 순입니다.
+                                    접근 제어자를 작성하지 않으면, 자동으로 기본값인 <Code text="default" />가 설정됩니다.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Img
                                 variant="bottom"
-                                src={process.env.PUBLIC_URL + '/assets/img/java/access_modifier.png'}
+                                src={ process.env.PUBLIC_URL + '/assets/img/java/access_modifier.png' }
                             />
                             <Card.Footer>
                                 <Button
@@ -180,7 +180,7 @@ const Method = () => {
                             <Card.Body>
                                 <Card.Img
                                     variant="top"
-                                    src={process.env.PUBLIC_URL + '/assets/img/java/access_private.png'}
+                                    src={ process.env.PUBLIC_URL + '/assets/img/java/access_private.png' }
                                 />
                                 <Card.Title>
                                     <BsSubtract /> private 접근 제어자
@@ -203,7 +203,7 @@ const Method = () => {
                             <Card.Body>
                                 <Card.Img
                                     variant="top"
-                                    src={process.env.PUBLIC_URL + '/assets/img/java/access_public.png'}
+                                    src={ process.env.PUBLIC_URL + '/assets/img/java/access_public.png' }
                                 />
                                 <Card.Title>
                                     <BsSubtract /> public 접근 제어자
@@ -225,7 +225,7 @@ const Method = () => {
                             <Card.Body>
                                 <Card.Img
                                     variant="top"
-                                    src={process.env.PUBLIC_URL + '/assets/img/java/access_default.png'}
+                                    src={ process.env.PUBLIC_URL + '/assets/img/java/access_default.png' }
                                 />
                                 <Card.Title>
                                     <BsSubtract /> default 접근 제어자
@@ -248,7 +248,7 @@ const Method = () => {
                             <Card.Body>
                                 <Card.Img
                                     variant="top"
-                                    src={process.env.PUBLIC_URL + '/assets/img/java/access_protected.png'}
+                                    src={ process.env.PUBLIC_URL + '/assets/img/java/access_protected.png' }
                                 />
                                 <Card.Title>
                                     <BsSubtract /> protected 접근 제어자

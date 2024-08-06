@@ -4,15 +4,9 @@ import { BsSubtract, BsFeather, BsPinAngle } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 // Components
 import { Sup, Span, Code } from 'components/elements/Elements';
-import CodeBlock from 'components/CodeBlock';
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Oop = () => {
-    const
-        codeEx1 =
-`접근제어자 반환타입 메소드이름(매개변수목록) { // 선언부
-    // 구현부
-}`;
-
     return(
         <>
             <Helmet>
@@ -68,7 +62,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 객체지향프로그래밍<sup>object-oriented programming</sup>
+                                    <BsSubtract /> 객체지향프로그래밍 <Sup text="object-oriented programming" />
                                 </Card.Title>
                                 <Card.Text>
                                     프로그램을 단순히 데이터와 처리 방법으로 나누는 것이 아니라, 프로그램을 수많은 <Span text="객체(object)" />
@@ -88,7 +82,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 객체<sup>Object</sup>
+                                    <BsSubtract /> 객체 <Sup text="Object" />
                                 </Card.Title>
                                 <Card.Text>
                                     객체를 정의하면, 넓은 의미로 객체는 실세계에 존재하거나 생각할 수 있는 것을 뜻합니다.
@@ -109,7 +103,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 캡슐화<sup>encapsulation</sup>
+                                    <BsSubtract /> 캡슐화 <Sup text="encapsulation" />
                                 </Card.Title>
                                 <Card.Text>
                                     변수와 함수를 하나의 단위로 묶는 것을 의미합니다. 데이터의 번들링(bundling)입니다.
@@ -128,7 +122,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 상속<sup>inheritance</sup>
+                                    <BsSubtract /> 상속 <Sup text="inheritance" />
                                 </Card.Title>
                                 <Card.Text>
                                     상속은 자식 클래스가 부모 클래스의 특성과 기능을 그대로 물려받는 것을 말합니다.
@@ -144,33 +138,31 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 다형성<sup>polymorphism</sup>
+                                    <BsSubtract /> 다형성 <Sup text="polymorphism" />
                                 </Card.Title>
-                                <Card.Text>
-                                    <dl>
-                                        <dt>
-                                            <BsFeather /> 서브타입 다형성(subtype polymorphism / inclusion polymorphism / subtyping)
-                                        </dt>
-                                        <dd>
-                                            기초 클래스 또는 인터페이스를 구현하는 상위 클래스를 생성하고, 해당 클래스를
-                                            상속받는 다수의 하위 클래스들을 만들어 상위 클래스의 포인터나 참조변수 등이
-                                            하위 클래스의 객체를 참조하게 하는 것으로, 각각의 하위 클래스는 상위 클래스의
-                                            메서드 위에 자신이 매소드를 덮어 쓰는 메서드 오버라이딩(method overriding)을
-                                            수행하고, 상위 클래스의 참조 변수가 어떤 하위 클래스의 객체를 참조하느냐에 따라
-                                            호출되는 메서드가 달라지게됩니다.
-                                        </dd>
-                                        <dt>
-                                            <BsFeather /> 매개변수 다형성(parametric polymorphism)
-                                        </dt>
-                                        <dd>
-                                            타입을 매개 변수로 받아 새로운 타입을 되돌려주는 기능입니다.
-                                            타입 매개 변수를 정의한 클래스 혹은 메서드는 사용할 때 매개 변수에 타입을 지정하게 되며, 컴파일시 지정한 타입에 따라서 해석됩니다.
-                                            <br />
-                                            자바에서는 <span className="text-primary">제네릭(generic), 메서드 오버로딩(mehtod overloading),
-                                            묵시적 형변환(implicit polymorphism), 명시적 형변환(explicit polymorphism)</span>이 있습니다.
-                                        </dd>
-                                    </dl>
-                                </Card.Text>
+                                <dl>
+                                    <dt>
+                                        <BsFeather /> 서브타입 다형성(subtype polymorphism / inclusion polymorphism / subtyping)
+                                    </dt>
+                                    <dd>
+                                        기초 클래스 또는 인터페이스를 구현하는 상위 클래스를 생성하고, 해당 클래스를
+                                        상속받는 다수의 하위 클래스들을 만들어 상위 클래스의 포인터나 참조변수 등이
+                                        하위 클래스의 객체를 참조하게 하는 것으로, 각각의 하위 클래스는 상위 클래스의
+                                        메서드 위에 자신이 매소드를 덮어 쓰는 메서드 오버라이딩(method overriding)을
+                                        수행하고, 상위 클래스의 참조 변수가 어떤 하위 클래스의 객체를 참조하느냐에 따라
+                                        호출되는 메서드가 달라지게됩니다.
+                                    </dd>
+                                    <dt>
+                                        <BsFeather /> 매개변수 다형성(parametric polymorphism)
+                                    </dt>
+                                    <dd>
+                                        타입을 매개 변수로 받아 새로운 타입을 되돌려주는 기능입니다.
+                                        타입 매개 변수를 정의한 클래스 혹은 메서드는 사용할 때 매개 변수에 타입을 지정하게 되며, 컴파일시 지정한 타입에 따라서 해석됩니다.
+                                        <br />
+                                        자바에서는 <span className="text-primary">제네릭(generic), 메서드 오버로딩(mehtod overloading),
+                                        묵시적 형변환(implicit polymorphism), 명시적 형변환(explicit polymorphism)</span>이 있습니다.
+                                    </dd>
+                                </dl>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -179,7 +171,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 클래스<sup>Class</sup>
+                                    <BsSubtract /> 클래스 <Sup text="Class" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 클래스는 객체 지향 프로그래밍의 기본적인 개념 중 하나입니다.
@@ -197,7 +189,7 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 인스턴스<sup>Instance</sup>
+                                    <BsSubtract /> 인스턴스 <Sup text="Instance" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 클래스를 사용하기 위해서는 우선 해당 클래스 타입과 객체를 선언해야 합니다.
@@ -214,7 +206,7 @@ const Oop = () => {
 
                         <Alert variant="success">
                             <Alert.Heading>
-                                <BsPinAngle /> 객체<sup>object</sup>와 인스턴스<sup>instance</sup>
+                                <BsPinAngle /> 객체 <Sup text="object" />와 인스턴스 <Sup text="instance" />
                             </Alert.Heading>
                             <p>
                                 객체 지향 프로그래밍에서의 객체와 인스턴스의 차이점은 객체는 선언, 인스턴스는 실체화를 의미합니다.
@@ -229,22 +221,28 @@ const Oop = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 메서드<sup>Method</sup>
+                                    <BsSubtract /> 메서드 <Sup text="Method" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 클래스는 멤버(member)로 속성을 표현하는 필드(field)와 기능을 표현하는 메소드(method)를 가집니다.
                                     그중에서 메소드(method)란 어떠한 특정 작업을 수행하기 위한 명령문의 집합이라 할 수 있습니다.
-                                    <CodeBlock
-                                        language="java"
-                                        codestring={ codeEx1 }
-                                    />
-                                    <ul>
-                                        <li>접근제어자 : 해당 메소드에 접근할 수 있는 범위</li>
-                                        <li>반환타입 : 메소드가 모든 작업을 마치고 반환하는 데이터의 타입</li>
-                                        <li>메소드이름 : 메소드를 호출하기 위한 이름</li>
-                                        <li>매개변수목록 : 메소드 호출 시에 전달되는 인수의 값을 저장할 변수</li>
-                                        <li>구현부 : 메소드의 고유 기능을 수행하는 명령문</li>
-                                    </ul>
+                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "접근제어자 반환타입 메소드이름(매개변수목록) { // 선언부",
+                                        "    // 구현부",
+                                        "}"
+                                    ].join('\n')}
+                                />
+                                <ul>
+                                    <li>접근제어자 : 해당 메소드에 접근할 수 있는 범위</li>
+                                    <li>반환타입 : 메소드가 모든 작업을 마치고 반환하는 데이터의 타입</li>
+                                    <li>메소드이름 : 메소드를 호출하기 위한 이름</li>
+                                    <li>매개변수목록 : 메소드 호출 시에 전달되는 인수의 값을 저장할 변수</li>
+                                    <li>구현부 : 메소드의 고유 기능을 수행하는 명령문</li>
+                                </ul>
+                                <Card.Text>
                                     자바에서는 하나의 클래스에 같은 이름의 메소드를 둘 이상 정의할 수 없습니다.
                                     하지만 메소드 오버로딩(overloading)을 이용하면, 같은 이름의 메소드를 중복하여 정의할 수 있습니다.
                                 </Card.Text>

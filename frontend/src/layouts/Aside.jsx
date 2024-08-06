@@ -330,6 +330,22 @@ const Aside = ({ arrObjs, recLink }) => {
                                     <span>메서드(Method)</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/java/this">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>this와 this()</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/overloading">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>오버로딩(Overloading)</span>
+                                </Link>
+                            </li>
                         </ul>
                     </li>{/* End Java OOP Nav */}
 
@@ -348,6 +364,22 @@ const Aside = ({ arrObjs, recLink }) => {
                                         className="icon"
                                     />
                                     <span>상속(Inheritance)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/overriding">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>오버라이딩(Overriding)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/super">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>super와 super()</span>
                                 </Link>
                             </li>
                         </ul>

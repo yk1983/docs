@@ -1,18 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract, BsFeather } from 'react-icons/bs';
-import Highlight from 'react-highlight';
+// Components
+import { Sup, Span } from 'components/elements/Elements';
 import PageTitle from 'layouts/PageTitle';
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Classes = () => {
-    const
-        codeEx1 =
-``,
-        codeEx2 =
-``,
-        codeEx3 =
-``;
-
     return(
         <>
             <Helmet>
@@ -32,7 +26,7 @@ const Classes = () => {
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 클래스<sup>class</sup>
+                                    <BsSubtract /> 클래스 <Sup text="class" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서 클래스(class)는 객체를 정의하는 틀 또는 설계도와 같은 의미로 사용되고,
@@ -60,50 +54,49 @@ const Classes = () => {
                                     생성자(constructor)를 가집니다.
                                     <br />
                                     <br />
-                                    자바에서 클래스를 선언하는 방법은 <code>접근 제어자와 함께 class 키워드를 사용</code>하면 됩니다.
-                                    <Highlight language="java">
-{`public class Car { // 클래스
-    private String modelName;   // 멤버 변수
-    private int modelYear;      // 멤버 변수
-
-    Car(String modelName, int modelYear) { // 생성자
-        this.modelName = modelName;
-        this.modelYear = modelYear;
-    }
-
-    public String getModelName() { // 메서드
-        return this.modelName;
-    }
-
-    public void setModelName(String modelName) { // 메서드
-        this.modelName = modelName;
-    }
-}`}
-                                    </Highlight>
-                                    <dl>
-                                        <dt><BsFeather /> 멤버 변수(필드)</dt>
-                                        <dd>클래스에 포함된 변수(variable)를 의미하고 선언된 위치에 따라
-                                            <span className="text-primary">
-                                                클래스 변수(static variable),
-                                                인스턴스 변수(instance variable),
-                                                지역 변수(local variable)
-                                            </span>
-                                            로 나누어집니다.
-                                        </dd>
-                                        <dt><BsFeather /> 메소드(method)</dt>
-                                        <dd>
-                                            어떠한 특정 작업을 수행하기 위한 명령문의 집합이며, 모듈화를 통해 전체적으로
-                                            중복되는 코드의 반복을 줄일 수 있고, 가독성을 향상시킬수 있습니다.
-                                        </dd>
-                                        <dt><BsFeather /> 생성자(constructor)</dt>
-                                        <dd>
-                                            클래스를 가지고 객체를 생성하면, 해당 객체는 메모리에 즉시 생성
-                                            되는데, 이렇게 생성된 객체는 모든 인스턴스 변수가 초기화되지 않은 상태입니다.
-                                            자바에서는 객체의 생성과 동시에 인스턴스 변수를 원하는 값으로 초기화할 수 있는
-                                            생성자(constructor)라는 메소드를 제공합니다.
-                                        </dd>
-                                    </dl>
+                                    자바에서 클래스를 선언하는 방법은 <Span text="접근 제어자와 함께 class 키워드를 사용" />하면 됩니다.
                                 </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "public class Car { // 클래스",
+                                        "    private String modelName;   // 멤버 변수",
+                                        "    private int modelYear;      // 멤버 변수",
+                                        "",
+                                        "    Car(String modelName, int modelYear) { // 생성자",
+                                        "        this.modelName = modelName;",
+                                        "        this.modelYear = modelYear;",
+                                        "    }",
+                                        "",
+                                        "    public String getModelName() { // 메서드",
+                                        "        return this.modelName;",
+                                        "    }",
+                                        "",
+                                        "    public void setModelName(String modelName) { // 메서드",
+                                        "        this.modelName = modelName;",
+                                        "    }",
+                                        "}"
+                                    ].join('\n')}
+                                />
+                                <dl>
+                                    <dt><BsFeather /> 멤버 변수(필드)</dt>
+                                    <dd>클래스에 포함된 변수(variable)를 의미하고 선언된 위치에 따라
+                                        <Span text="클래스 변수(static variable), 인스턴스 변수(instance variable), 지역 변수(local variable)" />
+                                        로 나누어집니다.
+                                    </dd>
+                                    <dt><BsFeather /> 메소드(method)</dt>
+                                    <dd>
+                                        어떠한 특정 작업을 수행하기 위한 명령문의 집합이며, 모듈화를 통해 전체적으로
+                                        중복되는 코드의 반복을 줄일 수 있고, 가독성을 향상시킬수 있습니다.
+                                    </dd>
+                                    <dt><BsFeather /> 생성자(constructor)</dt>
+                                    <dd>
+                                        클래스를 가지고 객체를 생성하면, 해당 객체는 메모리에 즉시 생성
+                                        되는데, 이렇게 생성된 객체는 모든 인스턴스 변수가 초기화되지 않은 상태입니다.
+                                        자바에서는 객체의 생성과 동시에 인스턴스 변수를 원하는 값으로 초기화할 수 있는
+                                        생성자(constructor)라는 메소드를 제공합니다.
+                                    </dd>
+                                </dl>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -115,18 +108,23 @@ const Classes = () => {
                                     <BsSubtract /> 인스턴스 생성
                                 </Card.Title>
                                 <Card.Text>
-                                    객체를 참조하기 위한 참조 변수를 먼저 선언하고, <code>new 키워드</code>를 사용하여
+                                    객체를 참조하기 위한 참조 변수를 먼저 선언하고, <Span text="new 키워드" />를 사용하여
                                     인스턴스를 생성하고, 해당 인스턴스의 주소를 미리 선언한 참조 변수에 저장하여 사용합니다.
-                                    <Highlight language="java">
-{`Car myCar; // 클래스이름 객체참조변수명; 선언
-myCar = new Car(); // 객체참조변수이름 객체참조변수명 = new 클래스이름();
-`}
-                                    </Highlight>
-                                    또한, 다음과 같이 참조 변수의 선언과 인스턴스의 생성을 동시에 할 수도 있습니다.
-                                    <Highlight language="java">
-{`Car myCar = new Car(); // 참조 변수의 선언과 인스턴스의 생성`}
-                                    </Highlight>
                                 </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "Car myCar; // 클래스이름 객체참조변수명; 선언",
+                                        "myCar = new Car(); // 객체참조변수이름 객체참조변수명 = new 클래스이름();"
+                                    ].join('\n')}
+                                />
+                                또한, 다음과 같이 참조 변수의 선언과 인스턴스의 생성을 동시에 할 수도 있습니다.
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "Car myCar = new Car(); // 참조 변수의 선언과 인스턴스의 생성"
+                                    ].join('\n')}
+                                />
                             </Card.Body>
                         </Card>
                     </Col>

@@ -18,7 +18,9 @@ import JavaOop from 'pages/learn/java/Oop';
 import JavaClass from 'pages/learn/java/Classes';
 import JavaConstructor from 'pages/learn/java/Constructor';
 import JavaMethod from 'pages/learn/java/Method';
+import JavaOverloading from 'pages/learn/java/Overloading';
 import JavaInheritance from 'pages/learn/java/Inheritance';
+import JavaOverriding from 'pages/learn/java/Overriding';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // React
@@ -64,8 +66,10 @@ const App = () => {
                     <Route path="/java/control-flow" element={<JavaControlFlow />} />
                     <Route path="/java/oop" element={<JavaOop />} />
                     <Route path="/java/inheritance" element={<JavaInheritance />} />
+                    <Route path="/java/overriding" element={<JavaOverriding />} />
                     <Route path="/java/classes" element={<JavaClass />} />
                     <Route path="/java/method" element={<JavaMethod />} />
+                    <Route path="/java/overloading" element={<JavaOverloading />} />
                     <Route path="/java/conditional" element={<JavaConditional />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />

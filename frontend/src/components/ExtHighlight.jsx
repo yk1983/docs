@@ -1,7 +1,7 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const CodeBlock : React.FC<{ language : string, codestring : string }> = ({ language, codestring }) => {
+const Highlighter : React.FC<{ language : string, codestring : string }> = ({ language, codestring }) => {
     return (
         <SyntaxHighlighter
             language={ language }
@@ -11,7 +11,7 @@ const CodeBlock : React.FC<{ language : string, codestring : string }> = ({ lang
         </SyntaxHighlighter>
     );
 };
-//const CodeBlock = (props) => {
+//const Highlighter = (props) => {
 //    return(
 //        <>
 //            <SyntaxHighlighter
@@ -24,4 +24,4 @@ const CodeBlock : React.FC<{ language : string, codestring : string }> = ({ lang
 //    );
 //}
 //
-export default CodeBlock;
+export default Highlighter;

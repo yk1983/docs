@@ -2,25 +2,10 @@ import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
-// Components
-import CodeBlock from 'components/CodeBlock';
+import { Sup, Code } from 'components/elements/Elements'; // Components
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Constructor = () => {
-    const
-        codeEx1 =
-`클래스명() {} // 매개변수가 없는 기본생성자`,
-        codeEx2 =
-`// 선언문법
-클래스명() {...} // 매개변수가 없는 생성자 선언
-클래스명(매개변수1, 매개변수2) {...} // 매개변수가 있는 생성자
-// 선언예시
-Car() {}
-// 매개변수가 존재하는 생성자 (매개변수의 갯수가 다르므로 오버라이딩)
-Car(String modelName) {}
-Car(String modelName, int modelYear) {}
-Car(String modelName, int modelYear, String color) {}
-Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
-
     return(
         <>
             <Helmet>
@@ -40,7 +25,7 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 생성자<sup>constructor</sup>
+                                    <BsSubtract /> 생성자 <Sup text="constructor" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바에서는 객체의 생성과 동시에 인스턴스 변수를 원하는 값으로 초기화할 수 있는
@@ -70,7 +55,7 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
                                             생성자를 가질 수 있습니다. (즉, 생성자도 일종의 메서드이므로, 메서드 오버라딩이 가능합니다.)
                                         </li>
                                         <li>
-                                            <code>new 키워드</code>를 사용하여 객체를 생성할 때 자동으로 생성자는 호출됩니다.
+                                            <Code text="new 키워드" />를 사용하여 객체를 생성할 때 자동으로 생성자는 호출됩니다.
                                         </li>
                                     </ul>
                                 </Card.Text>
@@ -84,12 +69,12 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
                                 <Card.Title>
                                     <BsSubtract /> 생성자 선언
                                 </Card.Title>
-                                <Card.Text>
-                                    <CodeBlock
-                                        language="java"
-                                        codestring={ codeEx2 }
-                                    />
-                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "클래스명() {} // 매개변수가 없는 기본생성자"
+                                    ].join('\n')}
+                                />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -98,7 +83,7 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    <BsSubtract /> 기본 생성자<sup>default constructor</sup>
+                                    <BsSubtract /> 기본 생성자 <Sup text="default constructor" />
                                 </Card.Title>
                                 <Card.Text>
                                     자바의 모든 클래스에는 하나 이상의 생성자가 정의되어 있어야 하지만, 자바 컴파일러가
@@ -110,13 +95,25 @@ Car(String modelName, int modelYear, String color, int maxSpeeds) {}`;
                                     자바 컴파일러는 컴파일 시 클래스에 생성자가 하나도 정의되어 있지 않으면,
                                     자동으로 다음과 같은 기본 생성자를 추가합니다. (기본 생성자는 어떠한 매개변수도
                                     전달받지 않으며, 기본적으로 아무런 동작도 하지 않습니다.)
-                                    <CodeBlock
-                                        language="java"
-                                        codestring={ codeEx1 }
-                                    />
+                                    <br />
                                     하지만 만약 매개변수를 가지는 생성자를 하나라도 정의했다면, 기본 생성자는 자동으로
                                     추가되지 않습니다.
                                 </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "// 선언문법",
+                                        "클래스명() {} // 매개변수가 없는 생성자 선언",
+                                        "클래스명(매개변수1, 매개변수2) {...} // 매개변수가 있는 생성자",
+                                        "// 선언예시",
+                                        "Car() {}",
+                                        "// 매개변수가 존재하는 생성자 (매개변수의 갯수가 다르므로 오버라이딩)",
+                                        "Car(String modelName) {}",
+                                        "Car(String modelName, int modelYear) {}",
+                                        "Car(String modelName, int modelYear, String color) {}",
+                                        "Car(String modelName, int modelYear, String color, int maxSpeeds) {}"
+                                    ].join('\n')}
+                                />
                             </Card.Body>
                         </Card>
                     </Col>

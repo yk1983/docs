@@ -1,39 +1,13 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
+// layouts
 import PageTitle from 'layouts/PageTitle';
 // Components
 import {Span, Code, Sup} from 'components/elements/Elements';
-import CodeBlock from 'components/CodeBlock'; // SyntaxHighlighter
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Inheritance = () => {
-
-    const
-        codeEx1 =
-`public Class Parent { ... }; // 부모 클래스
-public Class Child extends parent { ... }; // 자식 클래스`,
-        example1 =
-`public class Book {
-    String name; // 멤버 변수
-    int price;
-
-    public void Print() { // 메서드
-        System.out.println("책의 이름과 가격 : "+name+" "+price);
-    }
-}`,
-    example2 =
-`public Class MyBook extends Book {
-    MyBook (String name, int price) { // 생성자
-        this.name = name;
-        this.price = price;
-    }
-
-    public static void main (String[] args) {
-        MyBook myBook = new MyBook("자바의 정석", 36000);
-        myBook.Print(); // 부모에게 상속받은 메서드 호출
-    }
-}`;
-
     return(
         <>
             <Helmet>
@@ -64,8 +38,8 @@ public Class Child extends parent { ... }; // 자식 클래스`,
                                     새로운 클래스를 생성할 수 있습니다.
                                     이때 기존에 정의되어 있던 클래스를
                                     <Span text="부모 클래스(parent class) 또는 상위 클래스(super class), 기초 클래스(base class)" />
-                                    라고 합니다. 그리고 상속을 통해 새롭게 작성되는 클래스를
-                                    {' '}<Span text="자식 클래스(child class) 또는 하위 클래스(sub class), 파생 클래스(derived class)" />
+                                    라고 합니다. 그리고 상속을 통해 새롭게 작성되는 클래스를{' '}
+                                    <Span text="자식 클래스(child class) 또는 하위 클래스(sub class), 파생 클래스(derived class)" />
                                     라고 합니다.
                                     <br />
                                     따라서, 상속을 이용하면 이미 구현되어있는 클래스의 기능을 재사용 또는 재정의해서
@@ -103,9 +77,12 @@ public Class Child extends parent { ... }; // 자식 클래스`,
                                     클래스의 상속은 상속받고자 하는 자식 클래스명 옆에 <Code text="extends" /> 키워드를 붙이고,
                                     상속할 부모 클래스명을 적습니다.
                                 </Card.Text>
-                                <CodeBlock
+                                <Highlight
                                     language="java"
-                                    codestring={ codeEx1 }
+                                    codestring={[
+                                        "public Class Parent { ... }; // 부모 클래스",
+                                        "public Class Child extends parent { ... }; // 자식 클래스"
+                                    ].join('\n')}
                                 />
                             </Card.Body>
                         </Card>
@@ -119,15 +96,36 @@ public Class Child extends parent { ... }; // 자식 클래스`,
                                 </Card.Title>
 
                                 <h6>부모 클래스(Parent class)</h6>
-                                <CodeBlock
+                                <Highlight
                                     language="java"
-                                    codestring={ example1 }
+                                    codestring={[
+                                        "public class Book {",
+                                        "    String name; // 멤버 변수",
+                                        "    int price;",
+                                        "",
+                                        "    public void Print() { // 메서드",
+                                        "        System.out.println(\"책의 이름과 가격 : \" + name + \" \" + price);",
+                                        "    }",
+                                        "}"
+                                    ].join('\n')}
                                 />
 
                                 <h6>자식 클래스(Child class)</h6>
-                                <CodeBlock
+                                <Highlight
                                     language="java"
-                                    codestring={ example2 }
+                                    codestring={[
+                                        "public class MyBook extends Book {",
+                                        "    MyBook (String name, int price) { // 생성자",
+                                        "        this.name = name;",
+                                        "        this.price = price;",
+                                        "    }",
+                                        "",
+                                        "    public static void main(String[] args) {",
+                                        "        MyBook myBook = new MyBook(\"자바의 정석\", 36000);",
+                                        "        myBook.Print(); // 부모에게 상속받은 메서드 호출",
+                                        "    }",
+                                        "}"
+                                    ].join('\n')}
                                 />
                             </Card.Body>
                         </Card>

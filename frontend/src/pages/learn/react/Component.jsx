@@ -2,23 +2,9 @@ import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
-// Components
-import CodeBlock from 'components/CodeBlock'; // SyntaxHighlighter
+import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Component = () => {
-    // 코드하이라이트 문자열 정의
-    const
-        codeEx1 =
-`class MyComponent extends React.Component {
-    render() {
-        return <div>Hello, I am a class component!</div>;
-    }
-}`,
-        codeEx2 =
-`function MyComponent() {
-    return <div>Hello, I am a function component!</div>;
-}`;
-
     return(
         <>
             <Helmet>
@@ -62,9 +48,15 @@ const Component = () => {
                                 <Card.Text>
                                     클래스 컴포넌트는 JavaScript의 클래스 문법을 사용해 만드는 컴포넌트입니다.
                                 </Card.Text>
-                                <CodeBlock
+                                <Highlight
                                     language="javascript"
-                                    codestring={ codeEx1 }
+                                    codestring={[
+                                        "class MyComponent extends React.Component {",
+                                        "    render() {",
+                                        "        return <div>Hello, I am a class component!</div>;",
+                                        "    }",
+                                        "}"
+                                    ].join('\n')}
                                 />
 
                                 <Card.Title>
@@ -95,9 +87,13 @@ const Component = () => {
                                 <Card.Text>
                                     함수 컴포넌트는 JavaScript 함수로 만든 컴포넌트입니다.
                                 </Card.Text>
-                                <CodeBlock
+                                <Highlight
                                     language="javascript"
-                                    codestring={ codeEx2 }
+                                    codestring={[
+                                        "function MyComponent() {",
+                                        "    return <div>Hello, I am a function component!</div>;",
+                                        "}"
+                                    ].join('\n')}
                                 />
 
                                 <Card.Title>

@@ -22,9 +22,12 @@ import JavaMethod from 'pages/learn/java/Method';
 import JavaOverloading from 'pages/learn/java/Overloading';
 import JavaInheritance from 'pages/learn/java/Inheritance';
 import JavaInheritanceSuper from 'pages/learn/java/InheritanceSuper';
+import JavaPolymorphism from 'pages/learn/java/Polymorphism';
 import JavaOverriding from 'pages/learn/java/Overriding';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
+// Spring
+import SpringIntro from 'pages/learn/spring/Intro';
 // React
 import ReactIntro from 'pages/learn/react/Intro';
 import ReactStarted from 'pages/learn/react/GetStarted';
@@ -70,11 +73,13 @@ const App = () => {
                     <Route path="/java/oop" element={<JavaOop />} />
                     <Route path="/java/inheritance" element={<JavaInheritance />} />
                     <Route path="/java/inheritance-super" element={<JavaInheritanceSuper />} />
+                    <Route path="/java/polymorphism" element={<JavaPolymorphism />} />
                     <Route path="/java/overriding" element={<JavaOverriding />} />
                     <Route path="/java/classes" element={<JavaClass />} />
                     <Route path="/java/method" element={<JavaMethod />} />
                     <Route path="/java/overloading" element={<JavaOverloading />} />
                     <Route path="/java/conditional" element={<JavaConditional />} />
+                    <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />

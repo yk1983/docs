@@ -383,11 +383,55 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                         </ul>
-                    </li>{/* End Java OOP Nav */}
+                    </li>{/* End Java Inheritance Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-polymorphism" data-bs-toggle="collapse" to="#">
+                            <BsBoxes
+                                className="icon"
+                            />
+                            <span>다형성(Polymorphism)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-java-polymorphism" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/java/polymorphism">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>다형성(Polymorphism)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/overriding">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>오버라이딩(Overriding)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/inheritance-super">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>super와 super()</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End Java Polymorphism Nav */}
 
                     <li className="nav-heading">SQL</li>
 
                     <li className="nav-heading">Spring</li>
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/intro">
+                            <BsFiletypeJava
+                                className="icon"
+                            />
+                            <span>소개(Introduction)</span>
+                        </Link>
+                    </li>{/* End Spring Introduction Page Nav */}
 
                     <li className="nav-heading">BPMN</li>
                     <li className="nav-item">

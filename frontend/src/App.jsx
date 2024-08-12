@@ -23,7 +23,10 @@ import JavaOverloading from 'pages/learn/java/Overloading';
 import JavaInheritance from 'pages/learn/java/Inheritance';
 import JavaInheritanceSuper from 'pages/learn/java/InheritanceSuper';
 import JavaPolymorphism from 'pages/learn/java/Polymorphism';
+import JavaAbstract from 'pages/learn/java/Abstract';
+import JavaInterface from 'pages/learn/java/Interface';
 import JavaOverriding from 'pages/learn/java/Overriding';
+import JavaInnerClass from 'pages/learn/java/InnerClass';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // Spring
@@ -76,7 +79,10 @@ const App = () => {
                     <Route path="/java/inheritance" element={<JavaInheritance />} />
                     <Route path="/java/inheritance-super" element={<JavaInheritanceSuper />} />
                     <Route path="/java/polymorphism" element={<JavaPolymorphism />} />
+                    <Route path="/java/abstract" element={<JavaAbstract />} />
+                    <Route path="/java/interface" element={<JavaInterface />} />
                     <Route path="/java/overriding" element={<JavaOverriding />} />
+                    <Route path="/java/inner-class" element={<JavaInnerClass />} />
                     <Route path="/java/classes" element={<JavaClass />} />
                     <Route path="/java/method" element={<JavaMethod />} />
                     <Route path="/java/overloading" element={<JavaOverloading />} />

@@ -1,12 +1,11 @@
 import { Row, Col, Card, Alert } from 'react-bootstrap';
 import { BsSubtract, BsInfoCircle } from 'react-icons/bs';
-import { Title, Span, Sup, Code, List } from 'components/elements/Elements'; // Components
+import { Title, Sup, Code, List } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 import BsCard from 'components/BsCard';
-import BsAlert from 'components/BsAlert';
 
-const Polymorphism = () => {
+const ViewRender = () => {
     return(
         <>
             <Title
@@ -287,10 +286,62 @@ const Polymorphism = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+
+                    <Col lg={12}>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>
+                                    <BsSubtract /> instanceof 연산자
+                                </Card.Title>
+                                <Card.Text>
+                                    다형성으로 인해 런타임에 참조 변수가 실제로 참조하고 있는 인스턴스의 타입을 확인하고 싶은 경우,
+                                    자바에서는 <Code text="instanceof" /> 연산자를 제공하여, 참조 변수가 참조하고 있는 인스턴스의 실제 타입을 확인할 수 있도록 해줍니다.
+                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "참조변수 instanceof 클래스이름"
+                                    ].join('\n')}
+                                />
+                                <Card.Text>
+                                    왼쪽에 전달된 참조 변수가 실제로 참조하고 있는 인스턴스의 타입이 오른쪽에 전달된 클래스
+                                    타입이면 <Code text="true" />를 반환하고, 아니면 <Code text="false" />를 반환합니다.
+                                    <br />
+                                    만약에 참조 변수가 <Code text="null" />을 가리키고 있으면 <Code text="false" />를 반환합니다.
+                                </Card.Text>
+                                <Card.Text>
+                                    아래의 코드는 참조 변수가 실제로 가리키고 있는 인스턴스의 타입을 instanceof 연산자로 확인하는 간단하게 작성된 예제입니다.
+                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "class Parent { ... }"
+                                    ,   "class Child extends Parent { ... }"
+                                    ,   "class Brother extends Parent { ... }"
+                                    ,   ""
+                                    ,   "public class Polymorphism01 {"
+                                    ,   "    public static void main(String[] args) {"
+                                    ,   "        Parent p = new Parent();"
+                                    ,   "        System.out.println(p instanceof Object); // true"
+                                    ,   "        System.out.println(p instanceof Parent); // true"
+                                    ,   "        System.out.println(p instanceof Child);  // false"
+                                    ,   "        System.out.println();"
+                                    ,   "        "
+                                    ,   "        Parent c = new Child();"
+                                    ,   "        System.out.println(c instanceof Object); // true"
+                                    ,   "        System.out.println(c instanceof Parent); // true"
+                                    ,   "        System.out.println(c instanceof Child);  // true"
+                                    ,   "    }"
+                                    ,   "}"
+                                    ].join('\n')}
+                                />
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
             </section>
         </>
     );
 };
 
-export default Polymorphism;
+export default ViewRender;

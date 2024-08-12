@@ -12,6 +12,7 @@ import {
     BsBox,
     BsCircle
 } from 'react-icons/bs';
+import { Span } from 'components/elements/Elements'; // Components
 
 const LiCreator = (text, link, liChildren) => {
     return (
@@ -411,11 +412,27 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/inheritance-super">
+                                <Link to="/java/abstract">
                                     <BsCircle
                                         className="icon"
                                     />
-                                    <span>super와 super()</span>
+                                    <span>추상화(Abstract)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/interface">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>인터페이스(Interface)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/inner-class">
+                                    <BsCircle
+                                        className="icon"
+                                    />
+                                    <span>내부클래스(Inner Class)</span>
                                 </Link>
                             </li>
                         </ul>

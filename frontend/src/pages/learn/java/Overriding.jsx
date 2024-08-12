@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async';
 import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsPinAngle } from 'react-icons/bs';
+import { BsSubtract, BsInfoCircle } from 'react-icons/bs';
 import { Span, Code, Sup } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle'; // layouts
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Overriding = () => {
+const ViewRender = () => {
     return(
         <>
             <Helmet>
@@ -42,7 +42,7 @@ const Overriding = () => {
                         </Card>
                     </Col>
 
-                    <Col lg={6}>
+                    <Col lg={12}>
                         <Card>
                             <Card.Body>
                                 <Card.Title>
@@ -95,9 +95,9 @@ const Overriding = () => {
                                 />
                             </Card.Body>
                             <Card.Footer>
-                                <Alert variant="success" className="mt-3">
+                                <Alert variant="info">
                                     <Alert.Heading>
-                                        <BsPinAngle /> @Override 어노테이션을 쓰는 이유
+                                        <BsInfoCircle /> @Override 어노테이션을 쓰는 이유
                                     </Alert.Heading>
                                     <p>
                                         프로그램 소스에서 <Code text="@Override" /> 어노테이션은 없어도 오버라이딩이 적용되어 정상적으로 잘 동작합니다.
@@ -116,4 +116,4 @@ const Overriding = () => {
     );
 };
 
-export default Overriding;
+export default ViewRender;

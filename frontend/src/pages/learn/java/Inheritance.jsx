@@ -4,7 +4,7 @@ import { BsSubtract } from 'react-icons/bs';
 // layouts
 import PageTitle from 'layouts/PageTitle';
 // Components
-import {Span, Code, Sup} from 'components/elements/Elements';
+import { Span, Code, Sup } from 'components/elements/Elements';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const Inheritance = () => {

@@ -1,8 +1,10 @@
 import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsPinAngle } from 'react-icons/bs';
+import { BsSubtract, BsInfoCircle } from 'react-icons/bs';
 import { Title, Span, Sup, Code, List } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
+import BsCard from 'components/BsCard';
+import BsAlert from 'components/BsAlert';
 
 const Polymorphism = () => {
     return(
@@ -21,89 +23,70 @@ const Polymorphism = () => {
             <section className="section">
                 <Row>
                     <Col lg={12}>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>
-                                    <BsSubtract /> 다형성 <Sup text="Polymorphism" />
-                                </Card.Title>
-                                <Card.Text>
-                                    다형성은 상속, 추상화와 더불어 객체 지향 프로그래밍을 구성하는 중요한 특징 중 하나입니다.
-                                    <br />
-                                    <Span text="다형성(polymorphism)" />이란 하나의 객체가 여러 가지 타입을 가질 수 있는 것을 의미합니다.
-                                    <br />
-                                    자바에서는 이러한 다형성을 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를
-                                    조할 수 있도록 하여 구현하고 있습니다.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <BsCard
+                            title="다형성"
+                            subtitle="Polymorphism"
+                            content={[
+                                {
+                                    text : [
+                                        '다형성(polymorphism)은 상속, 추상화와 더불어 객체 지향 프로그래밍을 구성하는 중요한 특징으로 하나의 객체가 여러 가지 타입을 가질 수 있는 것을 의미합니다.'
+                                    ,   '\n자바에서는 이러한 다형성을 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 조할 수 있도록 하여 구현하고 있습니다.'
+                                    ].join(' ')
+                                }
+                            ]}
+                        />
                     </Col>
 
                     <Col lg={12}>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>
-                                    <BsSubtract /> 참조 변수의 다형성
-                                </Card.Title>
-                                <Card.Text>
-                                    자바에서는 다형성을 위해 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 하고 있습니다.
-                                    이때 참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 같거나 적어야 참조할 수 있습니다.
-                                </Card.Text>
-                                <Highlight
-                                    language="java"
-                                    codestring={[
-                                        "class Parent { ... }"
-                                    ,   "class Child extends Parent { ... }"
-                                    ,   "..."
-                                    ,   "Parent pa = new Parent(); // 허용"
-                                    ,   "Child ch = new Child();   // 허용"
-                                    ,   "Parent pc = new Child();  // 허용"
-                                    ,   "Child cp = new Parent();  // 오류"
-                                    ].join('\n')}
-                                />
-
-                                <Card.Text>
-                                    특정 타입의 참조 변수로는 당연히 같은 타입의 인스턴스를 참조할 수 있습니다.
-                                    <br />
-                                    참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수와 같기 때문입니다.
-                                </Card.Text>
-
-                                <Card.Text>
-                                    부모 클래스 타입의 참조 변수로도 자식 클래스 타입의 인스턴스를 참조할 수 있습니다.
-                                    <br />
-                                    참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 적기 때문입니다.
-                                </Card.Text>
-
-                                <Card.Text>
-                                    반대의 경우인 자식 클래스 타입의 참조 변수로는 부모 클래스 타입의 인스턴스를 참조할 수 없습니다.
-                                    <br />
-                                    참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 많기 때문입니다.
-                                </Card.Text>
-
-                                {/*<List
-                                    isNumber={ false }
-                                    includeHTML={ true }
-                                    items={[
+                        <BsCard
+                            title="참조 변수의 다형성"
+                            content={[
+                                {
+                                    text : [
+                                        "자바에서는 다형성을 위해 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 하고 있습니다."
+                                    ,   "\n이때 참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 같거나 적어야 참조할 수 있습니다."
+                                    ].join(' ')
+                                },
+                                {
+                                    highlight : {
+                                        language : "java"
+                                    ,   content : [
+                                            "class Parent { ... }"
+                                        ,   "class Child extends Parent { ... }"
+                                        ,   "..."
+                                        ,   "Parent pa = new Parent(); // 허용"
+                                        ,   "Child ch = new Child();   // 허용"
+                                        ,   "Parent pc = new Child();  // 허용"
+                                        ,   "Child cp = new Parent();  // 오류"
+                                        ].join('\n')
+                                    }
+                                },
+                                {
+                                    text : [
                                         "특정 타입의 참조 변수로는 당연히 같은 타입의 인스턴스를 참조할 수 있습니다."
-                                    +   "<br />참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수와 같기 때문입니다."
-                                    ,   "부모 클래스 타입의 참조 변수로도 자식 클래스 타입의 인스턴스를 참조할 수 있습니다."
-                                    +   "<br />참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 적기 때문입니다."
-                                    ,   "반대의 경우인 자식 클래스 타입의 참조 변수로는 부모 클래스 타입의 인스턴스를 참조할 수 없습니다."
-                                    +   "<br />참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 많기 때문입니다."
-                                    ]}
-                                />*/}
-                            </Card.Body>
-                            <Card.Footer>
-                                <Alert>
-                                    <Alert.Heading>
-                                        <BsPinAngle /> 클래스 상속
-                                    </Alert.Heading>
-                                    <p>
-                                        클래스는 상속을 통해 확장될 수는 있어도 축소될 수는 없으므로,
-                                        자식 클래스에서 사용할 수 있는 멤버의 개수가 언제나 부모 클래스와 같거나 많게 됩니다.
-                                    </p>
-                                </Alert>
-                            </Card.Footer>
-                        </Card>
+                                    ,   "(참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수와 같기 때문)"
+                                    ].join(' ')
+                                },
+                                {
+                                    text : [
+                                        "부모 클래스 타입의 참조 변수로도 자식 클래스 타입의 인스턴스를 참조할 수 있습니다."
+                                    ,   "(참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 적기 때문)"
+                                    ].join(' ')
+                                },
+                                {
+                                    text : [
+                                        "반대의 경우인 자식 클래스 타입의 참조 변수로는 부모 클래스 타입의 인스턴스를 참조할 수 없습니다."
+                                    ,   "(참조 변수가 사용할 수 있는 멤버의 개수가 실제 인스턴스의 멤버 개수보다 많기 때문)"
+                                    ].join(' ')
+                                }
+                            ]}
+                            alert={{
+                                title : "클래스 상속",
+                                content : [
+                                    "클래스는 상속을 통해 확장될 수는 있어도 축소될 수는 없으므로, 자식 클래스에서 사용할 수 있는 멤버의 개수가 언제나 부모 클래스와 같거나 많게 됩니다."
+                                ].join(' ')
+                            }}
+                        />
                     </Col>
 
                     <Col lg={12}>
@@ -123,8 +106,7 @@ const Polymorphism = () => {
                                 />
 
                                 <Card.Text>
-                                    부모 클래스(Animal)을 상속받은 자식 클래스(Dog, Cat)를 전제로 upcasting을 사용하여
-                                    Animal 변수에 Dog, Cat 객체를 저장하고 eat()을 실행하면, Dog, Cat이 각각 재정의한 eat()이 출력됩니다.
+                                    부모 클래스(Animal)을 상속받은 자식 클래스(Dog, Cat)를 전제로 업캐스팅(UpCasting)을 사용하여 Animal 변수에 Dog, Cat 객체를 저장하고 eat()을 실행하면, Dog, Cat이 각각 재정의한 eat()이 출력됩니다.
                                     이것이 다형성입니다.
                                 </Card.Text>
 
@@ -168,18 +150,17 @@ const Polymorphism = () => {
                                 />
                             </Card.Body>
                             <Card.Footer>
-                                <Alert>
+                                <Alert variant="info">
                                     <Alert.Heading>
-                                        <BsPinAngle /> 상속관계 간 형변환(업캐스팅 <Sup text="Upcasting" />과, 다운캐스팅 <Sup text="Downcasting" />)
+                                        <BsInfoCircle /> 상속관계 간 형변환(업캐스팅 <Sup text="Upcasting" />과, 다운캐스팅 <Sup text="Downcasting" />)
                                     </Alert.Heading>
                                     <p>
                                         부모를 상속받아 생성하는 객체는 Dog, Cat같은 하위 클래스여도 상위 클래스로 받을 수 있습니다.
-                                        이 때, 더 큰 타입이 더 작은 타입을 받기 때문에 자동으로 형변환이 일어나며,
-                                        부모가 자식을 가리키는 이 객체 생성 방법을 업캐스팅이라고 합니다.
+                                        이 때, 더 큰 타입이 더 작은 타입을 받기 때문에 자동으로 형변환이 일어나며, 부모가 자식을 가리키는 이 객체 생성 방법을 업캐스팅이라고 합니다.
                                         <br />
                                         업캐스팅으로 객체를 생성하면 하위 클래스의 동작은 사용할 수 없으며,
                                         상위 클래스의 메모리만을 사용할 수 있기 때문에 원래 Dog, Cat의 eat() 동작 결과인{' '}
-                                        <Code text="Eat like a dog" />, <Code text="Eat like a cat" />을 얻지 못하게 됩니다.
+                                        <Code text="Eat like a dog" />, <Code text="Eat like a cat" /> 출력문을 얻지 못하게 됩니다.
                                         <br />
                                         <br />
                                         Cat의 night()는 Animal에 없기 때문에 Animal로 호출했을 때 이 메서드의 실행이 불가능합니다.
@@ -254,6 +235,53 @@ const Polymorphism = () => {
                                     ,   "    	animal.eat();"
                                     ,   "    }"
                                     ,   "}"
+                                    ].join('\n')}
+                                />
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col lg={12}>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>
+                                    <BsSubtract /> 참조 변수의 타입 변환
+                                </Card.Title>
+                                <Card.Text>
+                                    자바에서는 참조 변수도 다음과 같은 조건에 따라 타입 변환을 할 수 있습니다.
+                                </Card.Text>
+                                <ul>
+                                    <li>서로 상속 관계에 있는 클래스 사이에만 타입 변환을 할 수 있습니다.</li>
+                                    <li>자식 클래스 타입에서 부모 클래스 타입으로의 타입 변환은 생략할 수 있습니다.</li>
+                                    <li>부모 클래스 타입에서 자식 클래스 타입으로의 타입 변환은 반드시 명시해야 합니다.</li>
+                                </ul>
+                                <Card.Text>
+                                    참조 변수의 타입 변환도 기본 타입의 타입 변환과 마찬가지로 타입 캐스트 연산자(<Code text="()" />)를 사용합니다.
+                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "(변환할타입의클래스이름) 변환할참조변수"
+                                    ].join('\n')}
+                                />
+                                <Card.Text>
+                                    참조 변수의 타입 변환을 보여주는 예제
+                                </Card.Text>
+                                <Highlight
+                                    language="java"
+                                    codestring={[
+                                        "class Parent { ... }"
+                                    ,   "class Child extends Parent { ... }"
+                                    ,   "class Brother extends Parent { ... }"
+                                    ,   "..."
+                                    ,   "Parent pa01 = null;"
+                                    ,   "Child ch = new Child();"
+                                    ,   "Parent pa02 = new Parent();"
+                                    ,   "Brother br = null;"
+                                    ,   ""
+                                    ,   "pa01 = ch;          // pa01 = (Parent)ch; 와 같으며, 타입 변환을 생략할 수 있음."
+                                    ,   "br = (Brother)pa02; // 타입 변환을 생략할 수 없음."
+                                    ,   "br = (Brother)ch;   // 직접적인 상속 관계가 아니므로, 오류 발생."
                                     ].join('\n')}
                                 />
                             </Card.Body>

@@ -108,17 +108,17 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-heading">CSS</li>
 
-                    <li className="nav-heading">JavaScript</li>
+                    <li className="nav-heading">자바스크립트(JavaScript)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/javascript/intro">
                             <BsFiletypeJs
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
+                            <span>자바스크립트(JS)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
 
-                    <li className="nav-heading">jQuery</li>
+                    <li className="nav-heading">제이쿼리(jQuery)</li>
 
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
@@ -126,7 +126,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             <BsFiletypeJsx
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
+                            <span>리액트(React)</span>
                         </Link>
                     </li>{/* End React Introduction Page Nav */}
 
@@ -423,23 +423,39 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-heading">SQL</li>
 
-                    <li className="nav-heading">Spring</li>
+                    <li className="nav-heading">스프링(Spring)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/spring/intro">
                             <BsFiletypeJava
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
+                            <span>스프링(Spring)</span>
                         </Link>
                     </li>{/* End Spring Introduction Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/inversion-of-control">
+                            <BsFiletypeJava
+                                className="icon"
+                            />
+                            <span>제어의 역전(IOC)</span>
+                        </Link>
+                    </li>{/* End Spring IoC Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/dependency-injection">
+                            <BsFiletypeJava
+                                className="icon"
+                            />
+                            <span>의존성 주입(DI)</span>
+                        </Link>
+                    </li>{/* End Spring IoC Page Nav */}
 
-                    <li className="nav-heading">BPMN</li>
+                    <li className="nav-heading">비지니스 프로세스 모델링 표기법(BPMN)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/bpmn/intro">
                             <BsFiletypeJava
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
+                            <span>BPMN</span>
                         </Link>
                     </li>{/* End BPMN Introduction Page Nav */}
 

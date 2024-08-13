@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 // JsonData
 import data from 'data/html/globalAttributes'
 
-const GlobalAttributes = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -53,4 +53,4 @@ const GlobalAttributes = () => {
     );
 }
 
-export default GlobalAttributes;
+export default SectionRender;

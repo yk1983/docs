@@ -10,7 +10,7 @@ import BsModalEx1 from 'components/modal/BsModalEx1';
 import BsModalEx2 from 'components/modal/BsModalEx2';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Method = () => {
+const SectionRender = () => {
     const [modalShow1, setModalShow1] = useState(false);
     // const handleClose1 = () => setModalShow1(false);
     const handleShow1 = () => setModalShow1(true);
@@ -289,4 +289,4 @@ const Method = () => {
     );
 }
 
-export default Method;
+export default SectionRender;

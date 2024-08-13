@@ -7,7 +7,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Code, Sup } from 'components/elements/Elements';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Conditional = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -537,4 +537,4 @@ const Conditional = () => {
     );
 }
 
-export default Conditional;
+export default SectionRender;

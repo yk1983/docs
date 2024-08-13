@@ -1,4 +1,4 @@
-const PageRender = () => {
+const SectionRender = () => {
     return(
         <>
 
@@ -6,4 +6,4 @@ const PageRender = () => {
     );
 };
 
-export default PageRender;
+export default SectionRender;

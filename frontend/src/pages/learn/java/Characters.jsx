@@ -4,7 +4,7 @@ import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const Characters = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -68,4 +68,4 @@ const Characters = () => {
     );
 }
 
-export default Characters;
+export default SectionRender;

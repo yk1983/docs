@@ -6,7 +6,7 @@ import { Sup, Span } from 'components/elements/Elements';
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Classes = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -134,4 +134,4 @@ const Classes = () => {
     );
 }
 
-export default Classes;
+export default SectionRender;

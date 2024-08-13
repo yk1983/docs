@@ -8,7 +8,7 @@ import BsAlert from 'components/BsAlert';
 import ExtAccordion from 'components/ExtAccordion';
 import PageTitle from 'layouts/PageTitle';
 
-const PageRender = () => {
+const SectionRender = () => {
     const style = {
         whiteSpace : 'pre-line'
     };
@@ -239,4 +239,4 @@ const PageRender = () => {
     );
 };
 
-export default PageRender;
+export default SectionRender;

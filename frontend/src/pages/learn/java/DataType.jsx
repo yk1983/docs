@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 
-const DataType = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -146,4 +146,4 @@ const DataType = () => {
     );
 }
 
-export default DataType;
+export default SectionRender;

@@ -4,7 +4,7 @@ import { BsSubtract, BsFeather } from 'react-icons/bs';
 import Highlight from 'react-highlight';
 import PageTitle from 'layouts/PageTitle';
 
-const Conditional = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -307,4 +307,4 @@ public class EnhancedForEx {
     );
 }
 
-export default Conditional;
+export default SectionRender;

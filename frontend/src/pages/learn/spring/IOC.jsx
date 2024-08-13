@@ -3,7 +3,7 @@ import { Title, Span, Sup, Code, List } from 'components/elements/Elements'; // 
 import BsCard from 'components/BsCard';
 import PageTitle from 'layouts/PageTitle';
 
-const PageRender = () => {
+const SectionRender = () => {
     return(
         <>
             <Title
@@ -31,4 +31,4 @@ const PageRender = () => {
     );
 };
 
-export default PageRender;
+export default SectionRender;

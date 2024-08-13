@@ -22,7 +22,10 @@ const BsAlert = (props) => {
                 return <BsExclamationTriangle />;
             case 'info' :
                 return <BsInfoCircle />;
-            case 'primary', 'secondary', 'light', 'dark' :
+            case 'primary' :
+            case 'secondary' :
+            case 'light' :
+            case 'dark' :
                 return <BsPin />;
             default :
                 return <BsPinAngle />;

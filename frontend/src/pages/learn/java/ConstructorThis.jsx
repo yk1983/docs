@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Sup, Code } from 'components/elements/Elements'; // Components
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const ConstructorThis = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -86,4 +86,4 @@ const ConstructorThis = () => {
     );
 }
 
-export default ConstructorThis;
+export default SectionRender;

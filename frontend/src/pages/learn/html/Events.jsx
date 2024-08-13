@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 
-const Events = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -118,4 +118,4 @@ const Events = () => {
     );
 }
 
-export default Events;
+export default SectionRender;

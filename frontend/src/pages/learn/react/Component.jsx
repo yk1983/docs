@@ -4,7 +4,7 @@ import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Component = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -122,4 +122,4 @@ const Component = () => {
     );
 }
 
-export default Component;
+export default SectionRender;

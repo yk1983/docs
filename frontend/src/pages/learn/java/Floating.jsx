@@ -4,7 +4,7 @@ import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const Floating = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -127,4 +127,4 @@ const Floating = () => {
     );
 }
 
-export default Floating;
+export default SectionRender;

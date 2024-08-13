@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 // JsonData
 import data from 'data/html/tags';
 
-const TagList = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -52,4 +52,4 @@ const TagList = () => {
     );
 }
 
-export default TagList;
+export default SectionRender;

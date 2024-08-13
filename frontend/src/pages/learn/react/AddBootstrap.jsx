@@ -5,7 +5,7 @@ import { BsSubtract, BsLink45Deg } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const AddBootstrap = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -96,4 +96,4 @@ const AddBootstrap = () => {
     );
 }
 
-export default AddBootstrap;
+export default SectionRender;

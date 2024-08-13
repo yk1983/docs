@@ -4,7 +4,7 @@ import { BsSubtract, BsFeather } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const Router = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -284,4 +284,4 @@ const Router = () => {
     );
 }
 
-export default Router;
+export default SectionRender;

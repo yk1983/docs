@@ -7,7 +7,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Span, Code, Sup } from 'components/elements/Elements';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Inheritance = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -136,4 +136,4 @@ const Inheritance = () => {
     );
 }
 
-export default Inheritance;
+export default SectionRender;

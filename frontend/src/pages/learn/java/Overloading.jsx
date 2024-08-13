@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle'; // layouts
 import { Span, Code, Sup } from 'components/elements/Elements'; // Components
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Overloading = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -165,4 +165,4 @@ const Overloading = () => {
     );
 };
 
-export default Overloading;
+export default SectionRender;

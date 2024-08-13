@@ -3,7 +3,7 @@ import { Row, Col, Card, Table } from 'react-bootstrap';
 import { BsSubtract } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 
-const BooleanType = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -68,4 +68,4 @@ const BooleanType = () => {
     );
 }
 
-export default BooleanType;
+export default SectionRender;

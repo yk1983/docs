@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Sup, Code } from 'components/elements/Elements'; // Components
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const InheritanceSuper = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -103,4 +103,4 @@ const InheritanceSuper = () => {
     );
 }
 
-export default InheritanceSuper;
+export default SectionRender;

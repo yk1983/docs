@@ -4,7 +4,7 @@ import { BsSubtract } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const AddTypeScript = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -84,4 +84,4 @@ const AddTypeScript = () => {
     );
 }
 
-export default AddTypeScript;
+export default SectionRender;

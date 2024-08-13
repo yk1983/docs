@@ -5,7 +5,7 @@ import { BsSubtract, BsLink45Deg } from 'react-icons/bs';
 
 import PageTitle from 'layouts/PageTitle';
 
-const Setting = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -128,4 +128,4 @@ const Setting = () => {
     );
 }
 
-export default Setting;
+export default SectionRender;

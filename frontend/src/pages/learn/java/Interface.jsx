@@ -1,5 +1,5 @@
-import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsPinAngle, BsInfoCircle } from 'react-icons/bs';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
 import { Title, Sup, Code } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter

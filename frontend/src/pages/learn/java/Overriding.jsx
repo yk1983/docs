@@ -5,7 +5,7 @@ import { Span, Code, Sup } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle'; // layouts
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const ViewRender = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -116,4 +116,4 @@ const ViewRender = () => {
     );
 };
 
-export default ViewRender;
+export default SectionRender;

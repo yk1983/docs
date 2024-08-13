@@ -6,7 +6,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Code } from 'components/elements/Elements';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const ControlFlow = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -138,4 +138,4 @@ const ControlFlow = () => {
     );
 }
 
-export default ControlFlow;
+export default SectionRender;

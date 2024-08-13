@@ -4,7 +4,7 @@ import { Title, Sup, Code } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Casting = () => {
+const SectionRender = () => {
     return(
         <>
             <Title
@@ -127,4 +127,4 @@ const Casting = () => {
     );
 }
 
-export default Casting;
+export default SectionRender;

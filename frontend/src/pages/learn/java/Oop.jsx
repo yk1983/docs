@@ -6,7 +6,7 @@ import PageTitle from 'layouts/PageTitle';
 import { Sup, Span, Code } from 'components/elements/Elements';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const Oop = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -255,4 +255,4 @@ const Oop = () => {
     );
 }
 
-export default Oop;
+export default SectionRender;

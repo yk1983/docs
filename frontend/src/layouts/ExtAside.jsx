@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import {
     BiGridAlt,
-    BiLogoHtml5, BiLogoCss3, BiLogoJava, BiLogoSpringBoot, BiLogoJavascript, BiLogoJquery, BiLogoReact, BiLogoPostgresql,
+    BiLogoHtml5, /* BiLogoCss3, */ BiLogoJava, BiLogoSpringBoot, BiLogoJavascript, /* BiLogoJquery ,*/ BiLogoReact, BiLogoPostgresql,
     BiQuestionMark, BiEnvelope,
     BiCircle
 } from "react-icons/bi";
 import { FcWorkflow } from "react-icons/fc";
-import { Span } from 'components/elements/Elements'; // Components
 
 const LiCreator = (text, link, liChildren) => {
     return (
@@ -185,7 +184,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             <BiLogoJava
                                 className="icon"
                             />
-                            <span>소개(Introduction)</span>
+                            <span>자바(Java)</span>
                         </Link>
                     </li>{/* End Java Introduction Page Nav */}
 
@@ -608,8 +607,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         </ul>
                     </li>{/* End HTML References Nav */}
 
-                    <li className="nav-heading">Pages</li>
-
+                    <li className="nav-heading">Community</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/faq">
                             <BiQuestionMark

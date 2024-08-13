@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 import BsCard from 'components/BsCard';
 
-const ViewRender = () => {
+const SectionRender = () => {
     return(
         <>
             <Title
@@ -344,4 +344,4 @@ const ViewRender = () => {
     );
 };
 
-export default ViewRender;
+export default SectionRender;

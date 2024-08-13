@@ -1,17 +1,11 @@
 import { Link } from 'react-router-dom';
 import {
-    BsGrid,
-    BsFiletypeJava,
-    BsFiletypeJsx,
-    BsFiletypeJs,
-    BsDownload,
-    BsListColumnsReverse,
-    BsQuestionCircle,
-    BsEnvelope,
-    BsBoxes,
-    BsBox,
-    BsCircle
-} from 'react-icons/bs';
+    BiGridAlt,
+    BiLogoHtml5, BiLogoCss3, BiLogoJava, BiLogoSpringBoot, BiLogoJavascript, BiLogoJquery, BiLogoReact, BiLogoPostgresql,
+    BiQuestionMark, BiEnvelope,
+    BiCircle
+} from "react-icons/bi";
+import { FcWorkflow } from "react-icons/fc";
 import { Span } from 'components/elements/Elements'; // Components
 
 const LiCreator = (text, link, liChildren) => {
@@ -61,9 +55,10 @@ const Aside = ({ arrObjs, recLink }) => {
         <>
             <aside id="sidebar" className="sidebar">
                 <ul className="sidebar-nav" id="sidebar-nav">
+                    <li className="nav-heading">HOME</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/">
-                            <BsGrid
+                            <BiGridAlt
                                 className="icon"
                             />
                             <span>Dashboard</span>
@@ -73,7 +68,7 @@ const Aside = ({ arrObjs, recLink }) => {
                     <li className="nav-heading">HTML</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-htmlref-nav" data-bs-toggle="collapse" to="#">
-                            <BsListColumnsReverse
+                            <BiLogoHtml5
                                 className="icon"
                             />
                             <span>References</span>
@@ -82,7 +77,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-htmlref-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/html/ref-tags">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Tag List</span>
@@ -90,7 +85,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/html/ref-standardattributes">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Global Attributes</span>
@@ -98,7 +93,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/html/ref-eventattributes">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Events</span>
@@ -112,19 +107,19 @@ const Aside = ({ arrObjs, recLink }) => {
                     <li className="nav-heading">자바스크립트(JavaScript)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/javascript/intro">
-                            <BsFiletypeJs
+                            <BiLogoJavascript
                                 className="icon"
                             />
                             <span>자바스크립트(JS)</span>
                         </Link>
-                    </li>{/* End React Introduction Page Nav */}
+                    </li>{/* End JavaScript Introduction Page Nav */}
 
                     <li className="nav-heading">제이쿼리(jQuery)</li>
 
                     <li className="nav-heading">리액트(React)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react/intro">
-                            <BsFiletypeJsx
+                            <BiLogoReact
                                 className="icon"
                             />
                             <span>리액트(React)</span>
@@ -133,7 +128,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
-                            <BsDownload
+                            <BiLogoReact
                                 className="icon"
                             />
                             <span>Getting Started</span>
@@ -142,7 +137,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/react/getstarted">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Create App</span>
@@ -150,7 +145,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/react/adding-typescript">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Adding TypeScript</span>
@@ -158,7 +153,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/react/adding-bootstrap">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Adding Bootstrap</span>
@@ -166,7 +161,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/react/adding-router">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>Adding Router</span>
@@ -177,7 +172,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/react/component">
-                            <BsBox
+                            <BiLogoReact
                                 className="icon"
                             />
                             <span>컴포넌트(Component)</span>
@@ -187,16 +182,16 @@ const Aside = ({ arrObjs, recLink }) => {
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/intro">
-                            <BsFiletypeJava
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>소개(Introduction)</span>
                         </Link>
-                    </li>{/* End React Introduction Page Nav */}
+                    </li>{/* End Java Introduction Page Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-datatype" data-bs-toggle="collapse" to="#">
-                            <BsBoxes
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>자료형(Data Types)</span>
@@ -205,7 +200,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-java-datatype" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/datatype">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>자료형(Data Types)</span>
@@ -213,7 +208,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/integer">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>정수형(Integer)</span>
@@ -221,7 +216,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/floating">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>실수형(Floating-Point)</span>
@@ -229,7 +224,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/characters">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>문자형(Characters)</span>
@@ -237,7 +232,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/boolean">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>논리형(Boolean)</span>
@@ -245,7 +240,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/casting">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>형변환(Casting)</span>
@@ -256,7 +251,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-statements" data-bs-toggle="collapse" to="#">
-                            <BsBoxes
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>제어문(Statements)</span>
@@ -265,7 +260,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-java-statements" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/conditional">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>조건문(Conditional)</span>
@@ -273,7 +268,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/iteration">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>반복문(Iteration)</span>
@@ -281,7 +276,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/control-flow">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>기타</span>
@@ -292,7 +287,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-oop" data-bs-toggle="collapse" to="#">
-                            <BsBoxes
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>객체지향프로그래밍(OOP)</span>
@@ -301,7 +296,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-java-oop" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/oop">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>객체지향프로그래밍(OOP)</span>
@@ -309,7 +304,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/classes">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>클래스(Class)</span>
@@ -317,7 +312,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/constructor">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>생성자(Constructor)</span>
@@ -325,7 +320,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/constructor-this">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>this와 this()</span>
@@ -333,7 +328,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/method">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>메서드(Method)</span>
@@ -341,7 +336,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/overloading">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>오버로딩(Overloading)</span>
@@ -352,7 +347,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-inheritance" data-bs-toggle="collapse" to="#">
-                            <BsBoxes
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>상속(Inheritance)</span>
@@ -361,7 +356,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-java-inheritance" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/inheritance">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>상속(Inheritance)</span>
@@ -369,7 +364,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/overriding">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>오버라이딩(Overriding)</span>
@@ -377,7 +372,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/inheritance-super">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>super와 super()</span>
@@ -388,7 +383,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-polymorphism" data-bs-toggle="collapse" to="#">
-                            <BsBoxes
+                            <BiLogoJava
                                 className="icon"
                             />
                             <span>다형성(Polymorphism)</span>
@@ -397,7 +392,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-java-polymorphism" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/java/polymorphism">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>다형성(Polymorphism)</span>
@@ -405,7 +400,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/overriding">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>오버라이딩(Overriding)</span>
@@ -413,7 +408,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/abstract">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>추상화(Abstract)</span>
@@ -421,7 +416,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/interface">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>인터페이스(Interface)</span>
@@ -429,7 +424,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/java/inner-class">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>내부클래스(Inner Class)</span>
@@ -440,10 +435,79 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-heading">SQL</li>
 
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-sql-dml" data-bs-toggle="collapse" to="#">
+                            <BiLogoPostgresql
+                                className="icon"
+                            />
+                            <span>데이터 조작어(DML)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-sql-dml" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/sql/insert">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>삽입(INSERT)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/sql/update">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>수정(UPDATE)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/sql/delete">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>삭제(DELETE)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/sql/select">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>검색(SELECT)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/sql/merge">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>MERGE문</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End Java Polymorphism Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/sql/join">
+                            <BiLogoPostgresql
+                                className="icon"
+                            />
+                            <span>조인(JOIN)</span>
+                        </Link>
+                    </li>{/* End SQL JOIN Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/sql/union">
+                            <BiLogoPostgresql
+                                className="icon"
+                            />
+                            <span>결합(UNION)</span>
+                        </Link>
+                    </li>{/* End SQL UNION Page Nav */}
+
                     <li className="nav-heading">스프링(Spring)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/spring/intro">
-                            <BsFiletypeJava
+                            <BiLogoSpringBoot
                                 className="icon"
                             />
                             <span>스프링(Spring)</span>
@@ -451,7 +515,7 @@ const Aside = ({ arrObjs, recLink }) => {
                     </li>{/* End Spring Introduction Page Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/spring/inversion-of-control">
-                            <BsFiletypeJava
+                            <BiLogoSpringBoot
                                 className="icon"
                             />
                             <span>제어의 역전(IOC)</span>
@@ -459,7 +523,7 @@ const Aside = ({ arrObjs, recLink }) => {
                     </li>{/* End Spring IoC Page Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/spring/dependency-injection">
-                            <BsFiletypeJava
+                            <BiLogoSpringBoot
                                 className="icon"
                             />
                             <span>의존성 주입(DI)</span>
@@ -469,7 +533,7 @@ const Aside = ({ arrObjs, recLink }) => {
                     <li className="nav-heading">비지니스 프로세스 모델링 표기법(BPMN)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/bpmn/intro">
-                            <BsFiletypeJava
+                            <FcWorkflow
                                 className="icon"
                             />
                             <span>BPMN</span>
@@ -478,7 +542,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-bpmn-nav" data-bs-toggle="collapse" to="#">
-                            <BsListColumnsReverse
+                            <FcWorkflow
                                 className="icon"
                             />
                             <span>BPMN 요소</span>
@@ -487,7 +551,7 @@ const Aside = ({ arrObjs, recLink }) => {
                         <ul id="learn-bpmn-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/bpmn/event">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>이벤트(Event)</span>
@@ -495,15 +559,15 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/bpmn/activitie">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>활동(Activities)</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/bpmn/geteway">
-                                    <BsCircle
+                                <Link to="/bpmn/gateway">
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>게이트웨이(Geteways)</span>
@@ -511,7 +575,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/bpmn/data-object">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>데이터 객체(Data Objects)</span>
@@ -519,7 +583,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/bpmn/flow">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>흐름(Flow)</span>
@@ -527,7 +591,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/bpmn/artifact">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>아티팩트(Artifact)</span>
@@ -535,7 +599,7 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                             <li>
                                 <Link to="/bpmn/swimlane">
-                                    <BsCircle
+                                    <BiCircle
                                         className="icon"
                                     />
                                     <span>스윔레인(Swimlane)</span>
@@ -548,7 +612,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/faq">
-                            <BsQuestionCircle
+                            <BiQuestionMark
                                 className="icon"
                             />
                             <span>F.A.Q</span>
@@ -557,7 +621,7 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/contact">
-                            <BsEnvelope
+                            <BiEnvelope
                                 className="icon"
                             />
                             <span>Contact</span>

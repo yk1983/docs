@@ -3,7 +3,7 @@ import { Row, Col, Card, Image } from 'react-bootstrap';
 import { BsSubtract, BsFeather } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 
-const Swimlane = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -53,4 +53,4 @@ const Swimlane = () => {
     );
 }
 
-export default Swimlane;
+export default SectionRender;

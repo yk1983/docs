@@ -6,7 +6,7 @@ import PageTitle from 'layouts/PageTitle';
 import data1 from 'data/bpmn/taskType';
 import data2 from 'data/bpmn/taskMaker';
 
-const Activities = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -110,4 +110,4 @@ const Activities = () => {
     );
 }
 
-export default Activities;
+export default SectionRender;

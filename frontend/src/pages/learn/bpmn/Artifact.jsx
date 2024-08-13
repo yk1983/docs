@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 // JsonData
 import data from 'data/bpmn/artifact';
 
-const Artifact = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -68,4 +68,4 @@ const Artifact = () => {
     );
 }
 
-export default Artifact;
+export default SectionRender;

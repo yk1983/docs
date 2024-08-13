@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 // JsonData
 import data from 'data/bpmn/geteway';
 
-const Gateways = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -184,4 +184,4 @@ const Gateways = () => {
     );
 }
 
-export default Gateways;
+export default SectionRender;

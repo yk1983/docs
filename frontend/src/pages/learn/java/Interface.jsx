@@ -4,7 +4,7 @@ import { Title, Sup, Code } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
-const ViewRender = () => {
+const SectionRender = () => {
     return(
         <>
             <Title
@@ -230,4 +230,4 @@ const ViewRender = () => {
     );
 };
 
-export default ViewRender;
+export default SectionRender;

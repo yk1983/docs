@@ -6,7 +6,7 @@ import PageTitle from 'layouts/PageTitle';
 import data1 from 'data/bpmn/dataObjectType';
 import data2 from 'data/bpmn/dataStore';
 
-const DataObjects = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -120,4 +120,4 @@ const DataObjects = () => {
     );
 }
 
-export default DataObjects;
+export default SectionRender;

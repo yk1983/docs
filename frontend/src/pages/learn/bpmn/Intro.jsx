@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { BsSubtract, BsFeather } from 'react-icons/bs';
 import PageTitle from 'layouts/PageTitle';
 
-const Intro = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -71,4 +71,4 @@ const Intro = () => {
     );
 }
 
-export default Intro;
+export default SectionRender;

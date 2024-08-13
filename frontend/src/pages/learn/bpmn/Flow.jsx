@@ -5,7 +5,7 @@ import PageTitle from 'layouts/PageTitle';
 // JsonData
 import data from 'data/bpmn/flow';
 
-const Flow = () => {
+const SectionRender = () => {
     return(
         <>
             <Helmet>
@@ -62,4 +62,4 @@ const Flow = () => {
     );
 }
 
-export default Flow;
+export default SectionRender;

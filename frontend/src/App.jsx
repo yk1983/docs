@@ -49,6 +49,9 @@ import BpmnDataObject from 'pages/learn/bpmn/DataObjects';
 import BpmnFlow from 'pages/learn/bpmn/Flow';
 import BpmnArtifact from 'pages/learn/bpmn/Artifact';
 import BpmnSwimlane from 'pages/learn/bpmn/Swimlane';
+// SQL
+import SQLJoin from 'pages/learn/sql/Join'
+import SQLUnion from 'pages/learn/sql/Union'
 // pages
 import Contact from 'pages/Contact';
 import Faq from 'pages/Faq';
@@ -104,6 +107,8 @@ const App = () => {
                     <Route path="/bpmn/flow" element={<BpmnFlow />} />
                     <Route path="/bpmn/artifact" element={<BpmnArtifact />} />
                     <Route path="/bpmn/swimlane" element={<BpmnSwimlane />} />
+                    <Route path="/sql/join" element={<SQLJoin />} />
+                    <Route path="/sql/union" element={<SQLUnion />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<Faq />} />
                 </Routes>

@@ -5,7 +5,7 @@ import {
 } from 'react-icons/bs';
 import Alert from 'react-bootstrap/Alert';
 
-const BsAlert = (props) => {
+const Note = (props) => {
     const {
         variant="info"
     ,   title
@@ -33,15 +33,20 @@ const BsAlert = (props) => {
     };
 
     return(
-        <Alert variant={ variant }>
+        <Alert
+            variant={ variant }
+            className="mt-3"
+        >
             <Alert.Heading>
                 <BsIcon variant={ variant } /> { title }
             </Alert.Heading>
-            <p style={{ whiteSpace : 'pre-line' }}>
-                { content }
+            <p
+                className="mb-0"
+                style={{ whiteSpace : 'pre-line' }}
+            >{ content }
             </p>
         </Alert>
     );
 };
 
-export default BsAlert;
+export default Note;

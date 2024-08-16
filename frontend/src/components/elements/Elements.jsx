@@ -1,9 +1,13 @@
 import { Helmet } from 'react-helmet-async';
-
-interface Props {
-    className? : string;
-}
-// document title tag creator
+/**
+ * Elements.jsx
+ * @description
+ *
+ * @author  : yongkim
+ * @since   : 8/13/24
+ * @param   :
+ * @version : 1.0.0
+ */
 const Title = ({ text }) => {
     return(
         <Helmet>

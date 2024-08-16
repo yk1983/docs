@@ -1,29 +1,25 @@
-import { Row, Col, Card, Alert } from 'react-bootstrap';
-import { BsSubtract, BsPinAngle } from 'react-icons/bs';
-import { Title, Span, Sup, Code, List } from 'components/elements/Elements'; // Components
+import { Helmet } from 'react-helmet-async';
+import Breadcrumbs from 'components/Breadcrumbs';
 import ExtSection from 'components/ExtSection';
-import ExtCard from 'components/ExtCard';
-import BsCard from 'components/BsCard';
-import BsAlert from 'components/BsAlert';
+import { Row, Col, Card } from 'react-bootstrap';
+import { BsSubtract } from 'react-icons/bs';
+import { BsCard } from 'components/Article';
 import ExtAccordion from 'components/ExtAccordion';
-import PageTitle from 'layouts/PageTitle';
 
 const SectionRender = () => {
-    const style = {
-        whiteSpace : 'pre-line'
-    };
+    const
+        title = "스프링(Spring)",
+        breadcrumbs = [ "Learn", "React", "Introduction" ];
 
     return(
         <>
-            <Title
-                text="Learn SPRING"
-            />
+            <Helmet>
+                <title>{ title }</title>
+            </Helmet>
 
-            <PageTitle
-                title="스프링 프레임워크(Spring Framework)"
-                depth1="Learn"
-                depth2="Spring"
-                depth3="Introduction"
+            <Breadcrumbs
+                title={ title }
+                breadcrumbs={ breadcrumbs }
             />
 
             <ExtSection

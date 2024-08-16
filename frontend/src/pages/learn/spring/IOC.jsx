@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
 import { Title, Span, Sup, Code, List } from 'components/elements/Elements'; // Components
-import BsCard from 'components/BsCard';
+import { BsCard, BsCardText } from 'components/Article';
 import PageTitle from 'layouts/PageTitle';
 
 const SectionRender = () => {

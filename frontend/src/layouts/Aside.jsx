@@ -181,9 +181,7 @@ const Aside = ({ arrObjs, recLink }) => {
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/intro">
-                            <BiLogoJava
-                                className="icon"
-                            />
+                            <BiLogoJava className="icon" />
                             <span>자바(Java)</span>
                         </Link>
                     </li>{/* End Java Introduction Page Nav */}

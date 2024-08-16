@@ -3,7 +3,6 @@ import ExtCard from 'components/ExtCard';
 
 const ExtSection = ({ data }) => {
 //    console.log(data);
-
     let rowChildren = [];
     data.map((item, index) => {
         const { col = 12, title, subtitle, body } = item;

@@ -3,7 +3,7 @@ import { BsSubtract, BsInfoCircle } from 'react-icons/bs';
 import { Title, Sup, Code, List } from 'components/elements/Elements'; // Components
 import PageTitle from 'layouts/PageTitle';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
-import BsCard from 'components/BsCard';
+import { BsCard, BsCardText } from 'components/Article';
 
 const SectionRender = () => {
     return(

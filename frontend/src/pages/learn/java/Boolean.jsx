@@ -1,14 +1,14 @@
 import { Helmet } from 'react-helmet-async';
+import { Table } from 'react-bootstrap';
 import Breadcrumbs from 'components/Breadcrumbs';
-import BsTable from 'components/Table';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
-import { Row, Col, Card, Table } from 'react-bootstrap';
-import { BsSubtract } from 'react-icons/bs';
+import { UlList } from 'components/List';
+import Highlight from 'components/ExtHighlight';
 
 const SectionRender = () => {
     const
-        title = "논리형(Boolean)",
-        breadcrumbs = [ "Learn", "Java", "Boolean" ];
+        title = "논리형(Boolean Types)",
+        breadcrumbs = [ "Learn", "Java", "Boolean Types" ];
 
     return(
         <>
@@ -25,14 +25,28 @@ const SectionRender = () => {
                 <BsCard
                     col={ 12 }
                     title="논리형"
-                    subtitle="Boolean"
+                    subtitle="Boolean Types"
                 >
                     <BsCardText>
                         논리형은 참(<code>true</code>)이나 거짓(<code>false</code>) 중 한 가지 값만을 가질 수 있는
                         불리언 타입을 의미합니다.
                         <br />
-                        <code>boolean</code> 형의 기본값은 false이며, 기본 타입 중 가장 작은 크기인 1바이트의 크기를 가집니다.
+                        <code>boolean</code> 형의 기본값은 <code>false</code>이며, 기본 타입 중 가장 작은 크기인 1바이트의 크기를 가집니다.
                     </BsCardText>
+
+                    <UlList
+                        items={[
+                            "boolean"
+                        ]}
+                    />
+
+                    <Highlight
+                        language="java"
+                        codestring={[
+                            "boolean checked = true;"
+                        ,   "boolean power = FALSE;    // 에러. 자바에서는 대소문자를 구별되기 때문에 소문자를 사용해야합니다."
+                        ].join('\n')}
+                    />
                 </BsCard>
 
                 <BsCard

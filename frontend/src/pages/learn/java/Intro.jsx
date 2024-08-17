@@ -26,16 +26,33 @@ const SectionRender = () => {
                     subtitle="Java"
                 >
                     <BsCardText>
-                        자바(Java)는 객체 지향적 프로그래밍 언어이며, 자바 가상 머신(JVM, Java Virtual Machine)을 사용하여
-                        운영체제와는 독립적으로 동작할 수 있습니다.
+                        <span className="text-primary">자바(Java)는 객체 지향적 프로그래밍 언어</span>입니다.
+                    </BsCardText>
+                    <BsCardText>
+                        처음에는 가전제품 내에 탑재해 동작하는 프로그램을 위해 개발했지만 현재 웹 애플리케이션 개발에
+                        가장 많이 사용하는 언어 가운데 하나이고, 모바일 기기용 소프트웨어 개발에도 널리 사용하고 있습니다.
+                        자바의 개발자들은 유닉스 기반의 배경을 가지고 있었기 때문에 문법적인 특성은 파스칼이 아닌 C++의
+                        조상인 C 언어와 비슷하지만, 자바를 다른 컴파일언어와 구분 짓는 가장 큰 특징은 <span className="text-danger">
+                        컴파일된 코드가 플랫폼 독립적</span>이라는 점입니다.
+                    </BsCardText>
+                    <BsCardText>
+                        자바 컴파일러는 자바 언어로 작성된 프로그램을 바이트코드라는 특수한 <span className="text-danger">
+                        바이너리 형태로 변환</span>합니다.
                         <br />
+                        바이트코드를 실행하기 위해서는 <span className="text-primary">자바 가상 머신(JVM, Java Virtual Machine)</span>
+                        이라는 특수한 가상 머신이 필요한데, 이 가상 머신은 자바 바이트코드를 어느 플랫폼에서나 동일한 형태로 실행시킵니다.
                         <br />
+                        때문에 <span className="text-danger">자바로 개발된 프로그램은 CPU나 운영 체제의 종류에 관계없이
+                        JVM을 설치할 수 있는 시스템에서는 어디서나 실행</span>할 수 있으며, 이 점이 웹 애플리케이션의
+                        특성과 맞아떨어져 폭발적인 인기를 끌게 되었습니다.
+                    </BsCardText>
+                    <BsCardText>
                         2024년도 3월 TIOBE Index에서는 Python, C, C++, Java, C#순으로 가장 인기 있는 프로그래밍 언어 TOP 5로 선정되었으며,
                         이러한 추세는 몇 년간 지속되고 있습니다.
                         <br />
                         PYPL Index에서는 Python, Java, JavaScript, C#, C/C++이 가장 인기 있는 언어 5개로 선정되었습니다.
-                        <br />
-                        <br />
+                    </BsCardText>
+                    <BsCardText>
                         자바의 사용 점유율이 많이 내려간 추세이지만 아직까지 자바는 많이 사용되고 있으며, 현재까지 개발되어
                         유지보수 및 앞으로 추가적으로 자바로 개발되는 어플리케이션들이 많은 만큼 자바는 아직도 매력적인 시장이라 할 수 있습니다.
                     </BsCardText>

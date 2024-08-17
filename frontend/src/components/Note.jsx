@@ -10,6 +10,7 @@ const Note = (props) => {
         variant="info"
     ,   title
     ,   content
+    ,   children
     } = props;
 
     const BsIcon = ({ variant }) => {
@@ -43,7 +44,7 @@ const Note = (props) => {
             <p
                 className="mb-0"
                 style={{ whiteSpace : 'pre-line' }}
-            >{ content }
+            >{ (children) ? children : content }
             </p>
         </Alert>
     );

@@ -431,7 +431,14 @@ const Aside = ({ arrObjs, recLink }) => {
                     </li>{/* End Java Polymorphism Nav */}
 
                     <li className="nav-heading">SQL</li>
-
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/sql/oracle-on-macos">
+                            <BiLogoPostgresql
+                                className="icon"
+                            />
+                            <span>[MacOS]오라클 설치</span>
+                        </Link>
+                    </li>{/* End SQL JOIN Page Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-sql-dml" data-bs-toggle="collapse" to="#">
                             <BiLogoPostgresql
@@ -483,7 +490,6 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                         </ul>
                     </li>{/* End Java Polymorphism Nav */}
-
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/sql/join">
                             <BiLogoPostgresql

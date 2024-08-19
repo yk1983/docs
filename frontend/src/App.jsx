@@ -35,6 +35,7 @@ import JsIntro from 'pages/learn/javascript/Intro';
 import SpringIntro from 'pages/learn/spring/Intro';
 import SpringIOC from 'pages/learn/spring/IOC';
 import SpringDI from 'pages/learn/spring/DI';
+import SpringJPA from 'pages/learn/spring/JPA';
 // React
 import ReactIntro from 'pages/learn/react/Intro';
 import ReactStarted from 'pages/learn/react/GetStarted';
@@ -98,6 +99,7 @@ const App = () => {
                     <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/spring/inversion-of-control" element={<SpringIOC />} />
                     <Route path="/spring/dependency-injection" element={<SpringDI />} />
+                    <Route path="/spring/jpa" element={<SpringJPA />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />

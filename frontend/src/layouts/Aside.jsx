@@ -270,7 +270,15 @@ const Aside = ({ arrObjs, recLink }) => {
                                 <span>다차원배열(Multi-Dimensional)</span>
                             </Link>
                         </li>
-                    </ul>
+                        <li>
+                            <Link to="/java/arrays-conjugation">
+                                <BiCircle
+                                    className="icon"
+                                />
+                                <span>활용(Conjugation)</span>
+                            </Link>
+                        </li>
+                    </ul>{/* End Java Array Nav */}
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-statements" data-bs-toggle="collapse" to="#">
@@ -556,6 +564,12 @@ const Aside = ({ arrObjs, recLink }) => {
                                 className="icon"
                             />
                             <span>의존성 주입(DI)</span>
+                        </Link>
+                    </li>{/* End Spring IoC Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/jpa">
+                            <BiLogoSpringBoot className="icon" />
+                            <span>JPA&Mybatis</span>
                         </Link>
                     </li>{/* End Spring IoC Page Nav */}
 

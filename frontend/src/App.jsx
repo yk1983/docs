@@ -11,6 +11,8 @@ import JavaFloating from 'pages/learn/java/Floating';
 import JavaCharacters from 'pages/learn/java/Characters';
 import JavaBoolean from 'pages/learn/java/Boolean';
 import JavaCasting from 'pages/learn/java/Casting';
+import JavaArrays from 'pages/learn/java/Arrays';
+import JavaMultiDimensionalArray from 'pages/learn/java/MultiDimensionalArray';
 import JavaConditional from 'pages/learn/java/Conditional';
 import JavaIteration from 'pages/learn/java/Iteration';
 import JavaControlFlow from 'pages/learn/java/ControlFlow';
@@ -74,7 +76,9 @@ const App = () => {
                     <Route path="/java/floating" element={<JavaFloating />} />
                     <Route path="/java/characters" element={<JavaCharacters />} />
                     <Route path="/java/boolean" element={<JavaBoolean />} />
-                    <Route path="/java/casting" element={<JavaCasting />} />
+                    <Route path="/java/boolean" element={<JavaBoolean />} />
+                    <Route path="/java/arrays" element={<JavaArrays />} />
+                    <Route path="/java/multi-dimensional-arrays" element={<JavaMultiDimensionalArray />} />
                     <Route path="/java/constructor" element={<JavaConstructor />} />
                     <Route path="/java/constructor-this" element={<JavaConstructorThis />} />
                     <Route path="/java/iteration" element={<JavaIteration />} />

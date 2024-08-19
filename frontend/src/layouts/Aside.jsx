@@ -246,6 +246,32 @@ const Aside = ({ arrObjs, recLink }) => {
                         </ul>
                     </li>{/* End Java DataType Nav */}
 
+                    <Link className="nav-link collapsed" data-bs-target="#learn-java-arrays" data-bs-toggle="collapse" to="#">
+                        <BiLogoJava
+                            className="icon"
+                        />
+                        <span>배열(Arrays)</span>
+                        <i className="bi bi-chevron-down ms-auto"></i>
+                    </Link>
+                    <ul id="learn-java-arrays" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <Link to="/java/arrays">
+                                <BiCircle
+                                    className="icon"
+                                />
+                                <span>배열(Arrays)</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/java/multi-dimensional-arrays">
+                                <BiCircle
+                                    className="icon"
+                                />
+                                <span>다차원배열(Multi-Dimensional)</span>
+                            </Link>
+                        </li>
+                    </ul>
+
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-java-statements" data-bs-toggle="collapse" to="#">
                             <BiLogoJava

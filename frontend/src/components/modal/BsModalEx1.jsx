@@ -1,4 +1,4 @@
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const BsModal = (props) => {

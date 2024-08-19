@@ -4,8 +4,6 @@ import { Image } from 'react-bootstrap';
 import { BiLogoDocker, BiLink } from "react-icons/bi";
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
-import { DlList, DtItem, DdItem } from 'components/List';
-import Note from 'components/Note';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 
 const SectionRender = () => {

@@ -5,6 +5,7 @@ import { BsLink45Deg } from 'react-icons/bs';
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
 import { UlList, OlList, LiItem } from 'components/List';
+import Note from 'components/Note';
 import Highlight from 'components/ExtHighlight';
 
 const SectionRender = () => {
@@ -230,6 +231,15 @@ const SectionRender = () => {
                         ,   "    }"
                         ,   "}"
                         ].join('\n')}
+                    />
+
+                    <Note
+                        variant="danger"
+                        title="ArrayIndexOutOfBoundsException"
+                        content={[
+                            "선언된 배열의 길이보다 큰 인덱스를 사용하는 경우 다음과 같이 오류가 발생할 수 있습니다."
+                        ,   "\nSystem.out.println(weeks[7]);  // 여덟 번째 배열값이 없으므로 ArrayIndexOutOfBoundsException 오류 발생"
+                        ].join(' ')}
                     />
                 </BsCard>
             </BsContainer>

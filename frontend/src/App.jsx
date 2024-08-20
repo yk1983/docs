@@ -35,6 +35,7 @@ import JsIntro from 'pages/learn/javascript/Intro';
 import SpringIntro from 'pages/learn/spring/Intro';
 import SpringIOC from 'pages/learn/spring/IOC';
 import SpringDI from 'pages/learn/spring/DI';
+import SpringAOP from 'pages/learn/spring/AOP';
 import SpringJPA from 'pages/learn/spring/JPA';
 // React
 import ReactIntro from 'pages/learn/react/Intro';
@@ -77,7 +78,7 @@ const App = () => {
                     <Route path="/java/floating" element={<JavaFloating />} />
                     <Route path="/java/characters" element={<JavaCharacters />} />
                     <Route path="/java/boolean" element={<JavaBoolean />} />
-                    <Route path="/java/boolean" element={<JavaBoolean />} />
+                    <Route path="/java/casting" element={<JavaCasting />} />
                     <Route path="/java/arrays" element={<JavaArrays />} />
                     <Route path="/java/multi-dimensional-arrays" element={<JavaMultiDimensionalArray />} />
                     <Route path="/java/constructor" element={<JavaConstructor />} />
@@ -99,6 +100,7 @@ const App = () => {
                     <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/spring/inversion-of-control" element={<SpringIOC />} />
                     <Route path="/spring/dependency-injection" element={<SpringDI />} />
+                    <Route path="/spring/aop" element={<SpringAOP />} />
                     <Route path="/spring/jpa" element={<SpringJPA />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />

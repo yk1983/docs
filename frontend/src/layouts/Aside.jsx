@@ -526,52 +526,57 @@ const Aside = ({ arrObjs, recLink }) => {
                     </li>{/* End Java Polymorphism Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/sql/join">
-                            <BiLogoPostgresql
-                                className="icon"
-                            />
+                            <BiLogoPostgresql className="icon" />
                             <span>조인(JOIN)</span>
                         </Link>
                     </li>{/* End SQL JOIN Page Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/sql/union">
-                            <BiLogoPostgresql
-                                className="icon"
-                            />
+                            <BiLogoPostgresql className="icon" />
                             <span>결합(UNION)</span>
                         </Link>
                     </li>{/* End SQL UNION Page Nav */}
 
                     <li className="nav-heading">스프링(Spring)</li>
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/spring/intro">
-                            <BiLogoSpringBoot
-                                className="icon"
-                            />
+                        <Link className="nav-link collapsed" data-bs-target="#learn-spring" data-bs-toggle="collapse" to="#">
+                            <BiLogoSpringBoot className="icon" />
                             <span>스프링(Spring)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
+                        <ul id="learn-spring" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/spring/intro">
+                                    <BiCircle className="icon" />
+                                    <span>스프링(Spring)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/spring/dependency-injection">
+                                    <BiCircle className="icon" />
+                                    <span>의존성 주입(DI)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/spring/inversion-of-control">
+                                    <BiCircle className="icon" />
+                                    <span>제어의 역전(IoC)</span>
+                                </Link>
+                            </li>
+                        </ul>
                     </li>{/* End Spring Introduction Page Nav */}
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/spring/inversion-of-control">
-                            <BiLogoSpringBoot
-                                className="icon"
-                            />
-                            <span>제어의 역전(IOC)</span>
+                        <Link className="nav-link collapsed" to="/spring/aop">
+                            <BiLogoSpringBoot className="icon" />
+                            <span>AOP(관점지향프로그래밍)</span>
                         </Link>
-                    </li>{/* End Spring IoC Page Nav */}
-                    <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/spring/dependency-injection">
-                            <BiLogoSpringBoot
-                                className="icon"
-                            />
-                            <span>의존성 주입(DI)</span>
-                        </Link>
-                    </li>{/* End Spring IoC Page Nav */}
+                    </li>{/* End Spring AOP Page Nav */}
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/spring/jpa">
                             <BiLogoSpringBoot className="icon" />
-                            <span>JPA&Mybatis</span>
+                            <span>JPA & Mybatis</span>
                         </Link>
-                    </li>{/* End Spring IoC Page Nav */}
+                    </li>{/* End Spring JPA Page Nav */}
 
                     <li className="nav-heading">비지니스 프로세스 모델링 표기법(BPMN)</li>
                     <li className="nav-item">

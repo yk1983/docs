@@ -2,9 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Col, Image } from 'react-bootstrap';
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
-import { DlList, LiItem } from 'components/List';
-import Note from 'components/Note';
-import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
+import { DlList } from 'components/List';
 /**
  * JPA.jsx
  * @description
@@ -34,6 +32,7 @@ const SectionRender = () => {
                 <BsCard
                     col={ 12 }
                     title="JAP와 MyBatis"
+                    subtitle="JPA(Java Persistence Api)와 MyBatis"
                 >
                     <BsCardText>
                         웹 애플리케이션을 위한 백엔드로 가장 많이 사용되는 프레임워크로는 Java 기반의 Spring 또는 Springboot를

@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+// Dashboard
+import Main from 'pages/learn/Main';
 // HTML
 import HtmlTags from 'pages/learn/html/Tags';
 import HtmlGlobalAttributes from 'pages/learn/html/GlobalAttributes';
@@ -68,6 +70,7 @@ const App = () => {
         <>
             <main id="main" className="main">
                 <Routes>
+                    <Route path="/" element={<Main />} />
                     <Route path="/html/ref-tags" element={<HtmlTags />} />
                     <Route path="/html/ref-standardattributes" element={<HtmlGlobalAttributes />} />
                     <Route path="/html/ref-eventattributes" element={<HtmlEvents />} />

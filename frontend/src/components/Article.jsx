@@ -11,18 +11,13 @@ import { BsSubtract } from 'react-icons/bs';
  * @version : 1.0.0
  */
 const BsContainer = (props) => {
-    const children = props.children;
-    if (Object.is(props.className, 'section')) {
-        return(
-            <section className="section">
-                <Row>{ children }</Row>
-            </section>
-        );
-    }
+    const
+        children = props.children,
+        className = props.className;
     return(
-        <Container>
+        <section className={ className }>
             <Row>{ children }</Row>
-        </Container>
+        </section>
     );
 };
 

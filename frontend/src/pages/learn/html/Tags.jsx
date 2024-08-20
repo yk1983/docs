@@ -1,53 +1,53 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Table } from 'react-bootstrap';
-import { BsSubtract } from 'react-icons/bs';
-import PageTitle from 'layouts/PageTitle';
+import { Table } from 'react-bootstrap';
+import Breadcrumbs from 'components/Breadcrumbs';
+import { BsContainer, BsCard, BsCardText } from 'components/Article';
 // JsonData
 import data from 'data/html/tags';
 
 const SectionRender = () => {
-    return(
+    const
+        title = "HTML Element Reference",
+        breadcrumbs = [ "Learn", "HTML", "Tags" ];
+
+    return (
         <>
             <Helmet>
-                <title>Learn HTML</title>
+                <title>{ title }</title>
             </Helmet>
 
-            <PageTitle
-                title="HTML Element Reference"
-                depth1="Learn"
-                depth2="HTML"
-                depth3="Element Reference"
+            <Breadcrumbs
+                title={ title }
+                breadcrumbs={ breadcrumbs }
             />
 
-            <section className="section">
-                <Row>
-                    <Col lg={12}>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>
-                                    <BsSubtract /> HTML Element Reference
-                                </Card.Title>
-                                <Table striped bordered hover size="sm">
-                                    <thead>
-                                        <tr>
-                                            <th>Tag</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    {data.map(( item, index ) => (
-                                        <tr key={ index }>
-                                            <td>{ item.tag }</td>
-                                            <td>{ item.description }</td>
-                                        </tr>
-                                    ))}
-                                    </tbody>
-                                </Table> {/* End tables */}
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </section>
+            <BsContainer className="section" >
+                <BsCard
+                    col={ 12 }
+                    title="HTML Element Reference"
+                >
+                    <BsCardText>
+                        HTML 요소들을 정의합니다.
+                    </BsCardText>
+
+                    <Table striped bordered hover variant="dark" size="sm">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {data.map(( item, index ) => (
+                            <tr key={ index }>
+                                <td>{ item.tag }</td>
+                                <td>{ item.description }</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </Table> {/* End tables */}
+                </BsCard>
+            </BsContainer>
         </>
     );
 }

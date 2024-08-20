@@ -1,54 +1,53 @@
 import { Helmet } from 'react-helmet-async';
-import { Row, Col, Card, Table } from 'react-bootstrap';
-import { BsSubtract } from 'react-icons/bs';
-import PageTitle from 'layouts/PageTitle';
+import { Table } from 'react-bootstrap';
+import Breadcrumbs from 'components/Breadcrumbs';
+import { BsContainer, BsCard, BsCardText } from 'components/Article';
 // JsonData
-import data from 'data/html/globalAttributes'
+import data from 'data/html/tags';
 
 const SectionRender = () => {
-    return(
+    const
+        title = "HTML Global Attributes",
+        breadcrumbs = [ "Learn", "HTML", "Attributes" ];
+
+    return (
         <>
             <Helmet>
-                <title>Learn HTML</title>
+                <title>{ title }</title>
             </Helmet>
 
-            <PageTitle
-                title="HTML Global Attributes"
-                depth1="Learn"
-                depth2="HTML"
-                depth3="Global Attributes"
+            <Breadcrumbs
+                title={ title }
+                breadcrumbs={ breadcrumbs }
             />
 
-            <section className="section">
-                <Row>
-                    <Col lg={12}>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>
-                                    <BsSubtract /> HTML Global Attributes
-                                </Card.Title>
-                                {/* tables */}
-                                <Table striped bordered hover size="sm">
-                                    <thead>
-                                        <tr>
-                                            <th>Attribute</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    {data.map((item, index) => (
-                                        <tr key={ index }>
-                                            <td>{ item.attribute }</td>
-                                            <td>{ item.description }</td>
-                                        </tr>
-                                    ))}
-                                    </tbody>
-                                </Table> {/* End tables */}
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </section>
+            <BsContainer className="section" >
+                <BsCard
+                    col={ 12 }
+                    title="HTML Global Attributes"
+                >
+                    <BsCardText>
+                        HTML 요소들의 전역 속성을 정의합니다.
+                    </BsCardText>
+
+                    <Table striped bordered hover variant="dark" size="sm">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {data.map((item, index) => (
+                            <tr key={ index }>
+                                <td>{ item.attribute }</td>
+                                <td>{ item.description }</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </Table>
+                </BsCard>
+            </BsContainer>
         </>
     );
 }

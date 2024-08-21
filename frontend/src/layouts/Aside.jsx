@@ -577,6 +577,12 @@ const Aside = ({ arrObjs, recLink }) => {
                             <span>JPA & Mybatis</span>
                         </Link>
                     </li>{/* End Spring JPA Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/interceptor">
+                            <BiLogoSpringBoot className="icon" />
+                            <span>인터셉터(Interceptor)</span>
+                        </Link>
+                    </li>{/* End Spring JPA Page Nav */}
 
                     <li className="nav-heading">비지니스 프로세스 모델링 표기법(BPMN)</li>
                     <li className="nav-item">

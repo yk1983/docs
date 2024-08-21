@@ -40,6 +40,7 @@ import SpringDI from 'pages/learn/spring/DI';
 import SpringAOP from 'pages/learn/spring/AOP';
 import SpringJPA from 'pages/learn/spring/JPA';
 import SpringInterceptor from 'pages/learn/spring/Interceptor';
+import SpringResolver from 'pages/learn/spring/Resolver';
 // React
 import ReactIntro from 'pages/learn/react/Intro';
 import ReactStarted from 'pages/learn/react/GetStarted';
@@ -104,9 +105,10 @@ const App = () => {
                     <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/spring/inversion-of-control" element={<SpringIOC />} />
                     <Route path="/spring/dependency-injection" element={<SpringDI />} />
-                    <Route path="/spring/aop" element={<SpringAOP />} />
-                    <Route path="/spring/jpa" element={<SpringJPA />} />
+                    <Route path="/spring/aspect-oriented-programming" element={<SpringAOP />} />
+                    <Route path="/spring/java-persistence-api" element={<SpringJPA />} />
                     <Route path="/spring/interceptor" element={<SpringInterceptor />} />
+                    <Route path="/spring/resolver" element={<SpringResolver />} />
                     <Route path="/react/intro" element={<ReactIntro />} />
                     <Route path="/react/getstarted" element={<ReactStarted />} />
                     <Route path="/react/adding-typescript" element={<ReactTypeScript />} />

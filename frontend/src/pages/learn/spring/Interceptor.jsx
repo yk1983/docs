@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import { Col, Image } from 'react-bootstrap';
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
 import { UlList, DlList, DtItem, DdItem } from 'components/List';
@@ -16,7 +15,7 @@ import Note from 'components/Note';
 const SectionRender = () => {
     const
         title = "인터셉터(Interceptor)",
-        breadcrumbs = [ "Learn", "Java", "Interceptor" ];
+        breadcrumbs = [ "Learn", "Spring", "Interceptor" ];
 
     return (
         <>

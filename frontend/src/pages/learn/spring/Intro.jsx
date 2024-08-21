@@ -9,7 +9,7 @@ import ExtAccordion from 'components/ExtAccordion';
 const SectionRender = () => {
     const
         title = "스프링(Spring)",
-        breadcrumbs = [ "Learn", "React", "Introduction" ];
+        breadcrumbs = [ "Learn", "Spring", "Introduction" ];
 
     return(
         <>

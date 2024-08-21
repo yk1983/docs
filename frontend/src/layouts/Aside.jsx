@@ -566,13 +566,13 @@ const Aside = ({ arrObjs, recLink }) => {
                         </ul>
                     </li>{/* End Spring Introduction Page Nav */}
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/spring/aop">
+                        <Link className="nav-link collapsed" to="/spring/aspect-oriented-programming">
                             <BiLogoSpringBoot className="icon" />
                             <span>AOP(관점지향프로그래밍)</span>
                         </Link>
                     </li>{/* End Spring AOP Page Nav */}
                     <li className="nav-item">
-                        <Link className="nav-link collapsed" to="/spring/jpa">
+                        <Link className="nav-link collapsed" to="/spring/java-persistence-api">
                             <BiLogoSpringBoot className="icon" />
                             <span>JPA & Mybatis</span>
                         </Link>
@@ -582,7 +582,13 @@ const Aside = ({ arrObjs, recLink }) => {
                             <BiLogoSpringBoot className="icon" />
                             <span>인터셉터(Interceptor)</span>
                         </Link>
-                    </li>{/* End Spring JPA Page Nav */}
+                    </li>{/* End Spring Interceptor Page Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/spring/resolver">
+                            <BiLogoSpringBoot className="icon" />
+                            <span>리졸버(Resolver)</span>
+                        </Link>
+                    </li>{/* End Spring Resolver Page Nav */}
 
                     <li className="nav-heading">비지니스 프로세스 모델링 표기법(BPMN)</li>
                     <li className="nav-item">

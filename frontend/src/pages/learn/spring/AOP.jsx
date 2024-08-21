@@ -18,7 +18,7 @@ import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 const SectionRender = () => {
     const
         title = "AOP(Aspect Oriented Programming)",
-        breadcrumbs = [ "Learn", "Java", "AOP" ];
+        breadcrumbs = [ "Learn", "Spring", "AOP" ];
 
     return (
         <>

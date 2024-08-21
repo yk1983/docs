@@ -15,7 +15,7 @@ import { DlList } from 'components/List';
 const SectionRender = () => {
     const
         title = "JPA(Java Persistence Api)",
-        breadcrumbs = [ "Learn", "Java", "JPA" ];
+        breadcrumbs = [ "Learn", "Spring", "JPA" ];
 
     return(
         <>

@@ -463,6 +463,12 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                         </ul>
                     </li>{/* End Java Polymorphism Nav */}
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/java/generics">
+                            <BiLogoJava className="icon" />
+                            <span>제네릭(Generics)</span>
+                        </Link>
+                    </li>{/* End Java Generics Page Nav */}
 
                     <li className="nav-heading">SQL</li>
                     <li className="nav-item">

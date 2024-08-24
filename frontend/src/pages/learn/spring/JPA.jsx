@@ -31,7 +31,7 @@ const SectionRender = () => {
             <BsContainer className="section" >
                 <BsCard
                     col={ 12 }
-                    title="JAP와 MyBatis"
+                    title="JPA와 MyBatis"
                     subtitle="JPA(Java Persistence Api)와 MyBatis"
                 >
                     <BsCardText>

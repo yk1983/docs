@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
-import { UlList, LiItem, DlList, DtItem, DdItem } from 'components/List';
+import { UlList, DlList, DtItem, DdItem } from 'components/List';
 import Note from 'components/Note';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
 import BsModalEx1 from 'components/modal/BsModalEx1';
@@ -69,9 +69,9 @@ const SectionRender = () => {
                         language="java"
                         codestring={[
                             "접근제어자 리턴타입 메서드명(매개변수1, 매개변수2, ...) { // 선언부"
-                        ,   "    // 구현부",
-                        ,   "    ...",
-                        ,   "    return 반환값;",
+                        ,   "    // 구현부"
+                        ,   "    ..."
+                        ,   "    return 반환값;"
                         ,   "}"
                         ].join('\n')}
                     />

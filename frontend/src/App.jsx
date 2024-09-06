@@ -33,6 +33,13 @@ import JavaOverriding from 'pages/learn/java/Overriding';
 import JavaInnerClass from 'pages/learn/java/InnerClass';
 import JavaGenerics from 'pages/learn/java/Generics';
 import JavaCollectionFramework from 'pages/learn/java/Collection';
+import JavaIterableIF from 'pages/learn/java/IterableIF';
+import JavaCollectionIF from 'pages/learn/java/CollectionIF';
+import JavaListIF from 'pages/learn/java/ListIF';
+import JavaArrayList from 'pages/learn/java/ArrayList';
+import JavaLinkedList from 'pages/learn/java/LinkedList';
+import JavaStack from 'pages/learn/java/Stack';
+import JavaQueueIF from 'pages/learn/java/Queue';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // Spring
@@ -113,6 +120,13 @@ const App = () => {
                     <Route path="/java/conditional" element={<JavaConditional />} />
                     <Route path="/java/generics" element={<JavaGenerics />} />
                     <Route path="/java/collection" element={<JavaCollectionFramework />} />
+                    <Route path="/java/iterable-interface" element={<JavaIterableIF />} />
+                    <Route path="/java/collection-interface" element={<JavaCollectionIF />} />
+                    <Route path="/java/list-interface" element={<JavaListIF />} />
+                    <Route path="/java/array-list-class" element={<JavaArrayList />} />
+                    <Route path="/java/linked-list-class" element={<JavaLinkedList />} />
+                    <Route path="/java/stack-class" element={<JavaStack />} />
+                    <Route path="/java/queue-interface" element={<JavaQueueIF />} />
                     <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/spring/inversion-of-control" element={<SpringIOC />} />
                     <Route path="/spring/dependency-injection" element={<SpringDI />} />

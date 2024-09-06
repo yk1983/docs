@@ -547,19 +547,31 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/arraylist-class">
+                                <Link to="/java/array-list-class">
                                     <BiCircle className="icon" />
                                     <span>ArrayList 클래스</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/linkedlist-class">
+                                <Link to="/java/linked-list-class">
                                     <BiCircle className="icon" />
                                     <span>LinkedList 클래스</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/java/stack-class">
+                                    <BiCircle className="icon" />
+                                    <span>Stack 클래스</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/queue-interface">
+                                    <BiCircle className="icon" />
+                                    <span>Queue 인터페이스</span>
+                                </Link>
+                            </li>
                         </ul>
-                    </li>{/* End Java Polymorphism Nav */}
+                    </li>{/* End Java Collection Nav */}
 
                     <li className="nav-heading">SQL</li>
                     <li className="nav-item">

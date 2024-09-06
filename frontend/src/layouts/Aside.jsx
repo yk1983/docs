@@ -505,12 +505,63 @@ const Aside = ({ arrObjs, recLink }) => {
                             </li>
                         </ul>
                     </li>{/* End Java Polymorphism Nav */}
+
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to="/java/generics">
                             <BiLogoJava className="icon" />
                             <span>제네릭(Generics)</span>
                         </Link>
                     </li>{/* End Java Generics Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-java-collection" data-bs-toggle="collapse" to="#">
+                            <BiLogoJava
+                                className="icon"
+                            />
+                            <span>컬렉션(Collection)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-java-collection" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/java/collection">
+                                    <BiCircle className="icon" />
+                                    <span>컬렉션 프레임워크</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/overriding">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>오버라이딩(Overriding)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/abstract">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>추상화(Abstract)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/interface">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>인터페이스(Interface)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/inner-class">
+                                    <BiCircle
+                                        className="icon"
+                                    />
+                                    <span>내부클래스(Inner Class)</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End Java Polymorphism Nav */}
 
                     <li className="nav-heading">SQL</li>
                     <li className="nav-item">

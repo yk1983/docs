@@ -32,6 +32,7 @@ import JavaInterface from 'pages/learn/java/Interface';
 import JavaOverriding from 'pages/learn/java/Overriding';
 import JavaInnerClass from 'pages/learn/java/InnerClass';
 import JavaGenerics from 'pages/learn/java/Generics';
+import JavaCollectionFramework from 'pages/learn/java/Collection';
 // JavaScript
 import JsIntro from 'pages/learn/javascript/Intro';
 // Spring
@@ -111,6 +112,7 @@ const App = () => {
                     <Route path="/java/overloading" element={<JavaOverloading />} />
                     <Route path="/java/conditional" element={<JavaConditional />} />
                     <Route path="/java/generics" element={<JavaGenerics />} />
+                    <Route path="/java/collection" element={<JavaCollectionFramework />} />
                     <Route path="/spring/intro" element={<SpringIntro />} />
                     <Route path="/spring/inversion-of-control" element={<SpringIOC />} />
                     <Route path="/spring/dependency-injection" element={<SpringDI />} />

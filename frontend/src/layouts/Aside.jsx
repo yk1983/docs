@@ -529,35 +529,33 @@ const Aside = ({ arrObjs, recLink }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/overriding">
-                                    <BiCircle
-                                        className="icon"
-                                    />
-                                    <span>오버라이딩(Overriding)</span>
+                                <Link to="/java/iterable-interface">
+                                    <BiCircle className="icon" />
+                                    <span>Iterable 인터페이스</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/abstract">
-                                    <BiCircle
-                                        className="icon"
-                                    />
-                                    <span>추상화(Abstract)</span>
+                                <Link to="/java/collection-interface">
+                                    <BiCircle className="icon" />
+                                    <span>Collection 인터페이스</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/interface">
-                                    <BiCircle
-                                        className="icon"
-                                    />
-                                    <span>인터페이스(Interface)</span>
+                                <Link to="/java/list-interface">
+                                    <BiCircle className="icon" />
+                                    <span>List 인터페이스</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/java/inner-class">
-                                    <BiCircle
-                                        className="icon"
-                                    />
-                                    <span>내부클래스(Inner Class)</span>
+                                <Link to="/java/arraylist-class">
+                                    <BiCircle className="icon" />
+                                    <span>ArrayList 클래스</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/java/linkedlist-class">
+                                    <BiCircle className="icon" />
+                                    <span>LinkedList 클래스</span>
                                 </Link>
                             </li>
                         </ul>

@@ -49,6 +49,10 @@ import ReactTypeScript from 'pages/learn/react/AddTypeScript';
 import ReactBootstrap from 'pages/learn/react/AddBootstrap';
 import ReactRouter from 'pages/learn/react/AddRouter';
 import ReactComponent from 'pages/learn/react/Component';
+import ReactHooks from 'pages/learn/react/Hooks';
+import ReactUseState from 'pages/learn/react/UseState';
+import ReactUseEffect from 'pages/learn/react/UseEffect';
+import ReactUseRef from 'pages/learn/react/UseRef';
 // BPMN
 import BpmnIntro from 'pages/learn/bpmn/Intro';
 import BpmnEvent from 'pages/learn/bpmn/Events';
@@ -117,6 +121,10 @@ const App = () => {
                     <Route path="/react/adding-bootstrap" element={<ReactBootstrap />} />
                     <Route path="/react/adding-router" element={<ReactRouter />} />
                     <Route path="/react/component" element={<ReactComponent />} />
+                    <Route path="/react/hook" element={<ReactHooks />} />
+                    <Route path="/react/useState" element={<ReactUseState />} />
+                    <Route path="/react/useEffect" element={<ReactUseEffect />} />
+                    <Route path="/react/useRef" element={<ReactUseRef />} />
                     <Route path="/bpmn/intro" element={<BpmnIntro />} />
                     <Route path="/bpmn/event" element={<BpmnEvent />} />
                     <Route path="/bpmn/activitie" element={<BpmnActivitie />} />

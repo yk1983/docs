@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 import Breadcrumbs from 'components/Breadcrumbs';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
 // JsonData
-import data from 'data/html/tags';
+import data from 'data/html/globalAttributes';
 
 const SectionRender = () => {
     const

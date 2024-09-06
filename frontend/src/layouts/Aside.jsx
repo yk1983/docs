@@ -127,42 +127,32 @@ const Aside = ({ arrObjs, recLink }) => {
 
                     <li className="nav-item">
                         <Link className="nav-link collapsed" data-bs-target="#learn-react-nav" data-bs-toggle="collapse" to="#">
-                            <BiLogoReact
-                                className="icon"
-                            />
+                            <BiLogoReact className="icon" />
                             <span>Getting Started</span>
                             <i className="bi bi-chevron-down ms-auto"></i>
                         </Link>
                         <ul id="learn-react-nav" className="nav-content collapse" data-bs-parent="#sidebar-nav">
                             <li>
                                 <Link to="/react/getstarted">
-                                    <BiCircle
-                                        className="icon"
-                                    />
+                                    <BiCircle className="icon" />
                                     <span>Create App</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-typescript">
-                                    <BiCircle
-                                        className="icon"
-                                    />
+                                    <BiCircle className="icon" />
                                     <span>Adding TypeScript</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-bootstrap">
-                                    <BiCircle
-                                        className="icon"
-                                    />
+                                    <BiCircle className="icon" />
                                     <span>Adding Bootstrap</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/react/adding-router">
-                                    <BiCircle
-                                        className="icon"
-                                    />
+                                    <BiCircle className="icon" />
                                     <span>Adding Router</span>
                                 </Link>
                             </li>
@@ -177,6 +167,40 @@ const Aside = ({ arrObjs, recLink }) => {
                             <span>컴포넌트(Component)</span>
                         </Link>
                     </li>{/* End React Component Page Nav */}
+
+                    <li className="nav-item">
+                        <Link className="nav-link collapsed" data-bs-target="#learn-react-hook" data-bs-toggle="collapse" to="#">
+                            <BiLogoReact className="icon" />
+                            <span>훅(Hook)</span>
+                            <i className="bi bi-chevron-down ms-auto"></i>
+                        </Link>
+                        <ul id="learn-react-hook" className="nav-content collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <Link to="/react/hook">
+                                    <BiCircle className="icon" />
+                                    <span>훅(Hook)</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/useState">
+                                    <BiCircle className="icon" />
+                                    <span>useState</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/useEffect">
+                                    <BiCircle className="icon" />
+                                    <span>useEffect</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/useRef">
+                                    <BiCircle className="icon" />
+                                    <span>useRef</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>{/* End React Getting Started Page Nav */}
 
                     <li className="nav-heading">자바(Java)</li>
                     <li className="nav-item">

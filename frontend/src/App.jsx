@@ -53,6 +53,9 @@ import ReactHooks from 'pages/learn/react/Hooks';
 import ReactUseState from 'pages/learn/react/UseState';
 import ReactUseEffect from 'pages/learn/react/UseEffect';
 import ReactUseRef from 'pages/learn/react/UseRef';
+import ReactUseCallback from 'pages/learn/react/UseCallback';
+import ReactUseMemo from 'pages/learn/react/UseMemo';
+import ReactUseLayoutEffect from 'pages/learn/react/UseLayoutEffect';
 // BPMN
 import BpmnIntro from 'pages/learn/bpmn/Intro';
 import BpmnEvent from 'pages/learn/bpmn/Events';
@@ -124,7 +127,10 @@ const App = () => {
                     <Route path="/react/hook" element={<ReactHooks />} />
                     <Route path="/react/useState" element={<ReactUseState />} />
                     <Route path="/react/useEffect" element={<ReactUseEffect />} />
+                    <Route path="/react/useLayoutEffect" element={<ReactUseLayoutEffect />} />
                     <Route path="/react/useRef" element={<ReactUseRef />} />
+                    <Route path="/react/useCallback" element={<ReactUseCallback />} />
+                    <Route path="/react/useMemo" element={<ReactUseMemo />} />
                     <Route path="/bpmn/intro" element={<BpmnIntro />} />
                     <Route path="/bpmn/event" element={<BpmnEvent />} />
                     <Route path="/bpmn/activitie" element={<BpmnActivitie />} />

@@ -80,6 +80,7 @@ const SectionRender = () => {
                     </BsCardText>
 
                     <Note
+                        variant="danger"
                         title="주의점"
                     >
                         <p>
@@ -206,6 +207,25 @@ const SectionRender = () => {
                         ,   "}, []); // 빈 의존성 배열: 마운트될 때에만 실행"
                         ].join('\n')}
                     />
+                </BsCard>
+
+                <BsCard
+                    col={ 12 }
+                    title="deps 파라메터 값"
+                    subtitle="deps"
+                >
+                    <BsCardText>
+                        <code>deps</code> 에 특정 값을 넣게 되면 컴포넌트가 처음 마운트 될 때, 지정한 값이 바뀔 때,
+                        언마운트 될 때, 값이 바뀌기 직전에 모두 호출되게 됩니다.
+                        <br />
+                        <code>useEffect</code> 안에서 사용하는 <code>state</code> 나 <code>props</code> 가 있다면,
+                        {' '}<code>useEffect</code> 의 <code>deps</code> 에 넣어줘야 하는 것이 규칙입니다.
+                        만약 사용하는 값을 넣어주지 않는다면 <code>useEffect</code> 안의 함수가 실행될 때 최신
+                        <code>state</code>, <code>props</code> 를 가르키지 않습니다.
+                        <br />
+                        <code>deps</code> 파라메터를 생략하면 컴포넌트가 렌더링 될 때마다 <code>useEffect</code> 함수가
+                        호출되어 무한루프에 빠질 수 있습니다.
+                    </BsCardText>
                 </BsCard>
             </BsContainer>
         </>

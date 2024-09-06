@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import Breadcrumbs from 'components/Breadcrumbs';
+import { Table } from 'react-bootstrap';
 import { BsContainer, BsCard, BsCardText } from 'components/Article';
 import { DlList, DtItem, DdItem, UlList } from 'components/List';
 import Highlight from 'components/ExtHighlight'; // SyntaxHighlighter
@@ -141,6 +142,63 @@ const SectionRender = () => {
                         ,   "}"
                         ].join('\n')}
                     />
+                </BsCard>
+
+                <BsCard
+                    col={ 12 }
+                    title="React 컴포넌트 초기 렌더링과 리렌더링 과정"
+                >
+                    <Table striped bordered hover variant="dark" size="sm">
+                        <thead>
+                            <tr>
+                                <th>단계</th>
+                                <th>초기 렌더링</th>
+                                <th>리렌더링</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {[
+                            {   step : "1. 함수 컴포넌트 호출"
+                            ,   cn1 : "컴포넌트 함수가 호출됨"
+                            ,   cn2 : "컴포넌트 함수가 재호출됨"
+                            }
+                        ,   {   step : "2. 구현부 실행"
+                            ,   cn1 : "Props를 취득하고, Hook 실행, 내부 변수 및 함수 생성"
+                            ,   cn2 : "Props를 취득하고, Hook 재실행, 내부 변수 및 함수 재생성"
+                            }
+                        ,   {   step : "3. return 실행"
+                            ,   cn1 : "렌더링 시작"
+                            ,   cn2 : "렌더링 시작"
+                            }
+                        ,   {   step : "4. 렌더링 실행"
+                            ,   cn1 : "새로운 가상 DOM 생성 후 이전 가상 DOM과 비교하여 변경 사항 탐색, 실제 DOM에 반영할 부분 결정"
+                            ,   cn2 : "변경된 부분을 가상 DOM과 비교하여 변경 사항 탐색, 실제 DOM에 반영할 부분 결정"
+                            }
+                        ,   {   step : "5. 커밋 단계"
+                            ,   cn1 : "변경된 부분을 실제 DOM에 반영"
+                            ,   cn2 : "변경된 부분을 실제 DOM에 반영"
+                            }
+                        ,   {   step : "6. useLayoutEffect 실행"
+                            ,   cn1 : "동기적으로 실행됨"
+                            ,   cn2 : "동기적으로 실행됨 (state나 전역 상태값 변경 시 추가 실행 가능)"
+                            }
+                        ,   {   step : "7. paint"
+                            ,   cn1 : "실제 DOM을 화면에 그림"
+                            ,   cn2 : "실제 DOM을 화면에 그림"
+                            }
+                        ,   {   step : "8. useEffect 실행"
+                            ,   cn1 : "Mount 되어 브라우저에 그려진 후 비동기적으로 실행됨 (return이 있는 경우 실행됨)"
+                            ,   cn2 : "비동기적으로 실행됨 (return이 있는 경우 실행됨)"
+                            }
+                        ].map(item => (
+                            <tr>
+                                <td>{ item.step }</td>
+                                <td>{ item.cn1 }</td>
+                                <td>{ item.cn2 }</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </Table>
                 </BsCard>
             </BsContainer>
         </>

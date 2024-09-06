@@ -199,6 +199,24 @@ const Aside = ({ arrObjs, recLink }) => {
                                     <span>useRef</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/react/useCallback">
+                                    <BiCircle className="icon" />
+                                    <span>useCallback</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/useMemo">
+                                    <BiCircle className="icon" />
+                                    <span>useMemo</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/useLayoutEffect">
+                                    <BiCircle className="icon" />
+                                    <span>useLayoutEffect</span>
+                                </Link>
+                            </li>
                         </ul>
                     </li>{/* End React Getting Started Page Nav */}
 
